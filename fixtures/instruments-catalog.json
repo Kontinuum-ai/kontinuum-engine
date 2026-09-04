@@ -1,0 +1,1350 @@
+{
+ "instruments": [
+  {
+   "id": "kick",
+   "name": "909 Kick",
+   "description": "Kick voice from the Roland TR-909 Rhythm Composer (1983) \u2014 the defining techno kick: tuned sine body, pitch drop, soft click.",
+   "svg": "instruments/tr-909.svg",
+   "device": "TR-909",
+   "voiced": true
+  },
+  {
+   "id": "hat",
+   "name": "909 Hi-Hat",
+   "description": "Closed/open hi-hat from the TR-909: bright highpassed noise, the offbeat shimmer of techno.",
+   "svg": "instruments/tr-909.svg",
+   "device": "TR-909",
+   "voiced": true
+  },
+  {
+   "id": "clap",
+   "name": "909 Clap",
+   "description": "TR-909 clap: multi-burst noise pre-echoes into a long tail \u2014 the backbeat of house and techno.",
+   "svg": "instruments/tr-909.svg",
+   "device": "TR-909",
+   "voiced": true
+  },
+  {
+   "id": "snare",
+   "name": "909 Snare",
+   "description": "TR-909 snare: dual tone rods over a bright noise bed for fills and break accents.",
+   "svg": "instruments/tr-909.svg",
+   "device": "TR-909",
+   "voiced": true
+  },
+  {
+   "id": "shaker",
+   "name": "808 Shaker",
+   "description": "Shaker voice in the spirit of the TR-808 percussion set: soft attack, bright decay, groove glue.",
+   "svg": "instruments/tr-808.svg",
+   "device": "TR-808",
+   "voiced": true
+  },
+  {
+   "id": "bass",
+   "name": "JUNO Sub Bass",
+   "description": "Sub bass voice with the character of a Juno-106 lowpass \u2014 weight without mud.",
+   "svg": "instruments/juno-106.svg",
+   "device": "JUNO-106",
+   "voiced": true
+  },
+  {
+   "id": "acid",
+   "name": "TB-303 Acid Bass",
+   "description": "The Roland TB-303 Bass Line (1981): saw through a screaming resonant filter with slide and accent \u2014 accidental inventor of acid.",
+   "svg": "instruments/tb-303.svg",
+   "device": "TB-303",
+   "voiced": true
+  },
+  {
+   "id": "ep",
+   "name": "FM Electric Piano",
+   "description": "Electric piano in the spirit of the Yamaha DX7 (1983): two-operator FM, tine attack into a warm body \u2014 the deep-house chord machine.",
+   "svg": "instruments/dx7.svg",
+   "device": "DX7-STYLE",
+   "voiced": true
+  },
+  {
+   "id": "pad",
+   "name": "JUNO Pad",
+   "description": "Detuned-saw polysynth pad in the spirit of the Roland Juno-106 chorus sound.",
+   "svg": "instruments/juno-106.svg",
+   "device": "JUNO-106",
+   "voiced": true
+  },
+  {
+   "id": "stab",
+   "name": "Dub Stab",
+   "description": "Chord stab hit built for delay sends \u2014 the deep-house dub chord.",
+   "svg": "instruments/juno-106.svg",
+   "device": "JUNO-106",
+   "voiced": true
+  },
+  {
+   "id": "pluck",
+   "name": "Karplus Pluck",
+   "description": "Karplus-Strong physical string model (1983) \u2014 a plucked string from noise and a delay line.",
+   "svg": "instruments/pluck.svg",
+   "device": "PLUCK",
+   "voiced": true
+  },
+  {
+   "id": "sampler",
+   "name": "Sampler",
+   "description": "Sample playback track: load any sound, play it pitched and gated \u2014 the SP-series spirit.",
+   "svg": "instruments/sampler.svg",
+   "device": "SAMPLER",
+   "voiced": true
+  },
+  {
+   "id": "808-kick",
+   "name": "808 Kick",
+   "description": "Kick voice from the Roland TR-808 Rhythm Composer (1980) \u2014 the long tuned boom under Miami bass, electro and trap.",
+   "svg": "instruments/tr-808.svg",
+   "device": "TR-808",
+   "voiced": false,
+   "engine": {
+    "voice": "kick",
+    "params": {
+     "tune_hz": 52.0,
+     "decay_ms": 620.0,
+     "click": 0.15,
+     "drive": 0.5
+    },
+    "class": "drum"
+   }
+  },
+  {
+   "id": "808-cowbell",
+   "name": "808 Cowbell",
+   "description": "Cowbell from the TR-808 (1980): two detuned square waves struck together \u2014 the metallic clank behind countless hip-hop breaks.",
+   "svg": "instruments/tr-808.svg",
+   "device": "TR-808",
+   "voiced": false,
+   "engine": {
+    "patch": {
+     "nodes": [
+      {
+       "id": "clank",
+       "type": "fm_pair",
+       "ratio": 0.68,
+       "index": 1.5,
+       "feedback": 0.0,
+       "level": 0.8
+      },
+      {
+       "id": "bp",
+       "type": "filter",
+       "mode": "band_pass",
+       "cutoff_hz": 800.0,
+       "resonance": 0.55,
+       "drive": 0.0
+      },
+      {
+       "id": "amp",
+       "type": "env",
+       "attack_ms": 1.0,
+       "decay_ms": 120.0,
+       "sustain": 0.0,
+       "release_ms": 60.0
+      },
+      {
+       "id": "g",
+       "type": "gain",
+       "level": 0.0
+      },
+      {
+       "id": "out",
+       "type": "out",
+       "level": 0.9
+      }
+     ],
+     "edges": [
+      {
+       "from": "clank",
+       "to": "bp",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "bp",
+       "to": "g",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "g",
+       "to": "out",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "amp",
+       "to": "g",
+       "type": "mod",
+       "param": "level",
+       "amount": 1.0
+      }
+     ]
+    },
+    "class": "drum"
+   }
+  },
+  {
+   "id": "808-claves",
+   "name": "808 Claves",
+   "description": "Claves voice from the TR-808 (1980): one woody click off a single tone generator \u2014 the skeleton of Latin-tinged dance rhythms.",
+   "svg": "instruments/tr-808.svg",
+   "device": "TR-808",
+   "voiced": false,
+   "engine": {
+    "patch": {
+     "nodes": [
+      {
+       "id": "ping",
+       "type": "osc",
+       "wave": "sine",
+       "level": 0.9
+      },
+      {
+       "id": "amp",
+       "type": "env",
+       "attack_ms": 1.0,
+       "decay_ms": 10.0,
+       "sustain": 0.0,
+       "release_ms": 10.0
+      },
+      {
+       "id": "g",
+       "type": "gain",
+       "level": 0.0
+      },
+      {
+       "id": "out",
+       "type": "out",
+       "level": 0.9
+      }
+     ],
+     "edges": [
+      {
+       "from": "ping",
+       "to": "g",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "g",
+       "to": "out",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "amp",
+       "to": "g",
+       "type": "mod",
+       "param": "level",
+       "amount": 1.0
+      }
+     ]
+    },
+    "class": "drum"
+   }
+  },
+  {
+   "id": "606-kick",
+   "name": "606 Kick",
+   "description": "Kick from the Roland TR-606 Drumatix (1981) \u2014 dry and snappy, the rhythmic partner the TB-303 was built to travel with.",
+   "svg": "instruments/tr-606.svg",
+   "device": "TR-606",
+   "voiced": false,
+   "engine": {
+    "voice": "kick",
+    "params": {
+     "tune_hz": 55.0,
+     "decay_ms": 260.0,
+     "click": 0.4,
+     "drive": 0.6
+    },
+    "class": "drum"
+   }
+  },
+  {
+   "id": "606-hat",
+   "name": "606 Hi-Hat",
+   "description": "Hi-hat from the TR-606 (1981): thin, bright and hissy \u2014 the lo-fi tick that keeps acid lines rolling.",
+   "svg": "instruments/tr-606.svg",
+   "device": "TR-606",
+   "voiced": false,
+   "engine": {
+    "voice": "hat",
+    "params": {
+     "decay_ms": 30.0,
+     "tone": 0.75,
+     "open": false
+    },
+    "class": "drum"
+   }
+  },
+  {
+   "id": "707-snare",
+   "name": "707 Snare",
+   "description": "Snare from the Roland TR-707 (1985): short 12-bit samples with a bright crack \u2014 a house and techno staple.",
+   "svg": "instruments/tr-707.svg",
+   "device": "TR-707",
+   "voiced": false,
+   "engine": {
+    "voice": "snare",
+    "params": {
+     "tune_hz": 190.0,
+     "decay_ms": 150.0,
+     "snap": 0.8
+    },
+    "class": "drum"
+   }
+  },
+  {
+   "id": "727-conga",
+   "name": "727 Conga",
+   "description": "Conga from the Roland TR-727 (1985): tuned Latin percussion that gave second-wave house and acid its swing.",
+   "svg": "instruments/tr-727.svg",
+   "device": "TR-727",
+   "voiced": false,
+   "engine": {
+    "patch": {
+     "nodes": [
+      {
+       "id": "tone",
+       "type": "osc",
+       "wave": "sine",
+       "fine_cents": -50.0,
+       "level": 0.9
+      },
+      {
+       "id": "lp",
+       "type": "filter",
+       "mode": "low_pass",
+       "cutoff_hz": 900.0,
+       "resonance": 0.3,
+       "drive": 0.0
+      },
+      {
+       "id": "amp",
+       "type": "env",
+       "attack_ms": 1.0,
+       "decay_ms": 180.0,
+       "sustain": 0.0,
+       "release_ms": 90.0
+      },
+      {
+       "id": "g",
+       "type": "gain",
+       "level": 0.0
+      },
+      {
+       "id": "out",
+       "type": "out",
+       "level": 0.9
+      }
+     ],
+     "edges": [
+      {
+       "from": "tone",
+       "to": "lp",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "lp",
+       "to": "g",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "g",
+       "to": "out",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "amp",
+       "to": "g",
+       "type": "mod",
+       "param": "level",
+       "amount": 1.0
+      }
+     ]
+    },
+    "class": "drum"
+   }
+  },
+  {
+   "id": "cr78-kick",
+   "name": "CR-78 Kick",
+   "description": "Kick from the Roland CR-78 CompuRhythm (1978) \u2014 the first programmable drum machine, beating under 'Heart of Glass' and 'In the Air Tonight'.",
+   "svg": "instruments/cr-78.svg",
+   "device": "Roland CR-78",
+   "voiced": false,
+   "engine": {
+    "voice": "kick",
+    "params": {
+     "tune_hz": 45.0,
+     "decay_ms": 310.0,
+     "click": 0.3,
+     "drive": 0.5
+    },
+    "class": "drum"
+   }
+  },
+  {
+   "id": "cr78-bongo",
+   "name": "CR-78 Bongo",
+   "description": "Bongo from the CR-78 (1978): disco-era percussion baked into the preset rhythms that carried late-seventies pop and Italo.",
+   "svg": "instruments/cr-78.svg",
+   "device": "Roland CR-78",
+   "voiced": false,
+   "engine": {
+    "patch": {
+     "nodes": [
+      {
+       "id": "tone",
+       "type": "osc",
+       "wave": "sine",
+       "fine_cents": 50.0,
+       "level": 0.9
+      },
+      {
+       "id": "amp",
+       "type": "env",
+       "attack_ms": 1.0,
+       "decay_ms": 90.0,
+       "sustain": 0.0,
+       "release_ms": 50.0
+      },
+      {
+       "id": "g",
+       "type": "gain",
+       "level": 0.0
+      },
+      {
+       "id": "out",
+       "type": "out",
+       "level": 0.9
+      }
+     ],
+     "edges": [
+      {
+       "from": "tone",
+       "to": "g",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "g",
+       "to": "out",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "amp",
+       "to": "g",
+       "type": "mod",
+       "param": "level",
+       "amount": 1.0
+      }
+     ]
+    },
+    "class": "drum"
+   }
+  },
+  {
+   "id": "linn-kick",
+   "name": "Linn Kick",
+   "description": "Kick from the LinnDrum (1982) \u2014 Roger Linn's sampled drums with swing; the machine that stood in for drummers on 'Thriller'.",
+   "svg": "instruments/linndrum.svg",
+   "device": "LinnDrum",
+   "voiced": false,
+   "engine": {
+    "voice": "kick",
+    "params": {
+     "tune_hz": 50.0,
+     "decay_ms": 290.0,
+     "click": 0.5,
+     "drive": 0.6
+    },
+    "class": "drum"
+   }
+  },
+  {
+   "id": "linn-tom",
+   "name": "Linn Tom",
+   "description": "Tom from the LinnDrum (1982): cleanly sampled and truly tuned \u2014 proof a stored sound could feel played.",
+   "svg": "instruments/linndrum.svg",
+   "device": "LinnDrum",
+   "voiced": false,
+   "engine": {
+    "patch": {
+     "nodes": [
+      {
+       "id": "tone",
+       "type": "osc",
+       "wave": "sine",
+       "fine_cents": -100.0,
+       "level": 0.95
+      },
+      {
+       "id": "amp",
+       "type": "env",
+       "attack_ms": 1.0,
+       "decay_ms": 350.0,
+       "sustain": 0.0,
+       "release_ms": 120.0
+      },
+      {
+       "id": "g",
+       "type": "gain",
+       "level": 0.0
+      },
+      {
+       "id": "out",
+       "type": "out",
+       "level": 0.9
+      }
+     ],
+     "edges": [
+      {
+       "from": "tone",
+       "to": "g",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "g",
+       "to": "out",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "amp",
+       "to": "g",
+       "type": "mod",
+       "param": "level",
+       "amount": 1.0
+      }
+     ]
+    },
+    "class": "drum"
+   }
+  },
+  {
+   "id": "dmx-kick",
+   "name": "DMX Kick",
+   "description": "Kick from the Oberheim DMX (1980): punchy sampled drums that powered early hip-hop and electro.",
+   "svg": "instruments/dmx.svg",
+   "device": "Oberheim DMX",
+   "voiced": false,
+   "engine": {
+    "voice": "kick",
+    "params": {
+     "tune_hz": 48.0,
+     "decay_ms": 360.0,
+     "click": 0.45,
+     "drive": 0.6
+    },
+    "class": "drum"
+   }
+  },
+  {
+   "id": "dmx-snare",
+   "name": "DMX Snare",
+   "description": "Snare from the Oberheim DMX (1980): a tight sampled crack that sat under eighties rap and R&B.",
+   "svg": "instruments/dmx.svg",
+   "device": "Oberheim DMX",
+   "voiced": false,
+   "engine": {
+    "voice": "snare",
+    "params": {
+     "tune_hz": 180.0,
+     "decay_ms": 170.0,
+     "snap": 0.65
+    },
+    "class": "drum"
+   }
+  },
+  {
+   "id": "sp1200-kick",
+   "name": "SP-1200 Kick",
+   "description": "Kick from the E-mu SP-1200 (1987): 12-bit and gritty by design \u2014 the boom bap starter for Pete Rock and DJ Premier.",
+   "svg": "instruments/sp-1200.svg",
+   "device": "E-mu SP-1200",
+   "voiced": false,
+   "engine": {
+    "voice": "kick",
+    "params": {
+     "tune_hz": 47.0,
+     "decay_ms": 350.0,
+     "click": 0.5,
+     "drive": 0.9
+    },
+    "class": "drum"
+   }
+  },
+  {
+   "id": "mpc60-kick",
+   "name": "MPC60 Kick",
+   "description": "Kick from the Akai MPC60 (1988) \u2014 Akai and Roger Linn's first MPC; its pads and swing shaped hip-hop production from then on.",
+   "svg": "instruments/mpc60.svg",
+   "device": "Akai MPC60",
+   "voiced": false,
+   "engine": {
+    "voice": "kick",
+    "params": {
+     "tune_hz": 50.0,
+     "decay_ms": 420.0,
+     "click": 0.35,
+     "drive": 0.55
+    },
+    "class": "drum"
+   }
+  },
+  {
+   "id": "dr55-snare",
+   "name": "DR-55 Snare",
+   "description": "Snare from the Boss DR-55 Dr. Rhythm (1979): four sounds and a step sequencer \u2014 the cheap pulse behind early minimal and cold-wave demos.",
+   "svg": "instruments/dr-55.svg",
+   "device": "Boss DR-55",
+   "voiced": false,
+   "engine": {
+    "voice": "snare",
+    "params": {
+     "tune_hz": 200.0,
+     "decay_ms": 120.0,
+     "snap": 0.7
+    },
+    "class": "drum"
+   }
+  },
+  {
+   "id": "minipops-brush",
+   "name": "Minipops Brush",
+   "description": "Brush snare from the Korg Minipops (1972): preset rhythm-box grooves that Jean-Michel Jarre wired into 'Oxyg\u00e8ne'.",
+   "svg": "instruments/minipops.svg",
+   "device": "Korg Minipops",
+   "voiced": false,
+   "engine": {
+    "patch": {
+     "nodes": [
+      {
+       "id": "nz",
+       "type": "osc",
+       "wave": "noise",
+       "level": 0.8
+      },
+      {
+       "id": "bp",
+       "type": "filter",
+       "mode": "band_pass",
+       "cutoff_hz": 3500.0,
+       "resonance": 0.5,
+       "drive": 0.0
+      },
+      {
+       "id": "swell",
+       "type": "env",
+       "attack_ms": 60.0,
+       "decay_ms": 400.0,
+       "sustain": 0.2,
+       "release_ms": 150.0
+      },
+      {
+       "id": "g",
+       "type": "gain",
+       "level": 0.0
+      },
+      {
+       "id": "out",
+       "type": "out",
+       "level": 0.85
+      }
+     ],
+     "edges": [
+      {
+       "from": "nz",
+       "to": "bp",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "bp",
+       "to": "g",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "g",
+       "to": "out",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "swell",
+       "to": "g",
+       "type": "mod",
+       "param": "level",
+       "amount": 1.0
+      }
+     ]
+    },
+    "class": "drum"
+   }
+  },
+  {
+   "id": "sdsv-tom",
+   "name": "SDS-V Tom",
+   "description": "Tom from the Simmons SDS-V (1981): hexagonal pads and a long synthetic decay \u2014 the eighties' electronic drum sound.",
+   "svg": "instruments/sds-v.svg",
+   "device": "Simmons SDS-V",
+   "voiced": false,
+   "engine": {
+    "patch": {
+     "nodes": [
+      {
+       "id": "tone",
+       "type": "osc",
+       "wave": "sine",
+       "fine_cents": -100.0,
+       "level": 0.9
+      },
+      {
+       "id": "snap",
+       "type": "osc",
+       "wave": "noise",
+       "level": 0.35
+      },
+      {
+       "id": "hp",
+       "type": "filter",
+       "mode": "high_pass",
+       "cutoff_hz": 2000.0,
+       "resonance": 0.3,
+       "drive": 0.0
+      },
+      {
+       "id": "amp",
+       "type": "env",
+       "attack_ms": 1.0,
+       "decay_ms": 300.0,
+       "sustain": 0.0,
+       "release_ms": 120.0
+      },
+      {
+       "id": "g",
+       "type": "gain",
+       "level": 0.0
+      },
+      {
+       "id": "out",
+       "type": "out",
+       "level": 0.9
+      }
+     ],
+     "edges": [
+      {
+       "from": "tone",
+       "to": "g",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "snap",
+       "to": "hp",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "hp",
+       "to": "g",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "g",
+       "to": "out",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "amp",
+       "to": "g",
+       "type": "mod",
+       "param": "level",
+       "amount": 1.0
+      }
+     ]
+    },
+    "class": "drum"
+   }
+  },
+  {
+   "id": "sh101-bass",
+   "name": "SH-101 Bass",
+   "description": "Bass in the spirit of the Roland SH-101 (1982): one fat monosynth voice that carried Detroit techno basslines and acid leads alike.",
+   "svg": "instruments/sh-101.svg",
+   "device": "Roland SH-101",
+   "voiced": false,
+   "engine": {
+    "voice": "bass",
+    "params": {
+     "cutoff_hz": 2600.0,
+     "resonance": 0.3,
+     "wave": "square",
+     "glide_ms": 0.0
+    },
+    "class": "bass"
+   }
+  },
+  {
+   "id": "mc202-lead",
+   "name": "MC-202 Lead",
+   "description": "Lead from the Roland MC-202 MicroComposer (1983): an SH-101 voice with a sequencer bolted on \u2014 an Underground Resistance staple.",
+   "svg": "instruments/mc-202.svg",
+   "device": "Roland MC-202",
+   "voiced": false,
+   "engine": {
+    "voice": "acid",
+    "params": {
+     "cutoff_hz": 1800.0,
+     "resonance": 0.55,
+     "env_amt": 2.2,
+     "glide_ms": 40.0
+    },
+    "class": "bass"
+   }
+  },
+  {
+   "id": "minimoog-bass",
+   "name": "Minimoog Bass",
+   "description": "Bass in the spirit of the Minimoog Model D (1970): three oscillators into a ladder filter \u2014 the bass that made synth-funk move.",
+   "svg": "instruments/minimoog.svg",
+   "device": "Minimoog Model D",
+   "voiced": false,
+   "engine": {
+    "voice": "bass",
+    "params": {
+     "cutoff_hz": 700.0,
+     "resonance": 0.5,
+     "wave": "saw",
+     "glide_ms": 0.0
+    },
+    "class": "bass"
+   }
+  },
+  {
+   "id": "odyssey-lead",
+   "name": "Odyssey Lead",
+   "description": "Lead from the ARP Odyssey (1972): duophonic, bright and aggressive \u2014 the fusioneer's synth behind Herbie Hancock's seventies records.",
+   "svg": "instruments/odyssey.svg",
+   "device": "ARP Odyssey",
+   "voiced": false,
+   "engine": {
+    "voice": "acid",
+    "params": {
+     "cutoff_hz": 2200.0,
+     "resonance": 0.5,
+     "env_amt": 2.8,
+     "glide_ms": 25.0
+    },
+    "class": "bass"
+   }
+  },
+  {
+   "id": "ms20-pad",
+   "name": "MS-20 Pad",
+   "description": "Pad in the spirit of the Korg MS-20 (1978): a screaming resonant filter and a patchable signal path \u2014 industrial texture on tap.",
+   "svg": "instruments/ms-20.svg",
+   "device": "Korg MS-20",
+   "voiced": false,
+   "engine": {
+    "patch": {
+     "nodes": [
+      {
+       "id": "saw",
+       "type": "osc",
+       "wave": "saw",
+       "unison": 3,
+       "fine_cents": 18.0,
+       "level": 0.7
+      },
+      {
+       "id": "hp",
+       "type": "filter",
+       "mode": "high_pass",
+       "cutoff_hz": 300.0,
+       "resonance": 0.7,
+       "drive": 0.15
+      },
+      {
+       "id": "lp",
+       "type": "filter",
+       "mode": "low_pass",
+       "cutoff_hz": 1400.0,
+       "resonance": 0.5,
+       "drive": 0.0
+      },
+      {
+       "id": "amp",
+       "type": "env",
+       "attack_ms": 900.0,
+       "decay_ms": 1200.0,
+       "sustain": 0.75,
+       "release_ms": 2200.0
+      },
+      {
+       "id": "g",
+       "type": "gain",
+       "level": 0.0
+      },
+      {
+       "id": "out",
+       "type": "out",
+       "level": 0.8
+      }
+     ],
+     "edges": [
+      {
+       "from": "saw",
+       "to": "hp",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "hp",
+       "to": "lp",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "lp",
+       "to": "g",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "g",
+       "to": "out",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "amp",
+       "to": "g",
+       "type": "mod",
+       "param": "level",
+       "amount": 1.0
+      },
+      {
+       "from": "amp",
+       "to": "lp",
+       "type": "mod",
+       "param": "cutoff_hz",
+       "amount": 0.6
+      }
+     ]
+    },
+    "class": "synth"
+   }
+  },
+  {
+   "id": "prophet5-stab",
+   "name": "Prophet-5 Stab",
+   "description": "Chord stab in the spirit of the Sequential Prophet-5 (1978): the first fully programmable polysynth \u2014 five analog voices that defined eighties pop and house stabs.",
+   "svg": "instruments/prophet-5.svg",
+   "device": "Sequential Prophet-5",
+   "voiced": false,
+   "engine": {
+    "voice": "stab",
+    "params": {
+     "cutoff_hz": 5200.0,
+     "decay_ms": 420.0,
+     "detune_cents": 12.0
+    },
+    "class": "synth"
+   }
+  },
+  {
+   "id": "jupiter8-pad",
+   "name": "Jupiter-8 Pad",
+   "description": "Pad from the Roland Jupiter-8 (1981): lush, glassy polysynth sweeps \u2014 the sound of 'Take On Me' and every dreamy outro since.",
+   "svg": "instruments/jupiter-8.svg",
+   "device": "Roland Jupiter-8",
+   "voiced": false,
+   "engine": {
+    "voice": "pad",
+    "params": {
+     "attack_ms": 850.0,
+     "release_ms": 3200.0,
+     "detune_cents": 14.0,
+     "cutoff_hz": 4200.0
+    },
+    "class": "synth"
+   }
+  },
+  {
+   "id": "cs80-lead",
+   "name": "CS-80 Lead",
+   "description": "Lead from the Yamaha CS-80 (1977): a heavyweight polysynth with ribbon controller and aftertouch \u2014 Vangelis's 'Blade Runner' voice.",
+   "svg": "instruments/cs-80.svg",
+   "device": "Yamaha CS-80",
+   "voiced": false,
+   "engine": {
+    "patch": {
+     "nodes": [
+      {
+       "id": "saw1",
+       "type": "osc",
+       "wave": "saw",
+       "fine_cents": 0.0,
+       "level": 0.55
+      },
+      {
+       "id": "saw2",
+       "type": "osc",
+       "wave": "saw",
+       "fine_cents": 12.0,
+       "level": 0.55
+      },
+      {
+       "id": "lp",
+       "type": "filter",
+       "mode": "low_pass",
+       "cutoff_hz": 2600.0,
+       "resonance": 0.35,
+       "drive": 0.2
+      },
+      {
+       "id": "amp",
+       "type": "env",
+       "attack_ms": 20.0,
+       "decay_ms": 500.0,
+       "sustain": 0.7,
+       "release_ms": 350.0
+      },
+      {
+       "id": "g",
+       "type": "gain",
+       "level": 0.0
+      },
+      {
+       "id": "out",
+       "type": "out",
+       "level": 0.85
+      }
+     ],
+     "edges": [
+      {
+       "from": "saw1",
+       "to": "lp",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "saw2",
+       "to": "lp",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "lp",
+       "to": "g",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "g",
+       "to": "out",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "amp",
+       "to": "g",
+       "type": "mod",
+       "param": "level",
+       "amount": 1.0
+      },
+      {
+       "from": "amp",
+       "to": "lp",
+       "type": "mod",
+       "param": "cutoff_hz",
+       "amount": 0.4
+      }
+     ]
+    },
+    "class": "synth"
+   }
+  },
+  {
+   "id": "cz101-pluck",
+   "name": "CZ-101 Pluck",
+   "description": "Pluck from the Casio CZ-101 (1985): phase-distortion synthesis at a budget price \u2014 brittle, glassy tones dotted through late-eighties house and techno.",
+   "svg": "instruments/cz-101.svg",
+   "device": "Casio CZ-101",
+   "voiced": false,
+   "engine": {
+    "voice": "pluck",
+    "params": {
+     "damping": 0.55,
+     "bright": 0.7
+    },
+    "class": "synth"
+   }
+  },
+  {
+   "id": "rhodes-mk1",
+   "name": "Rhodes Mark I",
+   "description": "The Fender Rhodes Mark I (1969): tines struck and run through a tremolo preamp \u2014 the couch every soul, jazz-funk and deep-house chord sits on.",
+   "svg": "instruments/rhodes.svg",
+   "device": "Fender Rhodes Mark I",
+   "voiced": false,
+   "engine": {
+    "patch": {
+     "nodes": [
+      {
+       "id": "bell",
+       "type": "fm_pair",
+       "ratio": 2.0,
+       "index": 1.2,
+       "feedback": 0.0,
+       "level": 0.8
+      },
+      {
+       "id": "lp",
+       "type": "filter",
+       "mode": "low_pass",
+       "cutoff_hz": 3200.0,
+       "resonance": 0.2,
+       "drive": 0.0
+      },
+      {
+       "id": "amp",
+       "type": "env",
+       "attack_ms": 2.0,
+       "decay_ms": 900.0,
+       "sustain": 0.25,
+       "release_ms": 600.0
+      },
+      {
+       "id": "g",
+       "type": "gain",
+       "level": 0.0
+      },
+      {
+       "id": "out",
+       "type": "out",
+       "level": 0.85
+      }
+     ],
+     "edges": [
+      {
+       "from": "bell",
+       "to": "lp",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "lp",
+       "to": "g",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "g",
+       "to": "out",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "amp",
+       "to": "g",
+       "type": "mod",
+       "param": "level",
+       "amount": 1.0
+      },
+      {
+       "from": "amp",
+       "to": "bell",
+       "type": "mod",
+       "param": "index",
+       "amount": 0.5
+      }
+     ]
+    },
+    "class": "synth"
+   }
+  },
+  {
+   "id": "clavinet",
+   "name": "Clavinet D6",
+   "description": "The Hohner Clavinet D6 (1971): rubber-strung tangents straight into pickups \u2014 the fuzzed-out funk keyboard of 'Superstition'.",
+   "svg": "instruments/clavinet.svg",
+   "device": "Hohner Clavinet D6",
+   "voiced": false,
+   "engine": {
+    "patch": {
+     "nodes": [
+      {
+       "id": "sq",
+       "type": "osc",
+       "wave": "square",
+       "level": 0.7
+      },
+      {
+       "id": "hp",
+       "type": "filter",
+       "mode": "high_pass",
+       "cutoff_hz": 700.0,
+       "resonance": 0.4,
+       "drive": 0.0
+      },
+      {
+       "id": "amp",
+       "type": "env",
+       "attack_ms": 1.0,
+       "decay_ms": 180.0,
+       "sustain": 0.1,
+       "release_ms": 120.0
+      },
+      {
+       "id": "g",
+       "type": "gain",
+       "level": 0.0
+      },
+      {
+       "id": "out",
+       "type": "out",
+       "level": 0.85
+      }
+     ],
+     "edges": [
+      {
+       "from": "sq",
+       "to": "hp",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "hp",
+       "to": "g",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "g",
+       "to": "out",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "amp",
+       "to": "g",
+       "type": "mod",
+       "param": "level",
+       "amount": 1.0
+      }
+     ]
+    },
+    "class": "synth"
+   }
+  },
+  {
+   "id": "wurlitzer",
+   "name": "Wurlitzer 200A",
+   "description": "The Wurlitzer 200A (1974): a reedy, biting electric piano \u2014 Ray Charles made the early model talk, Supertramp made the 200A sing.",
+   "svg": "instruments/wurlitzer.svg",
+   "device": "Wurlitzer 200A",
+   "voiced": false,
+   "engine": {
+    "patch": {
+     "nodes": [
+      {
+       "id": "reed",
+       "type": "fm_pair",
+       "ratio": 1.0,
+       "index": 0.8,
+       "feedback": 0.0,
+       "level": 0.8
+      },
+      {
+       "id": "lp",
+       "type": "filter",
+       "mode": "low_pass",
+       "cutoff_hz": 2400.0,
+       "resonance": 0.15,
+       "drive": 0.0
+      },
+      {
+       "id": "amp",
+       "type": "env",
+       "attack_ms": 4.0,
+       "decay_ms": 1200.0,
+       "sustain": 0.4,
+       "release_ms": 800.0
+      },
+      {
+       "id": "trem",
+       "type": "lfo",
+       "rate_hz": 4.5,
+       "depth": 0.25,
+       "wave": "sine"
+      },
+      {
+       "id": "g",
+       "type": "gain",
+       "level": 0.0
+      },
+      {
+       "id": "out",
+       "type": "out",
+       "level": 0.85
+      }
+     ],
+     "edges": [
+      {
+       "from": "reed",
+       "to": "lp",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "lp",
+       "to": "g",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "g",
+       "to": "out",
+       "type": "audio",
+       "amount": 1.0
+      },
+      {
+       "from": "amp",
+       "to": "g",
+       "type": "mod",
+       "param": "level",
+       "amount": 1.0
+      },
+      {
+       "from": "trem",
+       "to": "g",
+       "type": "mod",
+       "param": "level",
+       "amount": 0.25
+      }
+     ]
+    },
+    "class": "synth"
+   }
+  }
+ ]
+}
