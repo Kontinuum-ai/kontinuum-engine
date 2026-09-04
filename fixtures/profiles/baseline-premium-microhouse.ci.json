@@ -1,0 +1,25 @@
+{
+  "profile": "premium-microhouse.json",
+  "seed": 7,
+  "distance": 15.611,
+  "ratchet": 3.0,
+  "note": "CI anchor (ubuntu x86_64 runners), measured 2026-09-04. Cross-host libm float-contraction decorrelates the acid resonator: the canonical host renders bit-identical output and holds the 0-anchor in baseline-premium-microhouse.json (gate it locally); a foreign host lands ~15.6 distance on a healthy export. This anchor therefore absorbs the measured cross-host drift with a 3.0 budget while still catching the breakage classes the gate exists for: a #111-class premium-chain miss adds 7+ to the distance on top of the drift, landing far outside 15.611 + 3.0. Re-measure on the CI runner generation if the drift itself moves.",
+  "metrics": {
+    "rms_dbfs": -9.9,
+    "peak_dbfs": -1.1,
+    "true_peak_dbfs": -1.1,
+    "crest_db": 8.84,
+    "short_term_dyn_db": 4.27,
+    "centroid_hz": 6894.0,
+    "band_shares": [
+      0.669,
+      0.124,
+      0.056,
+      0.094,
+      0.012,
+      0.027
+    ],
+    "transients_per_sec": 5.3,
+    "hit_cv": 0.29
+  }
+}

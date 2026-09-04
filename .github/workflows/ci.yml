@@ -47,5 +47,11 @@ jobs:
       # only ever rendered the real-time mix. Same session, the export
       # chain, its own profile and baseline.
       - run: |
+          # The strict 0-anchor premium ratchet holds on the canonical host
+          # (bit-identical render; see baseline-premium-microhouse.json). CI
+          # runners are a foreign libm: the gate here uses the measured
+          # cross-host drift anchor instead — it still catches #111-class
+          # chain breakage, which lands well above drift + budget.
+
           cargo run --release -q --bin kontinuum-offline -p kontinuum-offline -- render --premium session-critic.json render-critic-premium.wav
-          cargo run --release -q -p kontinuum-analysis --bin kontinuum-critic -- gate render-critic-premium.wav fixtures/profiles/premium-microhouse.json fixtures/profiles/baseline-premium-microhouse.json
+          cargo run --release -q -p kontinuum-analysis --bin kontinuum-critic -- gate render-critic-premium.wav fixtures/profiles/premium-microhouse.json fixtures/profiles/baseline-premium-microhouse.ci.json
