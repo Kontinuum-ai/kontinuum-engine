@@ -173,7 +173,13 @@ mod tests {
     /// THE GATE (issue #75): targets rendered by our own voices at known
     /// params must be recovered within tolerance, with the final loss far
     /// below any plausible bad fit. Proves the fitter before real material.
-    #[test]
+    /// Debug builds skip it: an unoptimized Nelder-Mead over rendered audio
+    /// is orders of magnitude slower and cannot fit a CI budget — the
+    /// release suite (the golden job) enforces this gate.
+    #[cfg_attr(
+        debug_assertions,
+        ignore = "debug builds make the fitter orders of magnitude slower; enforced by the release suite"
+    )]
     fn round_trip_recovers_known_params_for_every_voice_kind() {
         let cases: &[(VoiceKind, &[f32])] = &[
             (VoiceKind::Kick, &[50.0, 430.0, 0.55, 2.2]),

@@ -4,9 +4,15 @@ on:
     branches: [main]
   pull_request:
 
+# Job budget: the debug suite of the heavier crates takes tens of minutes
+# on shared runners (iterative fits, full renders, byte-identical masters).
+# The engine gate is therefore sharded; each shard names its crates and its
+# own timeout so a wedge dies clean instead of at a silent org ceiling.
+
 jobs:
   reachability:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
@@ -14,13 +20,27 @@ jobs:
 
   engine:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        group:
+          - name: language
+            crates: -p kontinuum-ir -p kontinuum-clock -p kontinuum-schedule -p kontinuum-supervision -p kontinuum-analysis -p kontinuum-corpus -p kontinuum-preference
+          - name: synthesis
+            crates: -p kontinuum-core -p kontinuum-mastering -p kontinuum-instruments-core -p kontinuum-plugin-api -p kontinuum-samples
+          - name: brain
+            crates: -p kontinuum-compose -p kontinuum-composer -p kontinuum-taste
+          - name: delivery
+            crates: -p kontinuum-bridge -p kontinuum-offline -p kontinuum-export
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
-      - run: cargo test --workspace
-      - run: cargo test --workspace --release
+      - run: cargo test ${{ matrix.group.crates }}
+
   golden:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
@@ -30,8 +50,10 @@ jobs:
       # opt-in via KONTINUUM_GOLDEN_PIN_CHECK=1 on the canonical host.
       - run: cargo test --workspace --release
       - run: cargo run --release --bin kontinuum-offline -p kontinuum-offline -- hash fixtures/loop-4track.ir.json
+
   critic:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
@@ -52,6 +74,5 @@ jobs:
           # runners are a foreign libm: the gate here uses the measured
           # cross-host drift anchor instead — it still catches #111-class
           # chain breakage, which lands well above drift + budget.
-
           cargo run --release -q --bin kontinuum-offline -p kontinuum-offline -- render --premium session-critic.json render-critic-premium.wav
           cargo run --release -q -p kontinuum-analysis --bin kontinuum-critic -- gate render-critic-premium.wav fixtures/profiles/premium-microhouse.json fixtures/profiles/baseline-premium-microhouse.ci.json
