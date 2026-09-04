@@ -47,5 +47,5 @@ jobs:
       # only ever rendered the real-time mix. Same session, the export
       # chain, its own profile and baseline.
       - run: |
-          cargo run --release -q -p kontinuum-offline -- render --premium session-critic.json render-critic-premium.wav
+          cargo run --release -q --bin kontinuum-offline -p kontinuum-offline -- render --premium session-critic.json render-critic-premium.wav
           cargo run --release -q -p kontinuum-analysis --bin kontinuum-critic -- gate render-critic-premium.wav fixtures/profiles/premium-microhouse.json fixtures/profiles/baseline-premium-microhouse.json
