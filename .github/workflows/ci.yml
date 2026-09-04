@@ -4,10 +4,12 @@ on:
     branches: [main]
   pull_request:
 
-# Job budget: the debug suite of the heavier crates takes tens of minutes
-# on shared runners (iterative fits, full renders, byte-identical masters).
-# The engine gate is therefore sharded; each shard names its crates and its
-# own timeout so a wedge dies clean instead of at a silent org ceiling.
+# Job budget: the debug suites of the render-bound crates (bridge, offline,
+# export: masters, stems, limiter sweeps) take an hour-plus on shared
+# runners — they are release-domain and the golden job already gates them
+# there. Debug CI therefore: shards the light-enough crates, and only
+# COMPILES the delivery crates in debug. Each job names its own timeout so
+# a wedge dies clean instead of at a silent org ceiling.
 
 jobs:
   reachability:
@@ -31,12 +33,21 @@ jobs:
             crates: -p kontinuum-core -p kontinuum-mastering -p kontinuum-instruments-core -p kontinuum-plugin-api -p kontinuum-samples
           - name: brain
             crates: -p kontinuum-compose -p kontinuum-composer -p kontinuum-taste
-          - name: delivery
-            crates: -p kontinuum-bridge -p kontinuum-offline -p kontinuum-export
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
       - run: cargo test ${{ matrix.group.crates }}
+
+  engine-debug-build:
+    # The delivery crates in debug: compile-gate only. Their debug test
+    # suites are render-bound (hour-plus on shared runners) and already
+    # enforced in release by the golden job.
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo test --no-run -p kontinuum-bridge -p kontinuum-offline -p kontinuum-export
 
   golden:
     runs-on: ubuntu-latest
