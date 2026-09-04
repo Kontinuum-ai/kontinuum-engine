@@ -229,8 +229,8 @@ pub fn normalize_to_target(
         (target_lufs - measured).min(24.0).max(-24.0)
     };
     let g = 10.0f64.powf(gain_db / 20.0);
-    let mut out_l: Vec<f32> = left.iter().map(|s| (s * g as f32)).collect();
-    let mut out_r: Vec<f32> = right.iter().map(|s| (s * g as f32)).collect();
+    let mut out_l: Vec<f32> = left.iter().map(|s| s * g as f32).collect();
+    let mut out_r: Vec<f32> = right.iter().map(|s| s * g as f32).collect();
     let tp = true_peak_dbfs(&out_l, &out_r);
     let mut trim = 0.0f64;
     if tp > ceiling_dbtp {

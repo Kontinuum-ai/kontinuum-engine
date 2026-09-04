@@ -29,7 +29,7 @@ jobs:
       # determinism, finite/audible output, WAV roundtrip. Exact-pin check is
       # opt-in via KONTINUUM_GOLDEN_PIN_CHECK=1 on the canonical host.
       - run: cargo test --workspace --release
-      - run: cargo run --release -p kontinuum-offline -- hash fixtures/loop-4track.ir.json
+      - run: cargo run --release --bin kontinuum-offline -p kontinuum-offline -- hash fixtures/loop-4track.ir.json
   critic:
     runs-on: ubuntu-latest
     steps:
@@ -40,7 +40,7 @@ jobs:
       # fails only on quality REGRESSION (issue #52 WS4), not on absolute miss.
       - run: |
           cargo run --release -q -p kontinuum-compose --example gen_genre -- microhouse session-critic.json 7 128
-          cargo run --release -q -p kontinuum-offline -- render session-critic.json render-critic.wav
+          cargo run --release -q --bin kontinuum-offline -p kontinuum-offline -- render session-critic.json render-critic.wav
           cargo run --release -q -p kontinuum-analysis --bin kontinuum-critic -- gate render-critic.wav fixtures/profiles/microhouse.json fixtures/profiles/baseline-microhouse.json
       # The premium/export path through its own ratchet (issue #117): #111
       # shipped 9 dB under target through this chain while the gate above
