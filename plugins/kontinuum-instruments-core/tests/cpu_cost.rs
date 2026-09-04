@@ -87,14 +87,28 @@ fn voice_cost_table_is_measured_and_within_class_budgets() {
     // Class ceilings (docs/cost-table.md): perc-class voices stay under
     // half the pad-class budget; the v2 voices sit in their documented
     // classes. Multiple failures here mean a real regression, not jitter —
-    // rerun locally before reverting anything.
+    // rerun locally before reverting anything. Absolute ceilings are
+    // Apple-Silicon-calibrated; foreign runners only get the class RELATION
+    // (perc under half of pad), same policy as the FX table below.
     let perc_budget = 40.0;
     let pad_budget = 120.0;
-    for (name, ns) in [("fmperc", fmperc), ("texture", texture), ("hat", hat)] {
-        assert!(ns < perc_budget, "{name} exceeds the perc-class budget: {ns:.1} ns/sample");
+    #[cfg(target_arch = "aarch64")]
+    {
+        for (name, ns) in [("fmperc", fmperc), ("texture", texture), ("hat", hat)] {
+            assert!(ns < perc_budget, "{name} exceeds the perc-class budget: {ns:.1} ns/sample");
+        }
+        for (name, ns) in [("wavetable", wavetable), ("pad", pad)] {
+            assert!(ns < pad_budget, "{name} exceeds the pad-class budget: {ns:.1} ns/sample");
+        }
     }
-    for (name, ns) in [("wavetable", wavetable), ("pad", pad)] {
-        assert!(ns < pad_budget, "{name} exceeds the pad-class budget: {ns:.1} ns/sample");
+    #[cfg(not(target_arch = "aarch64"))]
+    {
+        let pad_ref = pad.max(1.0);
+        assert!(
+            fmperc.max(texture).max(hat) < pad_ref * 0.5,
+            "perc-class voices must stay under half the pad-class cost: \
+             fmperc {fmperc:.1}, texture {texture:.1}, hat {hat:.1} vs pad {pad:.1}"
+        );
     }
 }
 
