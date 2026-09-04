@@ -1,0 +1,24 @@
+{
+  "name": "techno target profile (re-specified for corrected metrics)",
+  "note": "Bounds are ranges, not one-sided ceilings. The previous revision capped centroid, mid share and transient density only, which a generator satisfies most cheaply by removing content; the floors below are what stop that.",
+  "targets": {
+    "short_term_dyn_db": { "min": 3.0, "max": 9.0 },
+    "crest_db": { "min": 7.0, "max": 12.5 },
+    "hit_cv": { "min": 0.15, "max": 0.5 },
+    "transients_per_sec": { "min": 4.0, "max": 12.0 },
+    "centroid_hz": { "min": 1800.0, "max": 6500.0 },
+    "band_sub": { "max": 0.3 },
+    "band_mid": { "min": 0.14, "max": 0.34 },
+    "band_himid": { "min": 0.05 }
+  },
+  "tolerances": {
+    "short_term_dyn_db": 2.0,
+    "crest_db": 1.0,
+    "hit_cv": 0.05,
+    "transients_per_sec": 1.0,
+    "centroid_hz": 400.0,
+    "band_sub": 0.02,
+    "band_mid": 0.02,
+    "band_himid": 0.02
+  }
+}

@@ -1,0 +1,597 @@
+{
+  "version": 1,
+  "seed": 20260830,
+  "tempo_lane": [
+    [
+      0,
+      124.0
+    ]
+  ],
+  "key": "F minor",
+  "sections": [
+    {
+      "id": "a_intro",
+      "bars": 4,
+      "energy_curve": [
+        0.45,
+        0.5,
+        0.55,
+        0.6
+      ],
+      "transition_in": {
+        "type": "filter_sweep",
+        "bars": 1,
+        "params": {
+          "from_hz": 200,
+          "to_hz": 18000
+        }
+      },
+      "pattern_bindings": {
+        "kick": {
+          "generator": "euclidean",
+          "k": 4,
+          "n": 16,
+          "rot": 0,
+          "velocity": 0.8
+        },
+        "hat": {
+          "generator": "euclidean",
+          "k": 3,
+          "n": 16,
+          "rot": 0,
+          "velocity": 0.42
+        },
+        "bass": {
+          "steps": [
+            {
+              "position": 480,
+              "velocity": 0.85,
+              "pitch": 29.0,
+              "gate": 0.38
+            },
+            {
+              "position": 2400,
+              "velocity": 0.7,
+              "pitch": 29.0,
+              "gate": 0.38
+            }
+          ]
+        },
+        "shaker": {
+          "generator": "euclidean",
+          "k": 5,
+          "n": 16,
+          "rot": 0,
+          "velocity": 0.3
+        }
+      }
+    },
+    {
+      "id": "b_groove",
+      "bars": 4,
+      "energy_curve": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "transition_out": {
+        "type": "riser",
+        "bars": 1,
+        "params": {
+          "target": "noise"
+        }
+      },
+      "pattern_bindings": {
+        "kick": {
+          "generator": "euclidean",
+          "k": 4,
+          "n": 16,
+          "rot": 0,
+          "velocity": 0.95
+        },
+        "hat": {
+          "generator": "euclidean",
+          "k": 7,
+          "n": 16,
+          "rot": 0,
+          "velocity": 0.6
+        },
+        "bass": {
+          "steps": [
+            {
+              "position": 480,
+              "velocity": 0.9,
+              "pitch": 29.0,
+              "gate": 0.36
+            },
+            {
+              "position": 1440,
+              "velocity": 0.72,
+              "pitch": 29.0,
+              "gate": 0.3
+            },
+            {
+              "position": 1920,
+              "velocity": 0.62,
+              "pitch": 41.0,
+              "gate": 0.28
+            },
+            {
+              "position": 2400,
+              "velocity": 0.82,
+              "pitch": 36.0,
+              "gate": 0.34
+            },
+            {
+              "position": 3360,
+              "velocity": 0.72,
+              "pitch": 29.0,
+              "gate": 0.3
+            }
+          ]
+        },
+        "pad": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.5,
+              "pitch": 53.0,
+              "gate": 3.8
+            },
+            {
+              "position": 0,
+              "velocity": 0.44,
+              "pitch": 56.0,
+              "gate": 3.8
+            },
+            {
+              "position": 0,
+              "velocity": 0.4,
+              "pitch": 60.0,
+              "gate": 3.8
+            }
+          ]
+        },
+        "clap": {
+          "steps": [
+            {
+              "position": 960,
+              "velocity": 0.72
+            },
+            {
+              "position": 2880,
+              "velocity": 0.78
+            }
+          ]
+        },
+        "shaker": {
+          "generator": "euclidean",
+          "k": 11,
+          "n": 16,
+          "rot": 0,
+          "velocity": 0.3
+        },
+        "stab": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.55,
+              "pitch": 53.0,
+              "gate": 0.5
+            },
+            {
+              "position": 0,
+              "velocity": 0.48,
+              "pitch": 60.0,
+              "gate": 0.5
+            }
+          ]
+        }
+      },
+      "automation": {
+        "pad": {
+          "target_param": "send_reverb",
+          "points": [
+            [
+              0,
+              0.3,
+              "linear"
+            ],
+            [
+              3,
+              0.45,
+              "smooth"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "c_break",
+      "bars": 4,
+      "energy_curve": [
+        0.4,
+        0.45,
+        0.5,
+        0.6
+      ],
+      "pattern_bindings": {
+        "hat": {
+          "generator": "euclidean",
+          "k": 5,
+          "n": 16,
+          "rot": 4,
+          "velocity": 0.48
+        },
+        "pad": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.52,
+              "pitch": 49.0,
+              "gate": 3.8
+            },
+            {
+              "position": 0,
+              "velocity": 0.46,
+              "pitch": 52.0,
+              "gate": 3.8
+            },
+            {
+              "position": 0,
+              "velocity": 0.42,
+              "pitch": 56.0,
+              "gate": 3.8
+            }
+          ]
+        },
+        "stab": {
+          "steps": [
+            {
+              "position": 1920,
+              "velocity": 0.5,
+              "pitch": 49.0,
+              "gate": 0.6
+            },
+            {
+              "position": 1920,
+              "velocity": 0.44,
+              "pitch": 56.0,
+              "gate": 0.6
+            }
+          ]
+        },
+        "shaker": {
+          "generator": "euclidean",
+          "k": 9,
+          "n": 16,
+          "rot": 2,
+          "velocity": 0.32
+        }
+      },
+      "automation": {
+        "pad": {
+          "target_param": "send_reverb",
+          "points": [
+            [
+              0,
+              0.3,
+              "linear"
+            ],
+            [
+              3,
+              0.6,
+              "smooth"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "d_peak",
+      "bars": 4,
+      "energy_curve": [
+        0.9,
+        0.95,
+        0.9,
+        0.8
+      ],
+      "transition_out": {
+        "type": "filter_sweep",
+        "bars": 1,
+        "params": {
+          "from_hz": 18000,
+          "to_hz": 400
+        }
+      },
+      "pattern_bindings": {
+        "kick": {
+          "generator": "euclidean",
+          "k": 4,
+          "n": 16,
+          "rot": 0,
+          "velocity": 0.95
+        },
+        "hat": {
+          "generator": "euclidean",
+          "k": 9,
+          "n": 16,
+          "rot": 0,
+          "velocity": 0.62
+        },
+        "bass": {
+          "steps": [
+            {
+              "position": 480,
+              "velocity": 0.9,
+              "pitch": 32.0,
+              "gate": 0.36
+            },
+            {
+              "position": 960,
+              "velocity": 0.6,
+              "pitch": 32.0,
+              "gate": 0.26
+            },
+            {
+              "position": 1440,
+              "velocity": 0.76,
+              "pitch": 39.0,
+              "gate": 0.32
+            },
+            {
+              "position": 2400,
+              "velocity": 0.7,
+              "pitch": 44.0,
+              "gate": 0.3
+            },
+            {
+              "position": 2880,
+              "velocity": 0.6,
+              "pitch": 39.0,
+              "gate": 0.26
+            },
+            {
+              "position": 3360,
+              "velocity": 0.82,
+              "pitch": 32.0,
+              "gate": 0.34
+            }
+          ]
+        },
+        "pad": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.48,
+              "pitch": 51.0,
+              "gate": 3.8
+            },
+            {
+              "position": 0,
+              "velocity": 0.42,
+              "pitch": 56.0,
+              "gate": 3.8
+            },
+            {
+              "position": 0,
+              "velocity": 0.4,
+              "pitch": 60.0,
+              "gate": 3.8
+            }
+          ]
+        },
+        "clap": {
+          "steps": [
+            {
+              "position": 960,
+              "velocity": 0.75
+            },
+            {
+              "position": 2880,
+              "velocity": 0.8
+            },
+            {
+              "position": 3360,
+              "velocity": 0.5
+            }
+          ]
+        },
+        "acid": {
+          "steps": [
+            {
+              "position": 120,
+              "velocity": 0.7,
+              "pitch": 32.0,
+              "gate": 0.3
+            },
+            {
+              "position": 600,
+              "velocity": 0.55,
+              "pitch": 32.0,
+              "gate": 0.22
+            },
+            {
+              "position": 1080,
+              "velocity": 0.75,
+              "pitch": 39.0,
+              "gate": 0.3
+            },
+            {
+              "position": 1560,
+              "velocity": 0.5,
+              "pitch": 44.0,
+              "gate": 0.2
+            },
+            {
+              "position": 2040,
+              "velocity": 0.7,
+              "pitch": 32.0,
+              "gate": 0.28
+            },
+            {
+              "position": 2520,
+              "velocity": 0.55,
+              "pitch": 36.0,
+              "gate": 0.22
+            },
+            {
+              "position": 3000,
+              "velocity": 0.78,
+              "pitch": 32.0,
+              "gate": 0.3
+            },
+            {
+              "position": 3480,
+              "velocity": 0.5,
+              "pitch": 31.0,
+              "gate": 0.2
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "tracks": [
+    {
+      "id": "kick",
+      "role": "kick",
+      "instrument": {
+        "kind": "kick",
+        "tune_hz": 47.0,
+        "decay_ms": 430.0,
+        "click": 0.55,
+        "drive": 0.8
+      },
+      "inserts": [
+        {
+          "type": "drive",
+          "params": {
+            "amount": 1.2
+          },
+          "mix": 0.4
+        }
+      ],
+      "sends": {
+        "delay": 0.0,
+        "reverb": 0.05
+      },
+      "gain": 1.0,
+      "pan": 0.0
+    },
+    {
+      "id": "hat",
+      "role": "perc",
+      "instrument": {
+        "kind": "hat",
+        "decay_ms": 45.0,
+        "tone": 0.65,
+        "open": false
+      },
+      "sends": {
+        "delay": 0.3,
+        "reverb": 0.12
+      },
+      "gain": 0.85,
+      "pan": 0.28
+    },
+    {
+      "id": "bass",
+      "role": "bass",
+      "instrument": {
+        "kind": "bass",
+        "cutoff_hz": 1200.0,
+        "resonance": 0.5,
+        "wave": "saw",
+        "glide_ms": 30.0
+      },
+      "sends": {
+        "delay": 0.0,
+        "reverb": 0.0
+      },
+      "gain": 0.9,
+      "pan": 0.0
+    },
+    {
+      "id": "pad",
+      "role": "pad",
+      "instrument": {
+        "kind": "pad",
+        "attack_ms": 400.0,
+        "release_ms": 900.0,
+        "detune_cents": 9.0,
+        "cutoff_hz": 1500.0
+      },
+      "sends": {
+        "delay": 0.12,
+        "reverb": 0.42
+      },
+      "gain": 0.45,
+      "pan": -0.18
+    },
+    {
+      "id": "clap",
+      "role": "perc",
+      "instrument": {
+        "kind": "clap",
+        "decay_ms": 320.0,
+        "tone": 0.55
+      },
+      "sends": {
+        "delay": 0.0,
+        "reverb": 0.18
+      },
+      "gain": 0.75,
+      "pan": -0.3
+    },
+    {
+      "id": "shaker",
+      "role": "perc",
+      "instrument": {
+        "kind": "shaker",
+        "decay_ms": 70.0,
+        "tone": 0.7
+      },
+      "sends": {
+        "delay": 0.15,
+        "reverb": 0.08
+      },
+      "gain": 0.55,
+      "pan": 0.45
+    },
+    {
+      "id": "acid",
+      "role": "bass",
+      "instrument": {
+        "kind": "acid",
+        "cutoff_hz": 700.0,
+        "resonance": 0.85,
+        "env_amt": 2.6,
+        "glide_ms": 55.0
+      },
+      "sends": {
+        "delay": 0.22,
+        "reverb": 0.05
+      },
+      "gain": 0.7,
+      "pan": 0.0
+    },
+    {
+      "id": "stab",
+      "role": "pad",
+      "instrument": {
+        "kind": "stab",
+        "cutoff_hz": 2600.0,
+        "decay_ms": 380.0,
+        "detune_cents": 11.0
+      },
+      "sends": {
+        "delay": 0.35,
+        "reverb": 0.3
+      },
+      "gain": 0.6,
+      "pan": 0.22
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+[package]
+name = "kontinuum-core"
+version.workspace = true
+edition.workspace = true
+description = "DSP graph, voice pools, instruments, FX, mixer — alloc-free hot path"
+
+[dependencies]
+kontinuum-schedule.workspace = true
+rtrb.workspace = true
+kontinuum-clock.workspace = true
+kontinuum-ir.workspace = true
+kontinuum-mastering.workspace = true
+serde.workspace = true
+
+[dev-dependencies]
+assert_no_alloc = "1"
+serde_json.workspace = true

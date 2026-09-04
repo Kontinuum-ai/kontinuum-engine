@@ -1,0 +1,7 @@
+[package]
+name = "kontinuum-plugin-api"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+kontinuum-core = { path = "../../engine/kontinuum-core" }

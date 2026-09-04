@@ -1,0 +1,30 @@
+{
+  "name": "sound world `fathom` render profile (issue #30)",
+  "tolerances": {},
+  "targets": {
+    "band_sub": {
+      "min": 0.0,
+      "max": 0.75
+    },
+    "centroid_hz": {
+      "min": 2000.0,
+      "max": 11000.0
+    },
+    "crest_db": {
+      "min": 7.0,
+      "max": 22.0
+    },
+    "hit_cv": {
+      "min": 0.0,
+      "max": 0.8
+    },
+    "short_term_dyn_db": {
+      "min": 2.5,
+      "max": 20.0
+    },
+    "transients_per_sec": {
+      "min": 1.0,
+      "max": 6.5
+    }
+  }
+}

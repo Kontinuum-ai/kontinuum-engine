@@ -1,0 +1,316 @@
+{
+  "comment": "Engine realizations for the 30 library entries of InstrumentsCatalog.json (issue #97). Source of truth for the Rust side: engine/kontinuum-bridge/tests/engine_presets.rs validates every entry here against the IR (SetInstrumentParam vocabulary from ir/kontinuum-ir/src/diff.rs, patch compiler + validator for patches) and pins the bundled catalog to this file semantically. 'voice' presets: params use the kind's own struct fields. 'patch' presets: PatchGraph JSON (nodes osc/fm_pair/filter/env/lfo/gain/delay/out; feedback only through delay). Authoring constraints: oscillator pitch follows the note (no fixed-frequency param) and mod depth is capped at 1.0 by the edge bounds, so pitched percussion leans on the pattern's note pitch with fine_cents for static character. 'class' routes the UI pickers: drum -> drumcomputer lanes, bass -> bass lanes, synth -> synths lanes.",
+  "presets": {
+    "808-kick": {
+      "voice": "kick",
+      "params": { "tune_hz": 52.0, "decay_ms": 620.0, "click": 0.15, "drive": 0.5 },
+      "class": "drum"
+    },
+    "808-cowbell": {
+      "patch": {
+        "nodes": [
+          { "id": "clank", "type": "fm_pair", "ratio": 0.68, "index": 1.5, "feedback": 0.0, "level": 0.8 },
+          { "id": "bp", "type": "filter", "mode": "band_pass", "cutoff_hz": 800.0, "resonance": 0.55, "drive": 0.0 },
+          { "id": "amp", "type": "env", "attack_ms": 1.0, "decay_ms": 120.0, "sustain": 0.0, "release_ms": 60.0 },
+          { "id": "g", "type": "gain", "level": 0.0 },
+          { "id": "out", "type": "out", "level": 0.9 }
+        ],
+        "edges": [
+          { "from": "clank", "to": "bp", "type": "audio", "amount": 1.0 },
+          { "from": "bp", "to": "g", "type": "audio", "amount": 1.0 },
+          { "from": "g", "to": "out", "type": "audio", "amount": 1.0 },
+          { "from": "amp", "to": "g", "type": "mod", "param": "level", "amount": 1.0 }
+        ]
+      },
+      "class": "drum"
+    },
+    "808-claves": {
+      "patch": {
+        "nodes": [
+          { "id": "ping", "type": "osc", "wave": "sine", "level": 0.9 },
+          { "id": "amp", "type": "env", "attack_ms": 1.0, "decay_ms": 10.0, "sustain": 0.0, "release_ms": 10.0 },
+          { "id": "g", "type": "gain", "level": 0.0 },
+          { "id": "out", "type": "out", "level": 0.9 }
+        ],
+        "edges": [
+          { "from": "ping", "to": "g", "type": "audio", "amount": 1.0 },
+          { "from": "g", "to": "out", "type": "audio", "amount": 1.0 },
+          { "from": "amp", "to": "g", "type": "mod", "param": "level", "amount": 1.0 }
+        ]
+      },
+      "class": "drum"
+    },
+    "606-kick": {
+      "voice": "kick",
+      "params": { "tune_hz": 55.0, "decay_ms": 260.0, "click": 0.4, "drive": 0.6 },
+      "class": "drum"
+    },
+    "606-hat": {
+      "voice": "hat",
+      "params": { "decay_ms": 30.0, "tone": 0.75, "open": false },
+      "class": "drum"
+    },
+    "707-snare": {
+      "voice": "snare",
+      "params": { "tune_hz": 190.0, "decay_ms": 150.0, "snap": 0.8 },
+      "class": "drum"
+    },
+    "727-conga": {
+      "patch": {
+        "nodes": [
+          { "id": "tone", "type": "osc", "wave": "sine", "fine_cents": -50.0, "level": 0.9 },
+          { "id": "lp", "type": "filter", "mode": "low_pass", "cutoff_hz": 900.0, "resonance": 0.3, "drive": 0.0 },
+          { "id": "amp", "type": "env", "attack_ms": 1.0, "decay_ms": 180.0, "sustain": 0.0, "release_ms": 90.0 },
+          { "id": "g", "type": "gain", "level": 0.0 },
+          { "id": "out", "type": "out", "level": 0.9 }
+        ],
+        "edges": [
+          { "from": "tone", "to": "lp", "type": "audio", "amount": 1.0 },
+          { "from": "lp", "to": "g", "type": "audio", "amount": 1.0 },
+          { "from": "g", "to": "out", "type": "audio", "amount": 1.0 },
+          { "from": "amp", "to": "g", "type": "mod", "param": "level", "amount": 1.0 }
+        ]
+      },
+      "class": "drum"
+    },
+    "cr78-kick": {
+      "voice": "kick",
+      "params": { "tune_hz": 45.0, "decay_ms": 310.0, "click": 0.3, "drive": 0.5 },
+      "class": "drum"
+    },
+    "cr78-bongo": {
+      "patch": {
+        "nodes": [
+          { "id": "tone", "type": "osc", "wave": "sine", "fine_cents": 50.0, "level": 0.9 },
+          { "id": "amp", "type": "env", "attack_ms": 1.0, "decay_ms": 90.0, "sustain": 0.0, "release_ms": 50.0 },
+          { "id": "g", "type": "gain", "level": 0.0 },
+          { "id": "out", "type": "out", "level": 0.9 }
+        ],
+        "edges": [
+          { "from": "tone", "to": "g", "type": "audio", "amount": 1.0 },
+          { "from": "g", "to": "out", "type": "audio", "amount": 1.0 },
+          { "from": "amp", "to": "g", "type": "mod", "param": "level", "amount": 1.0 }
+        ]
+      },
+      "class": "drum"
+    },
+    "linn-kick": {
+      "voice": "kick",
+      "params": { "tune_hz": 50.0, "decay_ms": 290.0, "click": 0.5, "drive": 0.6 },
+      "class": "drum"
+    },
+    "linn-tom": {
+      "patch": {
+        "nodes": [
+          { "id": "tone", "type": "osc", "wave": "sine", "fine_cents": -100.0, "level": 0.95 },
+          { "id": "amp", "type": "env", "attack_ms": 1.0, "decay_ms": 350.0, "sustain": 0.0, "release_ms": 120.0 },
+          { "id": "g", "type": "gain", "level": 0.0 },
+          { "id": "out", "type": "out", "level": 0.9 }
+        ],
+        "edges": [
+          { "from": "tone", "to": "g", "type": "audio", "amount": 1.0 },
+          { "from": "g", "to": "out", "type": "audio", "amount": 1.0 },
+          { "from": "amp", "to": "g", "type": "mod", "param": "level", "amount": 1.0 }
+        ]
+      },
+      "class": "drum"
+    },
+    "dmx-kick": {
+      "voice": "kick",
+      "params": { "tune_hz": 48.0, "decay_ms": 360.0, "click": 0.45, "drive": 0.6 },
+      "class": "drum"
+    },
+    "dmx-snare": {
+      "voice": "snare",
+      "params": { "tune_hz": 180.0, "decay_ms": 170.0, "snap": 0.65 },
+      "class": "drum"
+    },
+    "sp1200-kick": {
+      "voice": "kick",
+      "params": { "tune_hz": 47.0, "decay_ms": 350.0, "click": 0.5, "drive": 0.9 },
+      "class": "drum"
+    },
+    "mpc60-kick": {
+      "voice": "kick",
+      "params": { "tune_hz": 50.0, "decay_ms": 420.0, "click": 0.35, "drive": 0.55 },
+      "class": "drum"
+    },
+    "dr55-snare": {
+      "voice": "snare",
+      "params": { "tune_hz": 200.0, "decay_ms": 120.0, "snap": 0.7 },
+      "class": "drum"
+    },
+    "minipops-brush": {
+      "patch": {
+        "nodes": [
+          { "id": "nz", "type": "osc", "wave": "noise", "level": 0.8 },
+          { "id": "bp", "type": "filter", "mode": "band_pass", "cutoff_hz": 3500.0, "resonance": 0.5, "drive": 0.0 },
+          { "id": "swell", "type": "env", "attack_ms": 60.0, "decay_ms": 400.0, "sustain": 0.2, "release_ms": 150.0 },
+          { "id": "g", "type": "gain", "level": 0.0 },
+          { "id": "out", "type": "out", "level": 0.85 }
+        ],
+        "edges": [
+          { "from": "nz", "to": "bp", "type": "audio", "amount": 1.0 },
+          { "from": "bp", "to": "g", "type": "audio", "amount": 1.0 },
+          { "from": "g", "to": "out", "type": "audio", "amount": 1.0 },
+          { "from": "swell", "to": "g", "type": "mod", "param": "level", "amount": 1.0 }
+        ]
+      },
+      "class": "drum"
+    },
+    "sdsv-tom": {
+      "patch": {
+        "nodes": [
+          { "id": "tone", "type": "osc", "wave": "sine", "fine_cents": -100.0, "level": 0.9 },
+          { "id": "snap", "type": "osc", "wave": "noise", "level": 0.35 },
+          { "id": "hp", "type": "filter", "mode": "high_pass", "cutoff_hz": 2000.0, "resonance": 0.3, "drive": 0.0 },
+          { "id": "amp", "type": "env", "attack_ms": 1.0, "decay_ms": 300.0, "sustain": 0.0, "release_ms": 120.0 },
+          { "id": "g", "type": "gain", "level": 0.0 },
+          { "id": "out", "type": "out", "level": 0.9 }
+        ],
+        "edges": [
+          { "from": "tone", "to": "g", "type": "audio", "amount": 1.0 },
+          { "from": "snap", "to": "hp", "type": "audio", "amount": 1.0 },
+          { "from": "hp", "to": "g", "type": "audio", "amount": 1.0 },
+          { "from": "g", "to": "out", "type": "audio", "amount": 1.0 },
+          { "from": "amp", "to": "g", "type": "mod", "param": "level", "amount": 1.0 }
+        ]
+      },
+      "class": "drum"
+    },
+    "sh101-bass": {
+      "voice": "bass",
+      "params": { "cutoff_hz": 2600.0, "resonance": 0.3, "wave": "square", "glide_ms": 0.0 },
+      "class": "bass"
+    },
+    "mc202-lead": {
+      "voice": "acid",
+      "params": { "cutoff_hz": 1800.0, "resonance": 0.55, "env_amt": 2.2, "glide_ms": 40.0 },
+      "class": "bass"
+    },
+    "minimoog-bass": {
+      "voice": "bass",
+      "params": { "cutoff_hz": 700.0, "resonance": 0.5, "wave": "saw", "glide_ms": 0.0 },
+      "class": "bass"
+    },
+    "odyssey-lead": {
+      "voice": "acid",
+      "params": { "cutoff_hz": 2200.0, "resonance": 0.5, "env_amt": 2.8, "glide_ms": 25.0 },
+      "class": "bass"
+    },
+    "ms20-pad": {
+      "patch": {
+        "nodes": [
+          { "id": "saw", "type": "osc", "wave": "saw", "unison": 3, "fine_cents": 18.0, "level": 0.7 },
+          { "id": "hp", "type": "filter", "mode": "high_pass", "cutoff_hz": 300.0, "resonance": 0.7, "drive": 0.15 },
+          { "id": "lp", "type": "filter", "mode": "low_pass", "cutoff_hz": 1400.0, "resonance": 0.5, "drive": 0.0 },
+          { "id": "amp", "type": "env", "attack_ms": 900.0, "decay_ms": 1200.0, "sustain": 0.75, "release_ms": 2200.0 },
+          { "id": "g", "type": "gain", "level": 0.0 },
+          { "id": "out", "type": "out", "level": 0.8 }
+        ],
+        "edges": [
+          { "from": "saw", "to": "hp", "type": "audio", "amount": 1.0 },
+          { "from": "hp", "to": "lp", "type": "audio", "amount": 1.0 },
+          { "from": "lp", "to": "g", "type": "audio", "amount": 1.0 },
+          { "from": "g", "to": "out", "type": "audio", "amount": 1.0 },
+          { "from": "amp", "to": "g", "type": "mod", "param": "level", "amount": 1.0 },
+          { "from": "amp", "to": "lp", "type": "mod", "param": "cutoff_hz", "amount": 0.6 }
+        ]
+      },
+      "class": "synth"
+    },
+    "prophet5-stab": {
+      "voice": "stab",
+      "params": { "cutoff_hz": 5200.0, "decay_ms": 420.0, "detune_cents": 12.0 },
+      "class": "synth"
+    },
+    "jupiter8-pad": {
+      "voice": "pad",
+      "params": { "attack_ms": 850.0, "release_ms": 3200.0, "detune_cents": 14.0, "cutoff_hz": 4200.0 },
+      "class": "synth"
+    },
+    "cs80-lead": {
+      "patch": {
+        "nodes": [
+          { "id": "saw1", "type": "osc", "wave": "saw", "fine_cents": 0.0, "level": 0.55 },
+          { "id": "saw2", "type": "osc", "wave": "saw", "fine_cents": 12.0, "level": 0.55 },
+          { "id": "lp", "type": "filter", "mode": "low_pass", "cutoff_hz": 2600.0, "resonance": 0.35, "drive": 0.2 },
+          { "id": "amp", "type": "env", "attack_ms": 20.0, "decay_ms": 500.0, "sustain": 0.7, "release_ms": 350.0 },
+          { "id": "g", "type": "gain", "level": 0.0 },
+          { "id": "out", "type": "out", "level": 0.85 }
+        ],
+        "edges": [
+          { "from": "saw1", "to": "lp", "type": "audio", "amount": 1.0 },
+          { "from": "saw2", "to": "lp", "type": "audio", "amount": 1.0 },
+          { "from": "lp", "to": "g", "type": "audio", "amount": 1.0 },
+          { "from": "g", "to": "out", "type": "audio", "amount": 1.0 },
+          { "from": "amp", "to": "g", "type": "mod", "param": "level", "amount": 1.0 },
+          { "from": "amp", "to": "lp", "type": "mod", "param": "cutoff_hz", "amount": 0.4 }
+        ]
+      },
+      "class": "synth"
+    },
+    "cz101-pluck": {
+      "voice": "pluck",
+      "params": { "damping": 0.55, "bright": 0.7 },
+      "class": "synth"
+    },
+    "rhodes-mk1": {
+      "patch": {
+        "nodes": [
+          { "id": "bell", "type": "fm_pair", "ratio": 2.0, "index": 1.2, "feedback": 0.0, "level": 0.8 },
+          { "id": "lp", "type": "filter", "mode": "low_pass", "cutoff_hz": 3200.0, "resonance": 0.2, "drive": 0.0 },
+          { "id": "amp", "type": "env", "attack_ms": 2.0, "decay_ms": 900.0, "sustain": 0.25, "release_ms": 600.0 },
+          { "id": "g", "type": "gain", "level": 0.0 },
+          { "id": "out", "type": "out", "level": 0.85 }
+        ],
+        "edges": [
+          { "from": "bell", "to": "lp", "type": "audio", "amount": 1.0 },
+          { "from": "lp", "to": "g", "type": "audio", "amount": 1.0 },
+          { "from": "g", "to": "out", "type": "audio", "amount": 1.0 },
+          { "from": "amp", "to": "g", "type": "mod", "param": "level", "amount": 1.0 },
+          { "from": "amp", "to": "bell", "type": "mod", "param": "index", "amount": 0.5 }
+        ]
+      },
+      "class": "synth"
+    },
+    "clavinet": {
+      "patch": {
+        "nodes": [
+          { "id": "sq", "type": "osc", "wave": "square", "level": 0.7 },
+          { "id": "hp", "type": "filter", "mode": "high_pass", "cutoff_hz": 700.0, "resonance": 0.4, "drive": 0.0 },
+          { "id": "amp", "type": "env", "attack_ms": 1.0, "decay_ms": 180.0, "sustain": 0.1, "release_ms": 120.0 },
+          { "id": "g", "type": "gain", "level": 0.0 },
+          { "id": "out", "type": "out", "level": 0.85 }
+        ],
+        "edges": [
+          { "from": "sq", "to": "hp", "type": "audio", "amount": 1.0 },
+          { "from": "hp", "to": "g", "type": "audio", "amount": 1.0 },
+          { "from": "g", "to": "out", "type": "audio", "amount": 1.0 },
+          { "from": "amp", "to": "g", "type": "mod", "param": "level", "amount": 1.0 }
+        ]
+      },
+      "class": "synth"
+    },
+    "wurlitzer": {
+      "patch": {
+        "nodes": [
+          { "id": "reed", "type": "fm_pair", "ratio": 1.0, "index": 0.8, "feedback": 0.0, "level": 0.8 },
+          { "id": "lp", "type": "filter", "mode": "low_pass", "cutoff_hz": 2400.0, "resonance": 0.15, "drive": 0.0 },
+          { "id": "amp", "type": "env", "attack_ms": 4.0, "decay_ms": 1200.0, "sustain": 0.4, "release_ms": 800.0 },
+          { "id": "trem", "type": "lfo", "rate_hz": 4.5, "depth": 0.25, "wave": "sine" },
+          { "id": "g", "type": "gain", "level": 0.0 },
+          { "id": "out", "type": "out", "level": 0.85 }
+        ],
+        "edges": [
+          { "from": "reed", "to": "lp", "type": "audio", "amount": 1.0 },
+          { "from": "lp", "to": "g", "type": "audio", "amount": 1.0 },
+          { "from": "g", "to": "out", "type": "audio", "amount": 1.0 },
+          { "from": "amp", "to": "g", "type": "mod", "param": "level", "amount": 1.0 },
+          { "from": "trem", "to": "g", "type": "mod", "param": "level", "amount": 0.25 }
+        ]
+      },
+      "class": "synth"
+    }
+  }
+}

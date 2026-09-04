@@ -1,0 +1,13 @@
+[package]
+name = "kontinuum-composer"
+version.workspace = true
+edition.workspace = true
+description = "Composer backends: provider-agnostic planning trait, heuristic on-device backend, HTTP escalation (#42)"
+
+[dependencies]
+kontinuum-compose.workspace = true
+kontinuum-ir.workspace = true
+kontinuum-schedule.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true

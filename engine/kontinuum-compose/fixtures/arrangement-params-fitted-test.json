@@ -1,0 +1,706 @@
+{
+  "artifact_version": 1,
+  "corpus_size": 42,
+  "subgenre": "fitted-test",
+  "section_lengths": {
+    "intro": {
+      "mean_bars": 8.0,
+      "std_bars": 0.0,
+      "p10_bars": 8.0,
+      "p50_bars": 8.0,
+      "p90_bars": 12.8
+    },
+    "groove_dev": {
+      "p10_bars": 32,
+      "p50_bars": 40,
+      "p90_bars": 48,
+      "mean_bars": 40.0,
+      "std_bars": 5.0
+    },
+    "tension": {
+      "mean_bars": 16.0,
+      "std_bars": 2.82,
+      "p10_bars": 8.0,
+      "p50_bars": 16.0,
+      "p90_bars": 16.0
+    },
+    "release": {
+      "mean_bars": 16.0,
+      "std_bars": 4.0,
+      "p10_bars": 16.0,
+      "p50_bars": 16.0,
+      "p90_bars": 32.0
+    },
+    "breakdown": {
+      "p10_bars": 8,
+      "p50_bars": 16,
+      "p90_bars": 16,
+      "mean_bars": 14.0,
+      "std_bars": 3.0
+    },
+    "reintro": {
+      "mean_bars": 8.0,
+      "std_bars": 0.0,
+      "p10_bars": 8.0,
+      "p50_bars": 8.0,
+      "p90_bars": 8.0
+    },
+    "variation": {
+      "p10_bars": 16,
+      "p50_bars": 24,
+      "p90_bars": 32,
+      "mean_bars": 24.0,
+      "std_bars": 4.0
+    },
+    "outro": {
+      "mean_bars": 8.0,
+      "std_bars": 0.0,
+      "p10_bars": 8.0,
+      "p50_bars": 8.0,
+      "p90_bars": 12.8
+    }
+  },
+  "transition_matrix": {},
+  "transition_type_tables": {},
+  "energy_arcs": [],
+  "grammar": {
+    "grammar_version": 1,
+    "transitions": {
+      "intro": {
+        "groove_dev": 6,
+        "tension": 1,
+        "variation": 1
+      },
+      "groove_dev": {
+        "groove_dev": 4,
+        "breakdown": 2,
+        "tension": 2,
+        "variation": 2,
+        "release": 1,
+        "outro": 3
+      },
+      "tension": {
+        "release": 4,
+        "breakdown": 3
+      },
+      "release": {
+        "groove_dev": 4,
+        "variation": 2,
+        "outro": 2
+      },
+      "breakdown": {
+        "groove_dev": 5,
+        "release": 2,
+        "outro": 1
+      },
+      "reintro": {
+        "variation": 1,
+        "groove_dev": 2,
+        "outro": 3
+      },
+      "variation": {
+        "groove_dev": 8,
+        "tension": 1,
+        "breakdown": 1,
+        "outro": 2
+      },
+      "outro": {}
+    },
+    "lengths": {
+      "intro": {
+        "p10": 8,
+        "p50": 8,
+        "p90": 12
+      },
+      "groove_dev": {
+        "p10": 32,
+        "p50": 40,
+        "p90": 48
+      },
+      "tension": {
+        "p10": 8,
+        "p50": 16,
+        "p90": 16
+      },
+      "release": {
+        "p10": 16,
+        "p50": 16,
+        "p90": 32
+      },
+      "breakdown": {
+        "p10": 8,
+        "p50": 16,
+        "p90": 16
+      },
+      "reintro": {
+        "p10": 8,
+        "p50": 8,
+        "p90": 8
+      },
+      "variation": {
+        "p10": 16,
+        "p50": 24,
+        "p90": 32
+      },
+      "outro": {
+        "p10": 8,
+        "p50": 8,
+        "p90": 12
+      }
+    },
+    "curves": {
+      "intro": {
+        "energy": [
+          0.3,
+          0.45
+        ],
+        "density": [
+          0.3,
+          0.45
+        ],
+        "brightness": [
+          0.35,
+          0.45
+        ]
+      },
+      "groove_dev": {
+        "energy": [
+          0.65,
+          0.82
+        ],
+        "density": [
+          0.6,
+          0.75
+        ],
+        "brightness": [
+          0.45,
+          0.6
+        ]
+      },
+      "tension": {
+        "energy": [
+          0.62,
+          0.8
+        ],
+        "density": [
+          0.55,
+          0.7
+        ],
+        "brightness": [
+          0.5,
+          0.75
+        ]
+      },
+      "release": {
+        "energy": [
+          0.78,
+          0.9
+        ],
+        "density": [
+          0.8,
+          0.9
+        ],
+        "brightness": [
+          0.65,
+          0.8
+        ]
+      },
+      "breakdown": {
+        "energy": [
+          0.18,
+          0.32
+        ],
+        "density": [
+          0.15,
+          0.3
+        ],
+        "brightness": [
+          0.3,
+          0.5
+        ]
+      },
+      "reintro": {
+        "energy": [
+          0.78,
+          0.9
+        ],
+        "density": [
+          0.8,
+          0.9
+        ],
+        "brightness": [
+          0.55,
+          0.65
+        ]
+      },
+      "variation": {
+        "energy": [
+          0.5,
+          0.62
+        ],
+        "density": [
+          0.55,
+          0.65
+        ],
+        "brightness": [
+          0.5,
+          0.62
+        ]
+      },
+      "outro": {
+        "energy": [
+          0.6,
+          0.25
+        ],
+        "density": [
+          0.6,
+          0.25
+        ],
+        "brightness": [
+          0.5,
+          0.35
+        ]
+      }
+    },
+    "transition_recipes": {
+      "intro->groove_dev": {
+        "fill": {
+          "weight": 0.7,
+          "bars": [
+            1,
+            1
+          ],
+          "min_delta": 0.0
+        },
+        "riser": {
+          "weight": 0.3,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.0
+        }
+      },
+      "groove_dev->groove_dev": {
+        "fill": {
+          "weight": 0.5,
+          "bars": [
+            1,
+            1
+          ],
+          "min_delta": 0.0
+        },
+        "mute_choreo": {
+          "weight": 0.3,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.0
+        },
+        "filter_sweep": {
+          "weight": 0.2,
+          "bars": [
+            8,
+            16
+          ],
+          "min_delta": 0.0
+        }
+      },
+      "groove_dev->tension": {
+        "filter_sweep": {
+          "weight": 0.6,
+          "bars": [
+            8,
+            16
+          ],
+          "min_delta": 0.0
+        },
+        "riser": {
+          "weight": 0.4,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.0
+        }
+      },
+      "groove_dev->variation": {
+        "fill": {
+          "weight": 0.6,
+          "bars": [
+            1,
+            1
+          ],
+          "min_delta": 0.0
+        },
+        "mute_choreo": {
+          "weight": 0.4,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.0
+        }
+      },
+      "groove_dev->release": {
+        "filter_sweep": {
+          "weight": 0.5,
+          "bars": [
+            8,
+            16
+          ],
+          "min_delta": 0.0
+        },
+        "riser": {
+          "weight": 0.5,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.1
+        }
+      },
+      "groove_dev->breakdown": {
+        "riser": {
+          "weight": 0.4,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.0
+        },
+        "reverb_throw": {
+          "weight": 0.35,
+          "bars": [
+            1,
+            2
+          ],
+          "min_delta": 0.0
+        },
+        "filter_sweep": {
+          "weight": 0.25,
+          "bars": [
+            8,
+            16
+          ],
+          "min_delta": 0.0
+        }
+      },
+      "groove_dev->outro": {
+        "fill": {
+          "weight": 0.7,
+          "bars": [
+            1,
+            1
+          ],
+          "min_delta": 0.0
+        },
+        "filter_sweep": {
+          "weight": 0.3,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.0
+        }
+      },
+      "tension->release": {
+        "riser": {
+          "weight": 0.6,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.1
+        },
+        "filter_sweep": {
+          "weight": 0.4,
+          "bars": [
+            8,
+            16
+          ],
+          "min_delta": 0.0
+        }
+      },
+      "tension->breakdown": {
+        "reverb_throw": {
+          "weight": 0.5,
+          "bars": [
+            1,
+            2
+          ],
+          "min_delta": 0.0
+        },
+        "riser": {
+          "weight": 0.3,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.0
+        },
+        "silence_drop": {
+          "weight": 0.2,
+          "bars": [
+            1,
+            2
+          ],
+          "min_delta": 0.3
+        }
+      },
+      "release->groove_dev": {
+        "fill": {
+          "weight": 0.5,
+          "bars": [
+            1,
+            1
+          ],
+          "min_delta": 0.0
+        },
+        "mute_choreo": {
+          "weight": 0.5,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.0
+        }
+      },
+      "release->variation": {
+        "mute_choreo": {
+          "weight": 1.0,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.0
+        }
+      },
+      "release->outro": {
+        "fill": {
+          "weight": 0.7,
+          "bars": [
+            1,
+            1
+          ],
+          "min_delta": 0.0
+        },
+        "filter_sweep": {
+          "weight": 0.3,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.0
+        }
+      },
+      "breakdown->groove_dev": {
+        "fill": {
+          "weight": 0.6,
+          "bars": [
+            1,
+            1
+          ],
+          "min_delta": 0.0
+        },
+        "riser": {
+          "weight": 0.4,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.0
+        }
+      },
+      "breakdown->release": {
+        "silence_drop": {
+          "weight": 0.5,
+          "bars": [
+            1,
+            2
+          ],
+          "min_delta": 0.4
+        },
+        "fill": {
+          "weight": 0.3,
+          "bars": [
+            1,
+            1
+          ],
+          "min_delta": 0.0
+        },
+        "riser": {
+          "weight": 0.2,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.0
+        }
+      },
+      "breakdown->outro": {
+        "riser": {
+          "weight": 1.0,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.0
+        }
+      },
+      "reintro->variation": {
+        "mute_choreo": {
+          "weight": 1.0,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.0
+        }
+      },
+      "reintro->groove_dev": {
+        "fill": {
+          "weight": 1.0,
+          "bars": [
+            1,
+            1
+          ],
+          "min_delta": 0.0
+        }
+      },
+      "reintro->outro": {
+        "fill": {
+          "weight": 0.7,
+          "bars": [
+            1,
+            1
+          ],
+          "min_delta": 0.0
+        },
+        "filter_sweep": {
+          "weight": 0.3,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.0
+        }
+      },
+      "variation->groove_dev": {
+        "fill": {
+          "weight": 0.6,
+          "bars": [
+            1,
+            1
+          ],
+          "min_delta": 0.0
+        },
+        "mute_choreo": {
+          "weight": 0.4,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.0
+        }
+      },
+      "variation->tension": {
+        "riser": {
+          "weight": 1.0,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.0
+        }
+      },
+      "variation->breakdown": {
+        "reverb_throw": {
+          "weight": 0.6,
+          "bars": [
+            1,
+            2
+          ],
+          "min_delta": 0.0
+        },
+        "riser": {
+          "weight": 0.4,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.0
+        }
+      },
+      "variation->outro": {
+        "fill": {
+          "weight": 0.7,
+          "bars": [
+            1,
+            1
+          ],
+          "min_delta": 0.0
+        },
+        "filter_sweep": {
+          "weight": 0.3,
+          "bars": [
+            4,
+            8
+          ],
+          "min_delta": 0.0
+        }
+      }
+    },
+    "arc_families": {
+      "slow_burn": {
+        "arc": [
+          0.35,
+          0.42,
+          0.5,
+          0.58,
+          0.66,
+          0.76,
+          0.88,
+          1.0
+        ],
+        "allows_early_breakdown": false,
+        "weight": 0.4
+      },
+      "twin_peak": {
+        "arc": [
+          0.4,
+          0.7,
+          1.0,
+          0.8,
+          0.45,
+          0.7,
+          0.95,
+          1.0
+        ],
+        "allows_early_breakdown": true,
+        "weight": 0.35
+      },
+      "plateau_hypnotic": {
+        "arc": [
+          0.5,
+          0.62,
+          0.68,
+          0.7,
+          0.7,
+          0.7,
+          0.68,
+          0.6
+        ],
+        "allows_early_breakdown": false,
+        "weight": 0.25
+      }
+    },
+    "constraints": {
+      "min_breakdown_bar": 64,
+      "phrase_bars": 8,
+      "max_adjacent_energy_delta": 0.35,
+      "max_silence_bars": 2
+    }
+  }
+}

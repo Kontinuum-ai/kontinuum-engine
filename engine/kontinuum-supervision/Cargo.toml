@@ -1,0 +1,13 @@
+[package]
+name = "kontinuum-supervision"
+version.workspace = true
+edition.workspace = true
+description = "Watchdog, fallback arrangement generator, kill-switch metrics, session restore (#15)"
+
+[dependencies]
+kontinuum-clock.workspace = true
+kontinuum-schedule.workspace = true
+kontinuum-ir.workspace = true
+kontinuum-analysis = { path = "../kontinuum-analysis" }
+serde.workspace = true
+serde_json.workspace = true

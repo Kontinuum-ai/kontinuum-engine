@@ -1,0 +1,1978 @@
+{
+  "version": 1,
+  "seed": 42,
+  "tempo_lane": [
+    [
+      0,
+      125.0
+    ]
+  ],
+  "key": "G minor",
+  "sections": [
+    {
+      "id": "intro",
+      "bars": 8,
+      "energy_curve": [
+        0.34728187,
+        0.39103118,
+        0.39916247,
+        0.40670526,
+        0.44668752,
+        0.42656228,
+        0.49570027,
+        0.51167536
+      ],
+      "density_curve": [
+        0.3198711,
+        0.3471917,
+        0.40732643,
+        0.4064893,
+        0.41307586,
+        0.46340308,
+        0.47591996,
+        0.51271904
+      ],
+      "brightness_curve": [
+        0.38301113,
+        0.43271396,
+        0.42919487,
+        0.44387957,
+        0.42268318,
+        0.4833611,
+        0.4577321,
+        0.51335746
+      ],
+      "transition_in": null,
+      "transition_out": {
+        "type": "fill",
+        "bars": 1,
+        "params": {
+          "glitch_repeat": true,
+          "kick_drop": false,
+          "reverse_cymbal": false,
+          "rolls": true
+        }
+      },
+      "pattern_bindings": {
+        "bass": {
+          "steps": [
+            {
+              "position": 268,
+              "velocity": 0.614972,
+              "probability": 1.0,
+              "microtiming_ticks": -3,
+              "ratchet": 1,
+              "pitch": 41.0,
+              "gate": 0.28761435,
+              "accent": true
+            },
+            {
+              "position": 750,
+              "velocity": 0.57040864,
+              "probability": 1.0,
+              "microtiming_ticks": -2,
+              "ratchet": 1,
+              "pitch": 41.0,
+              "gate": 0.32246077,
+              "accent": false
+            },
+            {
+              "position": 1240,
+              "velocity": 0.6153249,
+              "probability": 1.0,
+              "microtiming_ticks": -5,
+              "ratchet": 1,
+              "pitch": 41.0,
+              "gate": 0.28963274,
+              "accent": false
+            },
+            {
+              "position": 1718,
+              "velocity": 0.5864019,
+              "probability": 1.0,
+              "microtiming_ticks": -3,
+              "ratchet": 1,
+              "pitch": 41.0,
+              "gate": 0.34880823,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "kick": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.61,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": true
+            },
+            {
+              "position": 960,
+              "velocity": 0.61,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2880,
+              "velocity": 0.61,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2894,
+              "velocity": 0.51850003,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2908,
+              "velocity": 0.44072503,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "perc": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.56384957,
+              "probability": 1.0,
+              "microtiming_ticks": -9,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": true
+            },
+            {
+              "position": 755,
+              "velocity": 0.4905006,
+              "probability": 1.0,
+              "microtiming_ticks": -8,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 1444,
+              "velocity": 0.52677363,
+              "probability": 1.0,
+              "microtiming_ticks": -10,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 1921,
+              "velocity": 0.61913145,
+              "probability": 1.0,
+              "microtiming_ticks": -6,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2674,
+              "velocity": 0.49413407,
+              "probability": 1.0,
+              "microtiming_ticks": -7,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2880,
+              "velocity": 0.15030198,
+              "probability": 0.15434134,
+              "microtiming_ticks": -5,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 3357,
+              "velocity": 0.32910657,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 3478,
+              "velocity": 0.40787914,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 3602,
+              "velocity": 0.4534816,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 3724,
+              "velocity": 0.532222,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "shaker": {
+          "steps": [
+            {
+              "position": 2,
+              "velocity": 0.5402512,
+              "probability": 1.0,
+              "microtiming_ticks": -10,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 755,
+              "velocity": 0.48127785,
+              "probability": 1.0,
+              "microtiming_ticks": -9,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 1440,
+              "velocity": 0.5701089,
+              "probability": 1.0,
+              "microtiming_ticks": -9,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 1918,
+              "velocity": 0.4708038,
+              "probability": 1.0,
+              "microtiming_ticks": -10,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2400,
+              "velocity": 0.12616009,
+              "probability": 0.15295085,
+              "microtiming_ticks": -6,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2669,
+              "velocity": 0.535072,
+              "probability": 1.0,
+              "microtiming_ticks": -5,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 3357,
+              "velocity": 0.40414786,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 3481,
+              "velocity": 0.46539673,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 3597,
+              "velocity": 0.5340371,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 3717,
+              "velocity": 0.5979556,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 3839,
+              "velocity": 0.67731315,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        }
+      },
+      "automation": {
+        "bass": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.66499996,
+              "smooth"
+            ],
+            [
+              7,
+              0.76,
+              "smooth"
+            ]
+          ]
+        },
+        "kick": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.85,
+              "smooth"
+            ],
+            [
+              7,
+              0.85,
+              "smooth"
+            ]
+          ]
+        },
+        "perc": {
+          "target_param": "send_delay",
+          "points": [
+            [
+              0,
+              0.2,
+              "linear"
+            ],
+            [
+              6,
+              0.2,
+              "linear"
+            ],
+            [
+              7,
+              0.55,
+              "smooth"
+            ]
+          ]
+        },
+        "pluck": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.252,
+              "exp"
+            ],
+            [
+              7,
+              0.21,
+              "smooth"
+            ]
+          ]
+        },
+        "shaker": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.3,
+              "smooth"
+            ],
+            [
+              7,
+              0.4,
+              "smooth"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "dev_0",
+      "bars": 4,
+      "energy_curve": [
+        0.43012765,
+        0.50835544,
+        0.5169468,
+        0.55293965
+      ],
+      "density_curve": [
+        0.64418703,
+        0.71630365,
+        0.7368791,
+        0.7921571
+      ],
+      "brightness_curve": [
+        0.51835036,
+        0.5684217,
+        0.57178485,
+        0.6179801
+      ],
+      "transition_in": null,
+      "transition_out": {
+        "type": "fill",
+        "bars": 1,
+        "params": {
+          "glitch_repeat": false,
+          "kick_drop": true,
+          "reverse_cymbal": true,
+          "rolls": true
+        }
+      },
+      "pattern_bindings": {
+        "kick": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.65250003,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": true
+            },
+            {
+              "position": 960,
+              "velocity": 0.65250003,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2880,
+              "velocity": 0.65250003,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2894,
+              "velocity": 0.55462503,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2908,
+              "velocity": 0.4714313,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "perc": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.53553927,
+              "probability": 1.0,
+              "microtiming_ticks": -5,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": true
+            },
+            {
+              "position": 478,
+              "velocity": 0.5037978,
+              "probability": 1.0,
+              "microtiming_ticks": -5,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 961,
+              "velocity": 0.60621685,
+              "probability": 1.0,
+              "microtiming_ticks": -9,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 1200,
+              "velocity": 0.22973813,
+              "probability": 0.13938206,
+              "microtiming_ticks": -6,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 1441,
+              "velocity": 0.52783763,
+              "probability": 1.0,
+              "microtiming_ticks": -10,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 1920,
+              "velocity": 0.6030874,
+              "probability": 1.0,
+              "microtiming_ticks": -6,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2397,
+              "velocity": 0.6262363,
+              "probability": 1.0,
+              "microtiming_ticks": -9,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2886,
+              "velocity": 0.63199735,
+              "probability": 1.0,
+              "microtiming_ticks": -9,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 3360,
+              "velocity": 0.2946206,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 3483,
+              "velocity": 0.33,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 3597,
+              "velocity": 0.33,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 3722,
+              "velocity": 0.518401,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        }
+      },
+      "automation": {
+        "bass": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.76,
+              "exp"
+            ],
+            [
+              3,
+              0.095,
+              "smooth"
+            ]
+          ]
+        },
+        "kick": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.85,
+              "smooth"
+            ],
+            [
+              3,
+              1.0,
+              "smooth"
+            ]
+          ]
+        },
+        "perc": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.48000002,
+              "exp"
+            ],
+            [
+              3,
+              0.21000001,
+              "smooth"
+            ]
+          ]
+        },
+        "pluck": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.21,
+              "exp"
+            ],
+            [
+              3,
+              0.042,
+              "smooth"
+            ]
+          ]
+        },
+        "shaker": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.4,
+              "exp"
+            ],
+            [
+              3,
+              0.05,
+              "smooth"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "dev_1",
+      "bars": 4,
+      "energy_curve": [
+        0.91366357,
+        0.9061637,
+        0.9185363,
+        0.9272266
+      ],
+      "density_curve": [
+        0.6196182,
+        0.6712196,
+        0.71585894,
+        0.821248
+      ],
+      "brightness_curve": [
+        0.48207766,
+        0.5542802,
+        0.61860013,
+        0.64836293
+      ],
+      "transition_in": null,
+      "transition_out": null,
+      "pattern_bindings": {
+        "bass": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.82723916,
+              "probability": 1.0,
+              "microtiming_ticks": -4,
+              "ratchet": 1,
+              "pitch": 53.0,
+              "gate": 0.26978886,
+              "accent": true
+            },
+            {
+              "position": 283,
+              "velocity": 0.8494929,
+              "probability": 1.0,
+              "microtiming_ticks": -4,
+              "ratchet": 1,
+              "pitch": 41.0,
+              "gate": 0.30658332,
+              "accent": false
+            },
+            {
+              "position": 755,
+              "velocity": 0.8077496,
+              "probability": 1.0,
+              "microtiming_ticks": -5,
+              "ratchet": 1,
+              "pitch": 41.0,
+              "gate": 0.27057314,
+              "accent": false
+            },
+            {
+              "position": 1239,
+              "velocity": 0.9023723,
+              "probability": 1.0,
+              "microtiming_ticks": -4,
+              "ratchet": 1,
+              "pitch": 41.0,
+              "gate": 0.2775451,
+              "accent": false
+            },
+            {
+              "position": 1720,
+              "velocity": 0.76437294,
+              "probability": 1.0,
+              "microtiming_ticks": -3,
+              "ratchet": 1,
+              "pitch": 53.0,
+              "gate": 0.30233452,
+              "accent": false
+            },
+            {
+              "position": 2200,
+              "velocity": 0.8667829,
+              "probability": 1.0,
+              "microtiming_ticks": -3,
+              "ratchet": 1,
+              "pitch": 41.0,
+              "gate": 0.25653106,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "kick": {
+          "generator": "euclidean",
+          "k": 4,
+          "n": 16,
+          "rot": 0,
+          "velocity": 0.91249996,
+          "probability": 1.0,
+          "repeats": 1,
+          "gate": null,
+          "pitch": null
+        },
+        "perc": {
+          "steps": [
+            {
+              "position": 3,
+              "velocity": 0.7522504,
+              "probability": 1.0,
+              "microtiming_ticks": -6,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 240,
+              "velocity": 0.17026827,
+              "probability": 0.11929204,
+              "microtiming_ticks": -5,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 476,
+              "velocity": 0.793119,
+              "probability": 1.0,
+              "microtiming_ticks": -5,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 961,
+              "velocity": 0.77074313,
+              "probability": 1.0,
+              "microtiming_ticks": -6,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 1235,
+              "velocity": 0.75171643,
+              "probability": 1.0,
+              "microtiming_ticks": -7,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 1717,
+              "velocity": 0.70724434,
+              "probability": 1.0,
+              "microtiming_ticks": -5,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 1922,
+              "velocity": 0.81412834,
+              "probability": 1.0,
+              "microtiming_ticks": -9,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2399,
+              "velocity": 0.86011344,
+              "probability": 1.0,
+              "microtiming_ticks": -10,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2879,
+              "velocity": 0.75053746,
+              "probability": 1.0,
+              "microtiming_ticks": -5,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 3157,
+              "velocity": 0.7269787,
+              "probability": 1.0,
+              "microtiming_ticks": -10,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 3633,
+              "velocity": 0.7925284,
+              "probability": 1.0,
+              "microtiming_ticks": -5,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "shaker": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.7578142,
+              "probability": 1.0,
+              "microtiming_ticks": -8,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": true
+            },
+            {
+              "position": 485,
+              "velocity": 0.71611404,
+              "probability": 1.0,
+              "microtiming_ticks": -6,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 720,
+              "velocity": 0.13646539,
+              "probability": 0.093187064,
+              "microtiming_ticks": -10,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 960,
+              "velocity": 0.7618362,
+              "probability": 1.0,
+              "microtiming_ticks": -7,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 1232,
+              "velocity": 0.69714165,
+              "probability": 1.0,
+              "microtiming_ticks": -10,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 1707,
+              "velocity": 0.7690002,
+              "probability": 1.0,
+              "microtiming_ticks": -6,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 1917,
+              "velocity": 0.7200849,
+              "probability": 1.0,
+              "microtiming_ticks": -9,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2398,
+              "velocity": 0.87703824,
+              "probability": 1.0,
+              "microtiming_ticks": -6,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2877,
+              "velocity": 0.79210985,
+              "probability": 1.0,
+              "microtiming_ticks": -8,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 3157,
+              "velocity": 0.9208386,
+              "probability": 1.0,
+              "microtiming_ticks": -8,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 3360,
+              "velocity": 0.20236324,
+              "probability": 0.16480207,
+              "microtiming_ticks": -7,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 3630,
+              "velocity": 0.7824729,
+              "probability": 1.0,
+              "microtiming_ticks": -7,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        }
+      },
+      "automation": {
+        "bass": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.095,
+              "smooth"
+            ],
+            [
+              3,
+              0.9043989,
+              "smooth"
+            ]
+          ]
+        },
+        "kick": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              1.0,
+              "exp"
+            ],
+            [
+              3,
+              0.95515454,
+              "smooth"
+            ]
+          ]
+        },
+        "perc": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.21000001,
+              "smooth"
+            ],
+            [
+              3,
+              0.5351546,
+              "smooth"
+            ]
+          ]
+        },
+        "pluck": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.042,
+              "smooth"
+            ],
+            [
+              3,
+              0.042,
+              "smooth"
+            ]
+          ]
+        },
+        "shaker": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.05,
+              "smooth"
+            ],
+            [
+              3,
+              0.46183613,
+              "smooth"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "reintro",
+      "bars": 8,
+      "energy_curve": [
+        0.8352325,
+        0.87028736,
+        0.86461157,
+        0.89509964,
+        0.88488317,
+        0.8845443,
+        0.9542646,
+        0.9695275
+      ],
+      "density_curve": [
+        0.8739544,
+        0.8483323,
+        0.848722,
+        0.86266184,
+        0.90756553,
+        0.9451374,
+        0.9084309,
+        0.9459666
+      ],
+      "brightness_curve": [
+        0.56968516,
+        0.60588145,
+        0.64736086,
+        0.61141074,
+        0.65991735,
+        0.679396,
+        0.6807815,
+        0.6903347
+      ],
+      "transition_in": null,
+      "transition_out": {
+        "type": "fill",
+        "bars": 1,
+        "params": {
+          "glitch_repeat": false,
+          "kick_drop": true,
+          "reverse_cymbal": false,
+          "rolls": true
+        }
+      },
+      "pattern_bindings": {
+        "bass": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.82723916,
+              "probability": 1.0,
+              "microtiming_ticks": -4,
+              "ratchet": 1,
+              "pitch": 43.0,
+              "gate": 0.5395777,
+              "accent": true
+            }
+          ],
+          "repeats": 1
+        },
+        "kick": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.65250003,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": true
+            },
+            {
+              "position": 960,
+              "velocity": 0.65250003,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            },
+            {
+              "position": 2880,
+              "velocity": 0.65250003,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            },
+            {
+              "position": 2894,
+              "velocity": 0.55462503,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            },
+            {
+              "position": 2908,
+              "velocity": 0.4714313,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "perc": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.53553927,
+              "probability": 1.0,
+              "microtiming_ticks": -5,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": true
+            },
+            {
+              "position": 478,
+              "velocity": 0.5037978,
+              "probability": 1.0,
+              "microtiming_ticks": -5,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            },
+            {
+              "position": 961,
+              "velocity": 0.60621685,
+              "probability": 1.0,
+              "microtiming_ticks": -9,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            },
+            {
+              "position": 1441,
+              "velocity": 0.52783763,
+              "probability": 1.0,
+              "microtiming_ticks": -10,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            },
+            {
+              "position": 1920,
+              "velocity": 0.6030874,
+              "probability": 1.0,
+              "microtiming_ticks": -6,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            },
+            {
+              "position": 2397,
+              "velocity": 0.6262363,
+              "probability": 1.0,
+              "microtiming_ticks": -9,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            },
+            {
+              "position": 2886,
+              "velocity": 0.63199735,
+              "probability": 1.0,
+              "microtiming_ticks": -9,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            },
+            {
+              "position": 3360,
+              "velocity": 0.29088774,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            },
+            {
+              "position": 3722,
+              "velocity": 0.518401,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "pluck": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.4393,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 55.0,
+              "gate": 0.2,
+              "accent": true
+            },
+            {
+              "position": 762,
+              "velocity": 0.4393,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 58.0,
+              "gate": 0.2,
+              "accent": false
+            },
+            {
+              "position": 1432,
+              "velocity": 0.4393,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 62.0,
+              "gate": 0.2,
+              "accent": false
+            },
+            {
+              "position": 1920,
+              "velocity": 0.4393,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 65.0,
+              "gate": 0.2,
+              "accent": false
+            },
+            {
+              "position": 2668,
+              "velocity": 0.4393,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 69.0,
+              "gate": 0.2,
+              "accent": false
+            },
+            {
+              "position": 3352,
+              "velocity": 0.4393,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 55.0,
+              "gate": 0.2,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "shaker": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.7578142,
+              "probability": 1.0,
+              "microtiming_ticks": -8,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": true
+            },
+            {
+              "position": 485,
+              "velocity": 0.71611404,
+              "probability": 1.0,
+              "microtiming_ticks": -6,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            },
+            {
+              "position": 960,
+              "velocity": 0.7618362,
+              "probability": 1.0,
+              "microtiming_ticks": -7,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            },
+            {
+              "position": 1917,
+              "velocity": 0.7200849,
+              "probability": 1.0,
+              "microtiming_ticks": -9,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            },
+            {
+              "position": 2398,
+              "velocity": 0.87703824,
+              "probability": 1.0,
+              "microtiming_ticks": -6,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            },
+            {
+              "position": 2877,
+              "velocity": 0.79210985,
+              "probability": 1.0,
+              "microtiming_ticks": -8,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            },
+            {
+              "position": 3360,
+              "velocity": 0.20236324,
+              "probability": 0.16480207,
+              "microtiming_ticks": -7,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        }
+      },
+      "automation": {
+        "bass": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.9043989,
+              "smooth"
+            ],
+            [
+              7,
+              0.95,
+              "smooth"
+            ]
+          ]
+        },
+        "kick": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.95515454,
+              "smooth"
+            ],
+            [
+              7,
+              1.0,
+              "smooth"
+            ]
+          ]
+        },
+        "perc": {
+          "target_param": "send_delay",
+          "points": [
+            [
+              0,
+              0.2,
+              "linear"
+            ],
+            [
+              6,
+              0.2,
+              "linear"
+            ],
+            [
+              7,
+              0.55,
+              "smooth"
+            ]
+          ]
+        },
+        "pluck": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.042,
+              "smooth"
+            ],
+            [
+              7,
+              0.42,
+              "smooth"
+            ]
+          ]
+        },
+        "shaker": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.46183613,
+              "smooth"
+            ],
+            [
+              7,
+              0.5,
+              "smooth"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "outro",
+      "bars": 12,
+      "energy_curve": [
+        0.671902,
+        0.62334365,
+        0.5631716,
+        0.5267973,
+        0.52252096,
+        0.4712595,
+        0.47665715,
+        0.40959054,
+        0.38226208,
+        0.36643168,
+        0.3163187,
+        0.30527815
+      ],
+      "density_curve": [
+        0.62556386,
+        0.6290502,
+        0.563971,
+        0.5748276,
+        0.5301277,
+        0.48513162,
+        0.42717767,
+        0.42426974,
+        0.4027324,
+        0.37528569,
+        0.3043695,
+        0.31629917
+      ],
+      "brightness_curve": [
+        0.5275246,
+        0.5299285,
+        0.5457655,
+        0.47494283,
+        0.47649348,
+        0.47846273,
+        0.45477173,
+        0.47921732,
+        0.42575562,
+        0.42052928,
+        0.40545732,
+        0.4234869
+      ],
+      "transition_in": null,
+      "transition_out": null,
+      "pattern_bindings": {
+        "kick": {
+          "generator": "euclidean",
+          "k": 4,
+          "n": 16,
+          "rot": 0,
+          "velocity": 0.685,
+          "probability": 1.0,
+          "repeats": 1,
+          "gate": null,
+          "pitch": null
+        },
+        "perc": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.56656444,
+              "probability": 1.0,
+              "microtiming_ticks": -8,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": true
+            },
+            {
+              "position": 240,
+              "velocity": 0.20710424,
+              "probability": 0.17278385,
+              "microtiming_ticks": -5,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 755,
+              "velocity": 0.5488142,
+              "probability": 1.0,
+              "microtiming_ticks": -7,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 1439,
+              "velocity": 0.6004719,
+              "probability": 1.0,
+              "microtiming_ticks": -6,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 1922,
+              "velocity": 0.60585165,
+              "probability": 1.0,
+              "microtiming_ticks": -7,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2674,
+              "velocity": 0.55526036,
+              "probability": 1.0,
+              "microtiming_ticks": -6,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 3359,
+              "velocity": 0.57579625,
+              "probability": 1.0,
+              "microtiming_ticks": -9,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "pluck": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.3646,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 53.0,
+              "gate": 0.2,
+              "accent": true
+            },
+            {
+              "position": 1430,
+              "velocity": 0.3646,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 55.0,
+              "gate": 0.2,
+              "accent": false
+            },
+            {
+              "position": 2674,
+              "velocity": 0.3646,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 60.0,
+              "gate": 0.2,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "shaker": {
+          "generator": "probability_mask",
+          "density": 0.4545775,
+          "velocity": 0.635,
+          "probability": 0.9,
+          "repeats": 1,
+          "gate": null,
+          "pitch": null
+        }
+      },
+      "automation": {
+        "bass": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.95,
+              "exp"
+            ],
+            [
+              11,
+              0.54907393,
+              "smooth"
+            ]
+          ]
+        },
+        "kick": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              1.0,
+              "exp"
+            ],
+            [
+              11,
+              0.61469823,
+              "smooth"
+            ]
+          ]
+        },
+        "perc": {
+          "target_param": "send_delay",
+          "points": [
+            [
+              0,
+              0.2,
+              "linear"
+            ],
+            [
+              10,
+              0.2,
+              "linear"
+            ],
+            [
+              11,
+              0.55,
+              "smooth"
+            ]
+          ]
+        },
+        "pluck": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.42,
+              "exp"
+            ],
+            [
+              11,
+              0.2680367,
+              "smooth"
+            ]
+          ]
+        },
+        "shaker": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.5,
+              "exp"
+            ],
+            [
+              11,
+              0.30433428,
+              "smooth"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "tracks": [
+    {
+      "id": "kick",
+      "role": "kick",
+      "instrument": {
+        "kind": "kick",
+        "tune_hz": 56.0,
+        "decay_ms": 250.0,
+        "click": 0.55,
+        "drive": 0.3
+      },
+      "inserts": [
+        {
+          "type": "drive",
+          "params": {
+            "amount": 1.2
+          },
+          "mix": 0.4
+        }
+      ],
+      "sends": {
+        "delay": 0.0,
+        "reverb": 0.05
+      },
+      "gain": 1.0,
+      "pan": 0.0
+    },
+    {
+      "id": "perc",
+      "role": "perc",
+      "instrument": {
+        "kind": "hat",
+        "decay_ms": 45.0,
+        "tone": 0.62,
+        "open": false
+      },
+      "inserts": [],
+      "sends": {
+        "delay": 0.2,
+        "reverb": 0.1
+      },
+      "gain": 0.6,
+      "pan": 0.4,
+      "duck_depth": 1.0
+    },
+    {
+      "id": "shaker",
+      "role": "perc",
+      "instrument": {
+        "kind": "shaker",
+        "decay_ms": 70.0,
+        "tone": 0.5
+      },
+      "inserts": [],
+      "sends": {
+        "delay": 0.1,
+        "reverb": 0.08
+      },
+      "gain": 0.5,
+      "pan": -0.35,
+      "duck_depth": 1.0
+    },
+    {
+      "id": "bass",
+      "role": "bass",
+      "instrument": {
+        "kind": "bass",
+        "cutoff_hz": 700.0,
+        "resonance": 0.3,
+        "wave": "saw",
+        "glide_ms": 40.0
+      },
+      "inserts": [],
+      "sends": {
+        "delay": 0.0,
+        "reverb": 0.0
+      },
+      "gain": 0.95,
+      "pan": 0.0,
+      "duck_depth": 1.0
+    },
+    {
+      "id": "pluck",
+      "role": "pad",
+      "instrument": {
+        "kind": "pluck",
+        "damping": 0.35,
+        "bright": 0.65
+      },
+      "inserts": [],
+      "sends": {
+        "delay": 0.2,
+        "reverb": 0.3
+      },
+      "gain": 0.42,
+      "pan": 0.3,
+      "duck_depth": 1.0
+    }
+  ],
+  "palette": null,
+  "duck_release_ms": 160.0,
+  "pattern_engine": {
+    "groove": "mpc-ish",
+    "swing": 0.14629357,
+    "bias_ticks": -8,
+    "jitter_ticks": 3.0,
+    "bass_archetype": "offbeat-eighths",
+    "downbeat_collision": "avoid"
+  }
+}

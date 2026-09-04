@@ -1,0 +1,24 @@
+{
+  "name": "microhouse target profile (re-specified for corrected metrics)",
+  "note": "Was microhouse-easylee.json, whose bounds were read off one reference track under the old metric definitions. Those definitions have changed (percentile dynamics, magnitude-weighted centroid, band-local transient floor), so the derived numbers no longer mean what they meant and the file no longer claims that provenance. Re-derive from reference material with the current metrics before treating these as measured rather than specified.",
+  "targets": {
+    "short_term_dyn_db": { "min": 4.5, "max": 11.0 },
+    "crest_db": { "min": 8.5, "max": 13.5 },
+    "hit_cv": { "min": 0.25, "max": 0.6 },
+    "transients_per_sec": { "min": 3.0, "max": 9.0 },
+    "centroid_hz": { "min": 1800.0, "max": 6500.0 },
+    "band_sub": { "max": 0.3 },
+    "band_mid": { "min": 0.1, "max": 0.28 },
+    "band_himid": { "min": 0.04 }
+  },
+  "tolerances": {
+    "short_term_dyn_db": 2.0,
+    "crest_db": 1.0,
+    "hit_cv": 0.05,
+    "transients_per_sec": 1.0,
+    "centroid_hz": 400.0,
+    "band_sub": 0.02,
+    "band_mid": 0.02,
+    "band_himid": 0.02
+  }
+}

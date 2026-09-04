@@ -1,0 +1,17 @@
+[package]
+name = "kontinuum-compose"
+version.workspace = true
+edition.workspace = true
+description = "Pattern generators, hierarchical arrangement engine, rolling lookahead planner (#13/#16/#17)"
+
+[dependencies]
+kontinuum-clock.workspace = true
+kontinuum-schedule.workspace = true
+kontinuum-ir.workspace = true
+kontinuum-corpus.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+hound.workspace = true
+
+[dev-dependencies]
+kontinuum-samples = { path = "../kontinuum-samples" }

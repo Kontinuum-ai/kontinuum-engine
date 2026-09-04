@@ -1,0 +1,28 @@
+{
+  "version": 1, "seed": 11,
+  "tempo_lane": [[0, 96.0]],
+  "sections": [{"id": "a", "bars": 2, "energy_curve": [0.5],
+      "pattern_bindings": {"bell": {"steps": [{"position": 0, "pitch": 69.0, "gate": 3.0}], "repeats": 2}}}],
+  "tracks": [{"id": "bell", "role": "perc", "instrument": {"kind": "custom", "patch": {
+      "nodes": [
+        {"id": "carrier", "type": "osc", "wave": "sine", "unison": 1, "fine_cents": 0.0, "level": 0.5},
+        {"id": "fm1", "type": "fm_pair", "ratio": 7.0, "index": 2.0, "feedback": 0.1, "level": 0.5},
+        {"id": "env1", "type": "env", "attack_ms": 1.0, "decay_ms": 600.0, "sustain": 0.1, "release_ms": 2500.0},
+        {"id": "g1", "type": "gain", "level": 0.9},
+        {"id": "flt1", "type": "filter", "mode": "band_pass", "cutoff_hz": 3200.0, "resonance": 0.85, "drive": 0.0},
+        {"id": "lfo1", "type": "lfo", "rate_hz": 0.2, "depth": 0.1, "wave": "sine"},
+        {"id": "dly1", "type": "delay", "time_ms": 420.0, "feedback": 0.65, "mix": 0.35},
+        {"id": "out1", "type": "out", "level": 0.85}
+      ],
+      "edges": [
+        {"from": "carrier", "to": "g1", "type": "audio", "amount": 1.0},
+        {"from": "fm1", "to": "g1", "type": "audio", "amount": 1.0},
+        {"from": "env1", "to": "g1", "type": "mod", "param": "level", "amount": 0.9},
+        {"from": "g1", "to": "flt1", "type": "audio", "amount": 1.0},
+        {"from": "lfo1", "to": "flt1", "type": "mod", "param": "cutoff_hz", "amount": 0.1},
+        {"from": "flt1", "to": "dly1", "type": "audio", "amount": 1.0},
+        {"from": "dly1", "to": "out1", "type": "audio", "amount": 1.0},
+        {"from": "dly1", "to": "dly1", "type": "audio", "amount": 1.0}
+      ]
+  }}}]
+}

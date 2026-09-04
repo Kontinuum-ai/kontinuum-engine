@@ -1,0 +1,17 @@
+/target
+**/target
+Cargo.lock.orig
+.DS_Store
+ios/DerivedData
+*.xcuserstate
+xcuserdata/
+ios/RustLib/
+ios/build/
+ios/Kontinuum.xcodeproj
+renders/
+.playwright-mcp/
+.omo/
+/*.png
+
+# corpus pipeline outputs (regenerable; never audio in repo)
+corpus/features/

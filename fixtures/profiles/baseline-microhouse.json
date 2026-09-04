@@ -1,0 +1,24 @@
+{
+  "profile": "microhouse.json",
+  "seed": 7,
+  "distance": 36.652,
+  "ratchet": 0.5,
+  "note": "Re-measured on the merged engine (corrected metric definitions kept; main's 808 hat bank, bass archetypes, perc ghost pass and world layering folded in) and re-specified targets. Not comparable with either parent baseline: the PR's 18.87 was measured before main's instrument changes landed, main's 8.544 under the old metric definitions. The previous baseline recorded band shares of himid 0.0 / mid 0.044 \u2014 95% of the energy under 400 Hz \u2014 and the ratchet was holding the engine there. Distance is not expected to reach zero: these targets are specified from genre knowledge, not derived from reference material, so the gate's job is to catch regressions rather than to certify the sound. Re-anchored for #51 (29.899): the harness inversion moved the 12 synth voices into kontinuum-instruments-core. Re-anchored again for #87/#88 (36.652): microhouse now performs its own rack (tight kick, euclid hat, shaker, sub bass, micro-pluck \u2014 the shared 4/6-track rig and its pad are gone) at its own key tendency and groove draw, so the mix is quieter and sparser by design (rms \u221218.4 \u2192 \u221225.2 dBFS, band shares rebalanced). A deliberate identity change, not a mastering regression; see fixtures/genres/microhouse.ir.json and the compose genre gate.",
+  "metrics": {
+    "rms_dbfs": -25.2,
+    "peak_dbfs": -2.4,
+    "crest_db": 22.75,
+    "short_term_dyn_db": 6.71,
+    "centroid_hz": 7971.2,
+    "band_shares": [
+      0.691,
+      0.164,
+      0.043,
+      0.052,
+      0.005,
+      0.023
+    ],
+    "transients_per_sec": 4.63,
+    "hit_cv": 0.391
+  }
+}

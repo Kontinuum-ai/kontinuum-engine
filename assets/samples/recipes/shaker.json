@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "seed": 37,
+  "sample_rate": 48000,
+  "name": "starter shaker",
+  "tail_ms": 300,
+  "voices": [
+    {
+      "id": "s",
+      "instrument": { "kind": "shaker", "decay_ms": 85.0, "tone": 0.8 }
+    }
+  ],
+  "hits": [
+    { "voice": "s", "at_ms": 0.0, "pitch": 60, "velocity": 0.7 }
+  ],
+  "tags": ["perc", "shaker", "starter"]
+}

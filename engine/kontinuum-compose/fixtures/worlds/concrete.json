@@ -1,0 +1,64 @@
+{
+  "format_version": 1,
+  "id": "concrete",
+  "name": "Concrete",
+  "description": "Hard minimal: clipped tight kick, steely bright micro-percussion, resonant short bass, a pressed-forward wavetable drone. Roster-v2 curation: wavetable pad patch, FM perc + chord one-shot packs.",
+  "taste_tags": [
+    "minimal",
+    "techno"
+  ],
+  "palette_overrides": {
+    "kick": {
+      "voice": "kick",
+      "tune_hz": 56.0,
+      "decay_ms": 240.0,
+      "click": 0.6,
+      "drive": 0.5
+    },
+    "perc": {
+      "voice": "perc",
+      "decay_ms": 40.0,
+      "tone": 0.9
+    },
+    "bass": {
+      "voice": "bass",
+      "cutoff_hz": 260.0,
+      "resonance": 0.5,
+      "glide_ms": 20.0
+    }
+  },
+  "mix_target_overrides": {
+    "kick": {
+      "gain": 1.15
+    },
+    "perc": {
+      "gain": 0.75
+    },
+    "bass": {
+      "gain": 1.0
+    },
+    "pad": {
+      "gain": 0.4
+    }
+  },
+  "groove_affinities": {
+    "tense": 0.9,
+    "straight-machine": 0.7,
+    "pushed-hats": 0.4
+  },
+  "sample_packs": [
+    "fm-perc-v1",
+    "chord-oneshots-v1"
+  ],
+  "patch_overrides": {
+    "pad": {
+      "kind": "wavetable",
+      "position": 0.8,
+      "detune_cents": 6.0,
+      "osc2_level": 0.9,
+      "sub": 0.25,
+      "cutoff_hz": 2600.0,
+      "release_ms": 700.0
+    }
+  }
+}

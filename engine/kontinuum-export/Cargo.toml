@@ -1,0 +1,17 @@
+[package]
+name = "kontinuum-export"
+version.workspace = true
+edition.workspace = true
+description = "Deliverable masters from a session: WAV 32f/24/16 + MP3, full mix and stems (issue #102)"
+
+[dependencies]
+hound.workspace = true
+kontinuum-core.workspace = true
+kontinuum-ir.workspace = true
+kontinuum-mastering.workspace = true
+kontinuum-offline = { path = "../kontinuum-offline" }
+# Apache-2.0, pure Rust, zero dependencies: the only MP3 encoder that
+# cross-compiles to iOS without a C toolchain or an LGPL obligation.
+rusty_mp3 = "0.7"
+serde.workspace = true
+serde_json.workspace = true

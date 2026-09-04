@@ -1,0 +1,50 @@
+{
+  "format_version": 1,
+  "id": "acid-warehouse-303",
+  "name": "Acid warehouse",
+  "description": "Squelching 303-school warehouse acid: one resonant bassline twisted through a hundred filter positions, hats spitting on the offbeat.",
+  "kind": "genre",
+  "taste_tags": ["acid", "techno"],
+  "eras": {
+    "default": {
+      "style_card": "One resonant bassline, a hundred filter positions. The acid line is the melody, the rhythm section and the story — twist its cutoff every four bars and let the hats spit on the offbeat. Variation is the energy; nothing else needs to change.",
+      "harmony": {
+        "progressions": [
+          [{"root": 29, "minor": true}, {"root": 29, "minor": true}, {"root": 34, "minor": true}, {"root": 29, "minor": true}],
+          [{"root": 29, "minor": true}, {"root": 36, "minor": true}, {"root": 34, "minor": true}, {"root": 29, "minor": true}]
+        ]
+      },
+      "groove": {
+        "template": "pushed-hats",
+        "swing": 0.06,
+        "jitter_ticks": 2.0,
+        "affinities": { "pushed-hats": 0.9, "tense": 0.8, "straight-machine": 0.6 }
+      },
+      "rack": {
+        "palette_overrides": {
+          "kick": { "voice": "kick", "tune_hz": 46.0, "decay_ms": 300.0, "click": 0.45, "drive": 0.35 },
+          "perc": { "voice": "perc", "decay_ms": 70.0, "tone": 0.75 },
+          "bass": { "voice": "bass", "cutoff_hz": 1400.0, "resonance": 0.85, "glide_ms": 60.0 },
+          "pad": { "voice": "pad", "attack_ms": 1200.0, "release_ms": 2400.0, "detune_cents": 9.0, "cutoff_hz": 1100.0 }
+        }
+      },
+      "samples": {
+        "recipe_hashes": [],
+        "queries": ["bass resonant squelch acid", "hat spit offbeat", "kick dry tight"]
+      },
+      "mix": {
+        "profile": {
+          "kick": { "gain": 1.1, "pan": 0.0, "send_delay": 0.0, "send_reverb": 0.03 },
+          "perc": { "gain": 0.65, "pan": 0.2, "send_delay": 0.15, "send_reverb": 0.12 },
+          "bass": { "gain": 0.95, "pan": 0.0, "send_delay": 0.1, "send_reverb": 0.05 },
+          "pad": { "gain": 0.35, "pan": -0.15, "send_delay": 0.3, "send_reverb": 0.35 }
+        }
+      },
+      "arrangement": {
+        "dev_bars": 16,
+        "breakdown_bars": 8,
+        "energy_arc": [0.45, 0.55, 0.62, 0.68, 0.74, 0.8, 0.86, 0.92]
+      }
+    }
+  }
+}

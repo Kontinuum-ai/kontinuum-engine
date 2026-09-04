@@ -1,0 +1,22 @@
+[package]
+name = "kontinuum-ir"
+version.workspace = true
+edition.workspace = true
+description = "Musical IR: schema, validation, diff mutations, compiler (issue #11)"
+
+[[bin]]
+name = "kontinuum-ir"
+path = "src/main.rs"
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+kontinuum-clock.workspace = true
+kontinuum-schedule.workspace = true
+
+[dev-dependencies]
+assert_no_alloc = "1"
+
+[lints.rust]
+warnings = "deny"

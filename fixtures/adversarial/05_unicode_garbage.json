@@ -1,0 +1,2 @@
+{"version": 1, "seed": 1, "tempo_lane": [[0, 124.0]], "sections": [{"id": "a
+��", "bars": 4, "energy_curve": [0.5, 0.5, 0.5, 0.5], "pattern_bindings": {"k": {"generator": "euclidean", "k": 4, "n": 16, "rot": 0, "velocity": 0.8, "probability": 1.0}}}], "tracks": [{"id": "k", "role": "kick", "instrument": {"kind": "kick", "tune_hz": 47.0, "decay_ms": 320.0, "click": 0.4, "drive": 0.3}}]}

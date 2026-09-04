@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "seed": 7,
+  "name": "dusty micro kit",
+  "tail_ms": 400,
+  "voices": [
+    {
+      "id": "kick",
+      "instrument": { "kind": "kick", "tune_hz": 54.0, "decay_ms": 260.0, "click": 0.55 },
+      "chain": [{ "type": "drive", "amount": 1.4, "mix": 0.5 }]
+    },
+    {
+      "id": "click",
+      "instrument": { "kind": "hat", "decay_ms": 28.0, "tone": 0.85 },
+      "chain": [{ "type": "highpass", "amount": 3000.0 }]
+    },
+    {
+      "id": "shaker",
+      "instrument": { "kind": "shaker", "decay_ms": 70.0, "tone": 0.8 }
+    }
+  ],
+  "hits": [
+    { "voice": "kick", "at_ms": 0.0, "pitch": 36, "velocity": 0.95 },
+    { "voice": "click", "at_ms": 125.0, "velocity": 0.5 },
+    { "voice": "shaker", "at_ms": 250.0, "pitch": 62, "velocity": 0.6 },
+    { "voice": "kick", "at_ms": 500.0, "pitch": 36, "velocity": 0.9 },
+    { "voice": "click", "at_ms": 625.0, "velocity": 0.45 }
+  ],
+  "slice": { "mode": "transient", "max_slices": 8, "sensitivity": 0.5 },
+  "tags": ["microhouse", "dusty"]
+}

@@ -1,0 +1,49 @@
+{
+  "format_version": 1,
+  "id": "minimal-techno-function",
+  "name": "Minimal techno, big-system restraint",
+  "description": "Minimal techno for a big system: two elements doing the work of five, surgical low end, tension carried by what is missing.",
+  "kind": "genre",
+  "taste_tags": ["minimal", "techno"],
+  "eras": {
+    "default": {
+      "style_card": "Two elements doing the work of five. The kick is a metronome, never a soloist; tension lives in filter movement and what is absent. Keep velocities low and variations tiny — the room's sound system provides the drama.",
+      "harmony": {
+        "progressions": [
+          [{"root": 29, "minor": true}, {"root": 39, "minor": false}, {"root": 37, "minor": false}, {"root": 39, "minor": false}]
+        ]
+      },
+      "groove": {
+        "template": "tense",
+        "swing": 0.05,
+        "jitter_ticks": 1.0,
+        "affinities": { "tense": 0.95, "straight-machine": 0.8, "pushed-hats": 0.4 }
+      },
+      "rack": {
+        "palette_overrides": {
+          "kick": { "voice": "kick", "tune_hz": 47.0, "decay_ms": 280.0, "click": 0.35, "drive": 0.25 },
+          "perc": { "voice": "perc", "decay_ms": 45.0, "tone": 0.7 },
+          "bass": { "voice": "bass", "cutoff_hz": 260.0, "resonance": 0.35, "glide_ms": 20.0 },
+          "pad": { "voice": "pad", "attack_ms": 2500.0, "release_ms": 8000.0, "detune_cents": 5.0, "cutoff_hz": 1200.0 }
+        }
+      },
+      "samples": {
+        "recipe_hashes": [],
+        "queries": ["kick tight click minimal", "hat closed tick", "rim shot dry"]
+      },
+      "mix": {
+        "profile": {
+          "kick": { "gain": 1.05, "pan": 0.0, "send_delay": 0.0, "send_reverb": 0.0 },
+          "perc": { "gain": 0.55, "pan": -0.2, "send_delay": 0.15, "send_reverb": 0.08 },
+          "bass": { "gain": 0.85, "pan": 0.0, "send_delay": 0.0, "send_reverb": 0.0 },
+          "pad": { "gain": 0.35, "pan": 0.1, "send_delay": 0.25, "send_reverb": 0.3 }
+        }
+      },
+      "arrangement": {
+        "dev_bars": 24,
+        "breakdown_bars": 8,
+        "energy_arc": [0.3, 0.35, 0.4, 0.48, 0.55, 0.6, 0.68, 0.75]
+      }
+    }
+  }
+}

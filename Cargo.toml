@@ -1,0 +1,47 @@
+[workspace]
+resolver = "2"
+members = [
+    "engine/kontinuum-clock",
+    "engine/kontinuum-schedule",
+    "engine/kontinuum-core",
+    "engine/kontinuum-bridge",
+    "engine/kontinuum-offline",
+    "engine/kontinuum-export",
+    "engine/kontinuum-compose",
+    "engine/kontinuum-composer",
+    "engine/kontinuum-supervision",
+    "engine/kontinuum-analysis",
+    "engine/kontinuum-taste",
+    "engine/kontinuum-samples",
+    "engine/kontinuum-mastering",
+    "engine/kontinuum-preference",
+    "engine/kontinuum-corpus",
+    "ir/kontinuum-ir",
+    "plugins/kontinuum-plugin-api",
+    "plugins/kontinuum-instruments-core",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+rtrb = "0.3"
+hound = "3"
+kontinuum-clock = { path = "engine/kontinuum-clock" }
+kontinuum-schedule = { path = "engine/kontinuum-schedule" }
+kontinuum-core = { path = "engine/kontinuum-core" }
+kontinuum-ir = { path = "ir/kontinuum-ir" }
+kontinuum-compose = { path = "engine/kontinuum-compose" }
+kontinuum-supervision = { path = "engine/kontinuum-supervision" }
+kontinuum-mastering = { path = "engine/kontinuum-mastering" }
+kontinuum-preference = { path = "engine/kontinuum-preference" }
+kontinuum-corpus = { path = "engine/kontinuum-corpus" }
+kontinuum-export = { path = "engine/kontinuum-export" }
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

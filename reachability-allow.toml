@@ -1,0 +1,15 @@
+# Reachability exemptions (issue #81).
+#
+# Workspace members listed here are deliberately NOT reachable from either
+# product entry point (kontinuum-bridge — the iOS FFI surface — and
+# kontinuum-offline — the renderer) via normal dependencies. This file is
+# the difference between "declared standalone" and "silently orphaned":
+# scripts/check-reachability.sh fails the build for any orphan without an
+# entry here, and fails for stale entries once a crate becomes reachable.
+
+[kontinuum-preference]
+reason = "Pre-integration (issue #81): preference learning / bandit ladder (delivered by #24) is not yet consumed by the live engine; wiring or a tracking issue is pending."
+
+
+[kontinuum-taste]
+reason = "Pre-integration: the taste importer (delivered by #21) is standalone engine code until the bridge consumes it; wiring is a tracked follow-up, not an orphan accident."

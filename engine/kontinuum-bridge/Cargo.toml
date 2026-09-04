@@ -1,0 +1,30 @@
+[package]
+name = "kontinuum-bridge"
+version.workspace = true
+edition.workspace = true
+description = "C FFI surface, command/telemetry rings, panic containment (issue #10/#12)"
+
+[lib]
+name = "kontinuum_bridge"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[dependencies]
+kontinuum-instruments-core = { path = "../../plugins/kontinuum-instruments-core" }
+kontinuum-plugin-api = { path = "../../plugins/kontinuum-plugin-api" }
+kontinuum-clock.workspace = true
+kontinuum-schedule.workspace = true
+kontinuum-core.workspace = true
+kontinuum-compose.workspace = true
+kontinuum-composer = { path = "../kontinuum-composer" }
+kontinuum-supervision.workspace = true
+kontinuum-ir.workspace = true
+kontinuum-mastering.workspace = true
+kontinuum-export.workspace = true
+kontinuum-offline = { path = "../kontinuum-offline" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+rtrb.workspace = true
+
+[dev-dependencies]
+assert_no_alloc = "1"

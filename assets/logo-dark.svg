@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" fill="#0B0B0D"></rect>
+  <path d="M 256.00 200.00 C 215.54 142.19, 175.32 89.60, 146.71 89.60 C 118.10 89.60, 101.44 142.19, 101.44 200.00 C 101.44 257.81, 118.10 310.40, 146.71 310.40 C 175.32 310.40, 215.54 257.81, 256.00 200.00 C 296.46 142.19, 336.68 89.60, 365.29 89.60 C 393.90 89.60, 410.56 142.19, 410.56 200.00 C 410.56 257.81, 393.90 310.40, 365.29 310.40 C 336.68 310.40, 296.46 257.81, 256.00 200.00 Z" fill="none" stroke="#FF3B30" stroke-width="2.21" opacity=".16"></path>
+  <rect x="251.23" y="195.23" width="9.54" height="9.54" rx="3.12" fill="#ff6d1d"></rect>
+  <rect x="230.80" y="166.16" width="8.84" height="8.84" rx="3.54" fill="#ff5925"></rect>
+  <rect x="210.51" y="138.67" width="6.19" height="6.19" rx="2.86" fill="#ff4a2a"></rect>
+  <rect x="182.23" y="106.97" width="15.37" height="15.37" rx="7.31" fill="#ff412e"></rect>
+  <rect x="158.64" y="90.42" width="5.33" height="5.33" rx="2.64" fill="#ff3d2f"></rect>
+  <rect x="121.87" y="91.47" width="12.17" height="12.17" rx="6.06" fill="#ff3b30"></rect>
+  <rect x="103.01" y="121.02" width="15.63" height="15.63" rx="7.80" fill="#ff3b30"></rect>
+  <rect x="97.46" y="157.96" width="12.20" height="12.20" rx="6.09" fill="#ff3b30"></rect>
+  <rect x="97.53" y="196.09" width="7.83" height="7.83" rx="3.91" fill="#ff3b30"></rect>
+  <rect x="99.65" y="232.02" width="7.83" height="7.83" rx="3.91" fill="#ff3b30"></rect>
+  <rect x="104.73" y="265.07" width="12.20" height="12.20" rx="6.09" fill="#ff3b30"></rect>
+  <rect x="124.03" y="298.53" width="7.84" height="7.84" rx="3.91" fill="#ff3b30"></rect>
+  <rect x="158.59" y="304.20" width="5.43" height="5.43" rx="2.69" fill="#ff3d2f"></rect>
+  <rect x="182.23" y="277.66" width="15.37" height="15.37" rx="7.31" fill="#ff412e"></rect>
+  <rect x="209.45" y="254.07" width="8.33" height="8.33" rx="3.77" fill="#ff4a2a"></rect>
+  <rect x="230.80" y="225.00" width="8.84" height="8.84" rx="3.54" fill="#ff5925"></rect>
+  <rect x="251.23" y="195.23" width="9.54" height="9.54" rx="3.12" fill="#ff6d1d"></rect>
+  <rect x="271.66" y="165.46" width="10.24" height="10.24" rx="2.56" fill="#ff8115"></rect>
+  <rect x="292.69" y="136.06" width="11.40" height="11.40" rx="2.10" fill="#ff9010"></rect>
+  <rect x="316.43" y="109.00" width="11.32" height="11.32" rx="1.73" fill="#ff990c"></rect>
+  <rect x="345.02" y="87.41" width="11.35" height="11.35" rx="1.55" fill="#ff9d0b"></rect>
+  <rect x="381.12" y="94.63" width="5.85" height="5.85" rx="1.48" fill="#ff9f0a"></rect>
+  <rect x="398.25" y="125.91" width="5.85" height="5.85" rx="1.48" fill="#ff9f0a"></rect>
+  <rect x="405.50" y="161.13" width="5.87" height="5.87" rx="1.47" fill="#ff9f0a"></rect>
+  <rect x="404.93" y="194.37" width="11.25" height="11.25" rx="1.48" fill="#ff9f0a"></rect>
+  <rect x="402.81" y="230.30" width="11.27" height="11.27" rx="1.48" fill="#ff9f0a"></rect>
+  <rect x="398.24" y="268.23" width="5.87" height="5.87" rx="1.48" fill="#ff9f0a"></rect>
+  <rect x="378.41" y="296.80" width="11.28" height="11.28" rx="1.49" fill="#ff9f0a"></rect>
+  <rect x="345.12" y="301.34" width="11.15" height="11.15" rx="1.55" fill="#ff9d0b"></rect>
+  <rect x="316.43" y="279.68" width="11.32" height="11.32" rx="1.73" fill="#ff990c"></rect>
+  <rect x="295.32" y="255.16" width="6.15" height="6.15" rx="1.71" fill="#ff9010"></rect>
+  <rect x="270.50" y="223.14" width="12.56" height="12.56" rx="2.90" fill="#ff8115"></rect>
+  <text x="256" y="404" text-anchor="middle" font-family="ui-monospace, &#34;SF Mono&#34;, SFMono-Regular, Menlo, monospace" font-size="52" letter-spacing="15" fill="#D9D9D9">KONTINUUM</text>
+  <text x="256" y="442" text-anchor="middle" font-family="ui-monospace, &#34;SF Mono&#34;, SFMono-Regular, Menlo, monospace" font-size="17" letter-spacing="5.2" fill="#7A7A7A">let the music never stop</text>
+</svg>

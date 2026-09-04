@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "seed": 31,
+  "sample_rate": 48000,
+  "name": "starter click",
+  "tail_ms": 200,
+  "voices": [
+    {
+      "id": "c",
+      "instrument": { "kind": "hat", "decay_ms": 18.0, "tone": 0.95 },
+      "chain": [{ "type": "highpass", "amount": 6000.0 }]
+    }
+  ],
+  "hits": [
+    { "voice": "c", "at_ms": 0.0, "pitch": 72, "velocity": 0.6 }
+  ],
+  "tags": ["perc", "click", "starter", "microhouse"]
+}

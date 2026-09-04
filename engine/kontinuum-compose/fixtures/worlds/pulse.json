@@ -1,0 +1,63 @@
+{
+  "format_version": 1,
+  "id": "pulse",
+  "name": "Pulse",
+  "description": "Club techno: punching four-floor kick, crisp driving tops with FM-tom body, forward bass, wide open pad air. Roster-v2 curation: FM-percussion perc patch, FM perc pack.",
+  "taste_tags": [
+    "techno"
+  ],
+  "palette_overrides": {
+    "kick": {
+      "voice": "kick",
+      "tune_hz": 50.0,
+      "decay_ms": 280.0,
+      "click": 0.55,
+      "drive": 0.55
+    },
+    "bass": {
+      "voice": "bass",
+      "cutoff_hz": 420.0,
+      "resonance": 0.35,
+      "glide_ms": 30.0
+    },
+    "pad": {
+      "voice": "pad",
+      "release_ms": 900.0,
+      "cutoff_hz": 1700.0
+    }
+  },
+  "mix_target_overrides": {
+    "kick": {
+      "gain": 1.2
+    },
+    "perc": {
+      "gain": 0.8,
+      "pan": 0.25
+    },
+    "bass": {
+      "gain": 1.0
+    },
+    "pad": {
+      "gain": 0.5,
+      "send_reverb": 0.3
+    }
+  },
+  "groove_affinities": {
+    "pushed-hats": 0.8,
+    "straight-machine": 0.7,
+    "tense": 0.5
+  },
+  "sample_packs": [
+    "fm-perc-v1"
+  ],
+  "patch_overrides": {
+    "perc": {
+      "kind": "fmperc",
+      "ratio": 1.0,
+      "index": 3.0,
+      "feedback": 0.3,
+      "decay_ms": 260.0,
+      "preset": "tom"
+    }
+  }
+}

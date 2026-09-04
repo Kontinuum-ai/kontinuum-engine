@@ -1,0 +1,49 @@
+{
+  "format_version": 1,
+  "id": "dusty-microhouse",
+  "name": "Dusty microhouse",
+  "description": "Dusty microhouse, Perlon-school: click-and-hiss detail over a soft round kick, everything a notch too quiet to be sure it is there.",
+  "kind": "genre",
+  "taste_tags": ["microhouse", "micro", "minimal"],
+  "eras": {
+    "default": {
+      "style_card": "Think in crumbs, not bars: tiny percussive events, long near-empty stretches, one element entering per eight bars. The kick is soft and round, the hats are dusty and close. Restraint is the whole style — if it feels too sparse, remove one more thing.",
+      "harmony": {
+        "progressions": [
+          [{"root": 29, "minor": true}, {"root": 37, "minor": false}, {"root": 32, "minor": false}, {"root": 39, "minor": false}]
+        ]
+      },
+      "groove": {
+        "template": "drunk-shuffle",
+        "swing": 0.14,
+        "jitter_ticks": 4.0,
+        "affinities": { "drunk-shuffle": 0.9, "laid-back": 0.7, "tense": 0.3 }
+      },
+      "rack": {
+        "palette_overrides": {
+          "kick": { "voice": "kick", "tune_hz": 52.0, "decay_ms": 320.0, "click": 0.2, "drive": 0.1 },
+          "perc": { "voice": "perc", "decay_ms": 60.0, "tone": 0.55 },
+          "bass": { "voice": "bass", "cutoff_hz": 320.0, "resonance": 0.25, "glide_ms": 40.0 },
+          "pad": { "voice": "pad", "attack_ms": 1800.0, "release_ms": 6000.0, "detune_cents": 8.0, "cutoff_hz": 1800.0 }
+        }
+      },
+      "samples": {
+        "recipe_hashes": [],
+        "queries": ["kick dusty soft round", "hat brushed micro click", "shaker vinyl dust"]
+      },
+      "mix": {
+        "profile": {
+          "kick": { "gain": 1.0, "pan": 0.0, "send_delay": 0.0, "send_reverb": 0.05 },
+          "perc": { "gain": 0.6, "pan": 0.15, "send_delay": 0.2, "send_reverb": 0.15 },
+          "bass": { "gain": 0.8, "pan": 0.0, "send_delay": 0.0, "send_reverb": 0.02 },
+          "pad": { "gain": 0.4, "pan": -0.1, "send_delay": 0.3, "send_reverb": 0.45 }
+        }
+      },
+      "arrangement": {
+        "dev_bars": 16,
+        "breakdown_bars": 8,
+        "energy_arc": [0.25, 0.3, 0.38, 0.45, 0.5, 0.55, 0.62, 0.7]
+      }
+    }
+  }
+}

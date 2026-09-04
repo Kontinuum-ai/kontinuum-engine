@@ -1,0 +1,22 @@
+[package]
+name = "kontinuum-samples"
+version.workspace = true
+edition.workspace = true
+description = "Sample recipes (#53): deterministic sample packs rendered from validated JSON + seed"
+
+[dependencies]
+kontinuum-instruments-core = { path = "../../plugins/kontinuum-instruments-core" }
+kontinuum-plugin-api = { path = "../../plugins/kontinuum-plugin-api" }
+kontinuum-core.workspace = true
+kontinuum-ir.workspace = true
+kontinuum-clock.workspace = true
+kontinuum-schedule.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+hound.workspace = true
+rusqlite = { version = "0.32", features = ["bundled"] }
+
+[dev-dependencies]
+rusqlite = { version = "0.32", features = ["bundled"] }
+hound.workspace = true

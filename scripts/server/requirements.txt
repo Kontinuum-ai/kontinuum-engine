@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+yt-dlp
+librosa   # optional: falls back to heuristic features without it

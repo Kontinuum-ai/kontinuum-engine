@@ -1,0 +1,18 @@
+{
+  "kind": "custom",
+  "patch": {
+    "nodes": [
+      {"id": "noise", "type": "osc", "wave": "noise", "unison": 1, "fine_cents": 0.0, "level": 1.0},
+      {"id": "lp", "type": "filter", "mode": "low_pass", "cutoff_hz": 90.0, "resonance": 0.85, "drive": 0.0},
+      {"id": "vca", "type": "gain", "level": 0.0},
+      {"id": "amp", "type": "env", "attack_ms": 300.0, "decay_ms": 2000.0, "sustain": 0.9, "release_ms": 900.0},
+      {"id": "out", "type": "out", "level": 1.0}
+    ],
+    "edges": [
+      {"from": "noise", "to": "lp", "type": "audio", "amount": 1.0},
+      {"from": "lp", "to": "vca", "type": "audio", "amount": 1.0},
+      {"from": "vca", "to": "out", "type": "audio", "amount": 1.0},
+      {"from": "amp", "to": "vca", "type": "mod", "param": "level", "amount": 1.0}
+    ]
+  }
+}

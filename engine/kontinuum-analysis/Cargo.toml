@@ -1,0 +1,31 @@
+[package]
+name = "kontinuum-analysis"
+version.workspace = true
+edition.workspace = true
+description = "Critic v0: DSP metrics on renders, reference profiles, regression ratchet (issues #25/#26/#52 WS4)"
+
+[dependencies]
+kontinuum-instruments-core = { path = "../../plugins/kontinuum-instruments-core" }
+hound.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+kontinuum-clock.workspace = true
+kontinuum-core.workspace = true
+kontinuum-ir.workspace = true
+kontinuum-corpus.workspace = true
+
+[[bin]]
+name = "kontinuum-critic"
+path = "src/main.rs"
+
+[[bin]]
+name = "kontinuum-fit"
+path = "src/bin/kontinuum-fit.rs"
+
+[[bin]]
+name = "corpus-batch"
+path = "src/bin/corpus-batch.rs"
+
+[dev-dependencies]
+kontinuum-compose.workspace = true

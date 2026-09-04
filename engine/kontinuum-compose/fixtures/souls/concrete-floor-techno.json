@@ -1,0 +1,50 @@
+{
+  "format_version": 1,
+  "id": "concrete-floor-techno",
+  "name": "Concrete-floor techno",
+  "description": "Warehouse techno: pounding four-to-the-floor, dark and physical, a rumble you feel in the floor before you hear it.",
+  "kind": "genre",
+  "taste_tags": ["techno"],
+  "eras": {
+    "default": {
+      "style_card": "Dark, physical, relentless. The kick punches through the floor, perc loops hypnotize rather than decorate, and energy builds in long Patient ramps. Distortion is an instrument; reverb is a place, used sparingly.",
+      "harmony": {
+        "progressions": [
+          [{"root": 29, "minor": true}, {"root": 32, "minor": false}, {"root": 34, "minor": true}, {"root": 37, "minor": false}],
+          [{"root": 29, "minor": true}, {"root": 39, "minor": false}, {"root": 34, "minor": true}, {"root": 39, "minor": false}]
+        ]
+      },
+      "groove": {
+        "template": "straight-machine",
+        "swing": 0.0,
+        "jitter_ticks": 1.0,
+        "affinities": { "straight-machine": 0.95, "pushed-hats": 0.7, "tense": 0.6 }
+      },
+      "rack": {
+        "palette_overrides": {
+          "kick": { "voice": "kick", "tune_hz": 45.0, "decay_ms": 400.0, "click": 0.5, "drive": 0.45 },
+          "perc": { "voice": "perc", "decay_ms": 80.0, "tone": 0.45, "open": false },
+          "bass": { "voice": "bass", "cutoff_hz": 420.0, "resonance": 0.4, "glide_ms": 15.0 },
+          "pad": { "voice": "pad", "attack_ms": 900.0, "release_ms": 3000.0, "detune_cents": 14.0, "cutoff_hz": 900.0 }
+        }
+      },
+      "samples": {
+        "recipe_hashes": [],
+        "queries": ["kick punch distorted warehouse", "clap steel reverb", "hat industrial open"]
+      },
+      "mix": {
+        "profile": {
+          "kick": { "gain": 1.15, "pan": 0.0, "send_delay": 0.0, "send_reverb": 0.02 },
+          "perc": { "gain": 0.7, "pan": 0.25, "send_delay": 0.1, "send_reverb": 0.2 },
+          "bass": { "gain": 0.9, "pan": 0.0, "send_delay": 0.0, "send_reverb": 0.03 },
+          "pad": { "gain": 0.45, "pan": -0.2, "send_delay": 0.35, "send_reverb": 0.5 }
+        }
+      },
+      "arrangement": {
+        "dev_bars": 32,
+        "breakdown_bars": 12,
+        "energy_arc": [0.35, 0.45, 0.55, 0.65, 0.72, 0.8, 0.85, 0.9]
+      }
+    }
+  }
+}

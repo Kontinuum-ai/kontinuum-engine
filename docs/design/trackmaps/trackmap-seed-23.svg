@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3744" height="86" viewBox="0 0 3744 86">
+<rect width="3744" height="86" fill="#101014"/>
+<text x="4" y="14" fill="#e8e8ec" font-family="monospace" font-size="12">bars 312</text>
+<rect x="0" y="14" width="96" height="64" fill="#6a425b" stroke="#26262c"/>
+<text x="3" y="28" fill="#f2f2f5" font-family="monospace" font-size="11">intro · 8b</text>
+<polyline points="6.0,63.9 18.0,62.9 30.0,62.2 42.0,61.0 54.0,58.5 66.0,59.6 78.0,58.8 90.0,55.8" fill="none" stroke="#ffd166" stroke-width="1.5"/>
+<text x="92" y="70" fill="#8ecae6" font-family="monospace" font-size="9">fill</text>
+<rect x="96" y="14" width="288" height="64" fill="#845062" stroke="#26262c"/>
+<text x="99" y="28" fill="#f2f2f5" font-family="monospace" font-size="11">dev_0 · 24b</text>
+<polyline points="102.0,56.3 114.0,53.7 126.0,53.3 138.0,54.8 150.0,55.0 162.0,52.8 174.0,52.2 186.0,53.3 198.0,51.9 210.0,51.4 222.0,52.6 234.0,52.6 246.0,52.2 258.0,50.9 270.0,52.7 282.0,50.0 294.0,49.5 306.0,51.7 318.0,49.3 330.0,49.6 342.0,49.4 354.0,49.6 366.0,48.3 378.0,49.6" fill="none" stroke="#ffd166" stroke-width="1.5"/>
+<text x="380" y="70" fill="#8ecae6" font-family="monospace" font-size="9">fill</text>
+<rect x="384" y="14" width="192" height="64" fill="#a9656b" stroke="#26262c"/>
+<text x="387" y="28" fill="#f2f2f5" font-family="monospace" font-size="11">dev_1 · 16b</text>
+<polyline points="390.0,45.1 402.0,45.0 414.0,42.9 426.0,42.6 438.0,43.5 450.0,42.7 462.0,43.7 474.0,42.3 486.0,41.8 498.0,40.3 510.0,42.2 522.0,41.8 534.0,41.2 546.0,39.3 558.0,38.5 570.0,39.2" fill="none" stroke="#ffd166" stroke-width="1.5"/>
+<text x="572" y="70" fill="#8ecae6" font-family="monospace" font-size="9">sweep</text>
+<rect x="576" y="14" width="288" height="64" fill="#c87673" stroke="#26262c"/>
+<text x="579" y="28" fill="#f2f2f5" font-family="monospace" font-size="11">dev_2 · 24b</text>
+<polyline points="582.0,36.0 594.0,35.9 606.0,33.8 618.0,33.5 630.0,35.0 642.0,34.1 654.0,35.3 666.0,33.1 678.0,33.3 690.0,32.7 702.0,34.5 714.0,33.4 726.0,32.4 738.0,33.9 750.0,32.6 762.0,33.3 774.0,34.5 786.0,33.2 798.0,33.0 810.0,31.4 822.0,33.8 834.0,33.2 846.0,32.9 858.0,31.1" fill="none" stroke="#ffd166" stroke-width="1.5"/>
+<text x="860" y="70" fill="#8ecae6" font-family="monospace" font-size="9">fill</text>
+<rect x="864" y="14" width="288" height="64" fill="#b16a6d" stroke="#26262c"/>
+<text x="867" y="28" fill="#f2f2f5" font-family="monospace" font-size="11">dev_3 · 24b</text>
+<polyline points="870.0,42.7 882.0,39.8 894.0,39.8 906.0,40.4 918.0,40.9 930.0,41.2 942.0,39.6 954.0,38.6 966.0,40.4 978.0,38.2 990.0,38.5 1002.0,37.7 1014.0,39.3 1026.0,39.6 1038.0,37.2 1050.0,38.8 1062.0,37.4 1074.0,38.6 1086.0,37.4 1098.0,36.9 1110.0,37.5 1122.0,35.9 1134.0,36.5 1146.0,36.9" fill="none" stroke="#ffd166" stroke-width="1.5"/>
+<text x="1148" y="70" fill="#8ecae6" font-family="monospace" font-size="9">sweep</text>
+<rect x="1152" y="14" width="96" height="64" fill="#a16069" stroke="#26262c"/>
+<text x="1155" y="28" fill="#f2f2f5" font-family="monospace" font-size="11">tension_0 · 8b</text>
+<polyline points="1158.0,47.6 1170.0,47.8 1182.0,45.8 1194.0,43.7 1206.0,42.8 1218.0,43.2 1230.0,40.7 1242.0,38.2" fill="none" stroke="#ffd166" stroke-width="1.5"/>
+<text x="1244" y="70" fill="#8ecae6" font-family="monospace" font-size="9">throw</text>
+<rect x="1248" y="14" width="96" height="64" fill="#583857" stroke="#26262c"/>
+<text x="1251" y="28" fill="#f2f2f5" font-family="monospace" font-size="11">break_0 · 8b</text>
+<polyline points="1254.0,69.3 1266.0,69.1 1278.0,66.7 1290.0,67.6 1302.0,66.4 1314.0,65.5 1326.0,63.7 1338.0,63.3" fill="none" stroke="#ffd166" stroke-width="1.5"/>
+<text x="1340" y="70" fill="#8ecae6" font-family="monospace" font-size="9">drop</text>
+<rect x="1344" y="14" width="240" height="64" fill="#b86e6f" stroke="#26262c"/>
+<text x="1347" y="28" fill="#f2f2f5" font-family="monospace" font-size="11">release_0 · 20b</text>
+<polyline points="1350.0,40.5 1362.0,40.0 1374.0,38.8 1386.0,40.7 1398.0,39.7 1410.0,40.2 1422.0,39.4 1434.0,37.2 1446.0,38.6 1458.0,36.6 1470.0,38.5 1482.0,38.5 1494.0,36.0 1506.0,37.6 1518.0,34.9 1530.0,35.8 1542.0,36.8 1554.0,34.3 1566.0,34.5 1578.0,36.0" fill="none" stroke="#ffd166" stroke-width="1.5"/>
+<text x="1580" y="70" fill="#8ecae6" font-family="monospace" font-size="9">mute</text>
+<rect x="1584" y="14" width="192" height="64" fill="#875262" stroke="#26262c"/>
+<text x="1587" y="28" fill="#f2f2f5" font-family="monospace" font-size="11">variation_0 · 16b</text>
+<polyline points="1590.0,55.4 1602.0,53.3 1614.0,54.1 1626.0,52.7 1638.0,53.8 1650.0,51.6 1662.0,52.1 1674.0,49.9 1686.0,51.5 1698.0,49.4 1710.0,48.9 1722.0,51.0 1734.0,48.3 1746.0,49.0 1758.0,49.6 1770.0,48.1" fill="none" stroke="#ffd166" stroke-width="1.5"/>
+<text x="1772" y="70" fill="#8ecae6" font-family="monospace" font-size="9">mute</text>
+<rect x="1776" y="14" width="288" height="64" fill="#925865" stroke="#26262c"/>
+<text x="1779" y="28" fill="#f2f2f5" font-family="monospace" font-size="11">dev_4 · 24b</text>
+<polyline points="1782.0,52.2 1794.0,51.9 1806.0,53.4 1818.0,53.9 1830.0,51.2 1842.0,52.7 1854.0,52.4 1866.0,51.8 1878.0,52.2 1890.0,50.5 1902.0,49.4 1914.0,50.7 1926.0,51.2 1938.0,49.3 1950.0,50.6 1962.0,50.1 1974.0,48.6 1986.0,49.2 1998.0,49.0 2010.0,47.6 2022.0,49.2 2034.0,49.0 2046.0,48.8 2058.0,47.5" fill="none" stroke="#ffd166" stroke-width="1.5"/>
+<text x="2060" y="70" fill="#8ecae6" font-family="monospace" font-size="9">fill</text>
+<rect x="2064" y="14" width="288" height="64" fill="#a6646a" stroke="#26262c"/>
+<text x="2067" y="28" fill="#f2f2f5" font-family="monospace" font-size="11">dev_5 · 24b</text>
+<polyline points="2070.0,46.0 2082.0,43.7 2094.0,43.5 2106.0,45.3 2118.0,43.0 2130.0,42.8 2142.0,43.4 2154.0,43.9 2166.0,43.8 2178.0,43.0 2190.0,43.6 2202.0,40.9 2214.0,43.0 2226.0,40.8 2238.0,42.5 2250.0,40.6 2262.0,41.8 2274.0,41.8 2286.0,40.0 2298.0,41.0 2310.0,40.6 2322.0,40.8 2334.0,38.1 2346.0,39.9" fill="none" stroke="#ffd166" stroke-width="1.5"/>
+<text x="2348" y="70" fill="#8ecae6" font-family="monospace" font-size="9">sweep</text>
+<rect x="2352" y="14" width="288" height="64" fill="#c37471" stroke="#26262c"/>
+<text x="2355" y="28" fill="#f2f2f5" font-family="monospace" font-size="11">dev_6 · 24b</text>
+<polyline points="2358.0,37.4 2370.0,36.7 2382.0,36.3 2394.0,37.3 2406.0,35.2 2418.0,34.2 2430.0,35.6 2442.0,35.3 2454.0,33.6 2466.0,36.1 2478.0,35.6 2490.0,35.0 2502.0,34.7 2514.0,34.6 2526.0,35.2 2538.0,33.8 2550.0,34.7 2562.0,34.4 2574.0,33.8 2586.0,32.4 2598.0,33.5 2610.0,31.9 2622.0,33.1 2634.0,33.7" fill="none" stroke="#ffd166" stroke-width="1.5"/>
+<text x="2636" y="70" fill="#8ecae6" font-family="monospace" font-size="9">sweep</text>
+<rect x="2640" y="14" width="48" height="64" fill="#583857" stroke="#26262c"/>
+<text x="2643" y="28" fill="#f2f2f5" font-family="monospace" font-size="11">break_1 · 4b</text>
+<polyline points="2646.0,69.4 2658.0,66.9 2670.0,63.9 2682.0,64.1" fill="none" stroke="#ffd166" stroke-width="1.5"/>
+<text x="2684" y="70" fill="#8ecae6" font-family="monospace" font-size="9">fill</text>
+<rect x="2688" y="14" width="816" height="64" fill="#cb7873" stroke="#26262c"/>
+<text x="2691" y="28" fill="#f2f2f5" font-family="monospace" font-size="11">dev_7 · 68b</text>
+<polyline points="2694.0,34.8 2706.0,34.3 2718.0,34.1 2730.0,33.5 2742.0,33.5 2754.0,34.6 2766.0,35.3 2778.0,34.5 2790.0,33.4 2802.0,34.3 2814.0,34.4 2826.0,33.8 2838.0,33.7 2850.0,33.4 2862.0,34.1 2874.0,34.1 2886.0,33.4 2898.0,33.7 2910.0,33.1 2922.0,34.3 2934.0,33.8 2946.0,33.0 2958.0,33.3 2970.0,32.7 2982.0,33.3 2994.0,33.9 3006.0,34.7 3018.0,32.6 3030.0,33.1 3042.0,32.6 3054.0,32.5 3066.0,33.4 3078.0,33.3 3090.0,32.2 3102.0,32.2 3114.0,34.3 3126.0,33.3 3138.0,34.1 3150.0,33.2 3162.0,33.0 3174.0,32.5 3186.0,34.5 3198.0,34.2 3210.0,32.0 3222.0,32.5 3234.0,32.0 3246.0,33.6 3258.0,32.7 3270.0,34.1 3282.0,32.6 3294.0,34.2 3306.0,33.0 3318.0,32.4 3330.0,32.0 3342.0,31.8 3354.0,33.1 3366.0,33.9 3378.0,31.8 3390.0,33.8 3402.0,32.1 3414.0,32.3 3426.0,33.4 3438.0,31.8 3450.0,31.7 3462.0,31.1 3474.0,33.9 3486.0,33.8 3498.0,32.9" fill="none" stroke="#ffd166" stroke-width="1.5"/>
+<rect x="3504" y="14" width="96" height="64" fill="#b46b6e" stroke="#26262c"/>
+<text x="3507" y="28" fill="#f2f2f5" font-family="monospace" font-size="11">reintro · 8b</text>
+<polyline points="3510.0,41.8 3522.0,38.8 3534.0,37.6 3546.0,37.0 3558.0,36.8 3570.0,37.7 3582.0,36.3 3594.0,35.8" fill="none" stroke="#ffd166" stroke-width="1.5"/>
+<text x="3596" y="70" fill="#8ecae6" font-family="monospace" font-size="9">fill</text>
+<rect x="3600" y="14" width="144" height="64" fill="#995c67" stroke="#26262c"/>
+<text x="3603" y="28" fill="#f2f2f5" font-family="monospace" font-size="11">outro · 12b</text>
+<polyline points="3606.0,49.9 3618.0,50.7 3630.0,53.7 3642.0,54.6 3654.0,54.8 3666.0,57.8 3678.0,57.7 3690.0,59.1 3702.0,62.5 3714.0,62.0 3726.0,65.1 3738.0,65.8" fill="none" stroke="#ffd166" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,24 @@
+{
+  "name": "house target profile (re-specified for corrected metrics)",
+  "note": "Warmer and busier than techno: more mid content (chords sit there), offbeat hats keep transient density up, and the sub ceiling is tighter because house lives on the bass rather than under it.",
+  "targets": {
+    "short_term_dyn_db": { "min": 3.0, "max": 8.5 },
+    "crest_db": { "min": 7.0, "max": 12.0 },
+    "hit_cv": { "min": 0.15, "max": 0.5 },
+    "transients_per_sec": { "min": 4.0, "max": 12.0 },
+    "centroid_hz": { "min": 1600.0, "max": 6000.0 },
+    "band_sub": { "max": 0.28 },
+    "band_mid": { "min": 0.16, "max": 0.38 },
+    "band_himid": { "min": 0.05 }
+  },
+  "tolerances": {
+    "short_term_dyn_db": 2.0,
+    "crest_db": 1.0,
+    "hit_cv": 0.05,
+    "transients_per_sec": 1.0,
+    "centroid_hz": 400.0,
+    "band_sub": 0.02,
+    "band_mid": 0.02,
+    "band_himid": 0.02
+  }
+}

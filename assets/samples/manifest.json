@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "pack": "kontinuum-starter-v1",
+  "license": "CC0-1.0 (self-generated in-repo from assets/samples/recipes)",
+  "source": "rendered by kontinuum-offline genpack via kontinuum_samples::render_recipe",
+  "samples": [
+    {
+      "id": "click",
+      "class": "perc",
+      "sample_rate": 48000,
+      "frames": 9601,
+      "features": {
+        "duration_s": 0.20002083,
+        "spectral_centroid_hz": 18408.668,
+        "flatness": 0.0000055528517,
+        "pitch_hz": 0.0,
+        "transient_sharpness": 0.0,
+        "lufs": -34.954895
+      },
+      "pcm_hash": "6619319e657f742b"
+    },
+    {
+      "id": "hat-closed",
+      "class": "hat",
+      "sample_rate": 48000,
+      "frames": 14402,
+      "features": {
+        "duration_s": 0.30004168,
+        "spectral_centroid_hz": 19195.812,
+        "flatness": 0.0000017722078,
+        "pitch_hz": 0.0,
+        "transient_sharpness": 0.0009924164,
+        "lufs": -29.088684
+      },
+      "pcm_hash": "f2aef45e4aed5299",
+      "choke_group": 1
+    },
+    {
+      "id": "hat-open",
+      "class": "hat",
+      "sample_rate": 48000,
+      "frames": 33601,
+      "features": {
+        "duration_s": 0.70002085,
+        "spectral_centroid_hz": 19923.516,
+        "flatness": 0.0000022516763,
+        "pitch_hz": 0.0,
+        "transient_sharpness": 0.14235024,
+        "lufs": -25.000645
+      },
+      "pcm_hash": "c46b3254b3f6eda6",
+      "choke_group": 1
+    },
+    {
+      "id": "kick",
+      "class": "kick",
+      "sample_rate": 48000,
+      "frames": 28802,
+      "features": {
+        "duration_s": 0.6000417,
+        "spectral_centroid_hz": 25.757074,
+        "flatness": 0.0036850325,
+        "pitch_hz": 0.0,
+        "transient_sharpness": 0.33772147,
+        "lufs": -25.071062
+      },
+      "pcm_hash": "508e7ee8393f7dde"
+    },
+    {
+      "id": "shaker",
+      "class": "perc",
+      "sample_rate": 48000,
+      "frames": 14402,
+      "features": {
+        "duration_s": 0.30004168,
+        "spectral_centroid_hz": 3769.6785,
+        "flatness": 0.67710215,
+        "pitch_hz": 0.0,
+        "transient_sharpness": 0.56283134,
+        "lufs": -13.733654
+      },
+      "pcm_hash": "ce629813244cc6c5"
+    },
+    {
+      "id": "texture",
+      "class": "texture",
+      "sample_rate": 48000,
+      "frames": 52801,
+      "features": {
+        "duration_s": 1.1000209,
+        "spectral_centroid_hz": 231.96631,
+        "flatness": 0.0007855149,
+        "pitch_hz": 0.0,
+        "transient_sharpness": 0.5430198,
+        "lufs": -11.959472
+      },
+      "pcm_hash": "dc578a5b25ba02f3"
+    }
+  ]
+}

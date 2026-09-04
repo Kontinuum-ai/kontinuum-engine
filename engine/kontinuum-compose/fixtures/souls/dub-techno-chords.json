@@ -1,0 +1,50 @@
+{
+  "format_version": 1,
+  "id": "dub-techno-chords",
+  "name": "Dub techno chill",
+  "description": "Berlin-school dub techno: chords drowned in delay, sub-bass like fog, everything one room away from the microphone.",
+  "kind": "genre",
+  "taste_tags": ["dub", "techno", "dub techno"],
+  "eras": {
+    "default": {
+      "style_card": "Chords drowned in delay, sub-bass like fog. Everything sits one room away from the microphone: washy reverb, long delay tails, chords that blur into texture. The pulse is a heartbeat, never a knock.",
+      "harmony": {
+        "progressions": [
+          [{"root": 29, "minor": true}, {"root": 37, "minor": false}, {"root": 29, "minor": true}, {"root": 39, "minor": false}],
+          [{"root": 29, "minor": true}, {"root": 34, "minor": true}, {"root": 39, "minor": false}, {"root": 34, "minor": true}]
+        ]
+      },
+      "groove": {
+        "template": "drunk-shuffle",
+        "swing": 0.12,
+        "jitter_ticks": 4.0,
+        "affinities": { "drunk-shuffle": 0.85, "laid-back": 0.8, "straight-machine": 0.4 }
+      },
+      "rack": {
+        "palette_overrides": {
+          "kick": { "voice": "kick", "tune_hz": 43.0, "decay_ms": 500.0, "click": 0.15, "drive": 0.2 },
+          "perc": { "voice": "perc", "decay_ms": 200.0, "tone": 0.4 },
+          "bass": { "voice": "bass", "cutoff_hz": 200.0, "resonance": 0.3, "glide_ms": 120.0 },
+          "pad": { "voice": "pad", "attack_ms": 3000.0, "release_ms": 9000.0, "detune_cents": 16.0, "cutoff_hz": 1600.0 }
+        }
+      },
+      "samples": {
+        "recipe_hashes": [],
+        "queries": ["chord muffled dub wash", "kick deep fog soft", "noise filtered surf"]
+      },
+      "mix": {
+        "profile": {
+          "kick": { "gain": 0.9, "pan": 0.0, "send_delay": 0.1, "send_reverb": 0.25 },
+          "perc": { "gain": 0.45, "pan": -0.25, "send_delay": 0.5, "send_reverb": 0.45 },
+          "bass": { "gain": 0.85, "pan": 0.0, "send_delay": 0.05, "send_reverb": 0.08 },
+          "pad": { "gain": 0.55, "pan": 0.0, "send_delay": 0.55, "send_reverb": 0.7 }
+        }
+      },
+      "arrangement": {
+        "dev_bars": 24,
+        "breakdown_bars": 12,
+        "energy_arc": [0.3, 0.34, 0.38, 0.42, 0.45, 0.48, 0.5, 0.55]
+      }
+    }
+  }
+}

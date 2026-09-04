@@ -1,0 +1,8 @@
+[package]
+name = "kontinuum-schedule"
+version.workspace = true
+edition.workspace = true
+description = "Compiled event blocks, lookahead queue, sample-accurate dispatch"
+
+[dependencies]
+rtrb.workspace = true

@@ -1,0 +1,26 @@
+{
+  "name": "microhouse premium export profile (issue #117)",
+  "note": "Gates the premium/export chain (#28) — the path #111 shipped through while the ratchet only rendered the real-time mix. Bounds are anchored to the mastering targets (MasteringTargets::hypothesis(): \u22128.5 LUFS \u00b1 0.5 integrated, \u22121.0 dBTP ceiling) and genre knowledge, not to any render: the true-peak and sample-peak maxima are the ceiling guarantee (#112), the rms minimum is the loudness target (#111 \u2014 the double-mastered export landed ~9 LU under), and the crest window keeps the gate honest in both directions (the unmastered mix sits at ~22 dB crest, an over-limited one collapses below 6). The healthy post-#115 export sits inside every bound, so the baseline distance is 0.0 and the ratchet exists to absorb cross-host float drift (libm/LLVM decorrelates the acid resonator; see golden.rs provenance), not to license misses \u2014 re-anchor only with a documented, deliberate sound change, as with the real-time baseline.",
+  "targets": {
+    "true_peak_dbfs": { "max": -0.9 },
+    "peak_dbfs": { "max": -0.9 },
+    "rms_dbfs": { "min": -11.5 },
+    "crest_db": { "min": 6.0, "max": 13.0 },
+    "short_term_dyn_db": { "min": 2.0, "max": 8.0 },
+    "centroid_hz": { "min": 2500.0, "max": 9000.0 },
+    "band_sub": { "max": 0.78 },
+    "band_mid": { "min": 0.04 },
+    "band_himid": { "min": 0.004 }
+  },
+  "tolerances": {
+    "true_peak_dbfs": 0.1,
+    "peak_dbfs": 0.1,
+    "rms_dbfs": 1.0,
+    "crest_db": 1.0,
+    "short_term_dyn_db": 1.0,
+    "centroid_hz": 800.0,
+    "band_sub": 0.03,
+    "band_mid": 0.02,
+    "band_himid": 0.01
+  }
+}

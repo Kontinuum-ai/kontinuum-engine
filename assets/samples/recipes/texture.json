@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "seed": 41,
+  "sample_rate": 48000,
+  "name": "starter texture bed",
+  "tail_ms": 400,
+  "voices": [
+    {
+      "id": "grain-src",
+      "instrument": { "kind": "pad", "attack_ms": 5.0, "release_ms": 300.0, "detune_cents": 12.0, "cutoff_hz": 1800.0 }
+    }
+  ],
+  "hits": [
+    { "voice": "grain-src", "at_ms": 0.0, "pitch": 57, "velocity": 0.5 },
+    { "voice": "grain-src", "at_ms": 350.0, "pitch": 60, "velocity": 0.45 },
+    { "voice": "grain-src", "at_ms": 700.0, "pitch": 64, "velocity": 0.4 }
+  ],
+  "texture": {
+    "source_voice": "grain-src",
+    "grain_ms": 90.0,
+    "density": 30.0,
+    "spray_ms": 120.0,
+    "pitch_jitter_cents": 40.0,
+    "level": 0.35
+  },
+  "tags": ["texture", "starter", "granular"]
+}

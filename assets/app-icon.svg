@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <rect width="1024" height="1024" rx="216" fill="#0B0B0D"></rect>
+  <path d="M 512.00 404.00 C 437.23 297.19, 362.92 200.00, 310.05 200.00 C 257.18 200.00, 226.40 297.19, 226.40 404.00 C 226.40 510.81, 257.18 608.00, 310.05 608.00 C 362.92 608.00, 437.23 510.81, 512.00 404.00 C 586.77 297.19, 661.08 200.00, 713.95 200.00 C 766.82 200.00, 797.60 297.19, 797.60 404.00 C 797.60 510.81, 766.82 608.00, 713.95 608.00 C 661.08 608.00, 586.77 510.81, 512.00 404.00 Z" fill="none" stroke="#FF3B30" stroke-width="4.08" opacity=".16"></path>
+  <rect x="503.19" y="395.19" width="17.63" height="17.63" rx="5.77" fill="#ff6d1d"></rect>
+  <rect x="465.43" y="341.47" width="16.34" height="16.34" rx="6.55" fill="#ff5925"></rect>
+  <rect x="427.95" y="290.67" width="11.44" height="11.44" rx="5.28" fill="#ff4a2a"></rect>
+  <rect x="375.68" y="232.10" width="28.41" height="28.41" rx="13.50" fill="#ff412e"></rect>
+  <rect x="332.10" y="201.52" width="9.85" height="9.85" rx="4.88" fill="#ff3d2f"></rect>
+  <rect x="264.15" y="203.46" width="22.48" height="22.48" rx="11.20" fill="#ff3b30"></rect>
+  <rect x="229.30" y="258.06" width="28.88" height="28.88" rx="14.41" fill="#ff3b30"></rect>
+  <rect x="219.05" y="326.33" width="22.54" height="22.54" rx="11.25" fill="#ff3b30"></rect>
+  <rect x="219.17" y="396.77" width="14.46" height="14.46" rx="7.22" fill="#ff3b30"></rect>
+  <rect x="223.08" y="463.17" width="14.46" height="14.46" rx="7.22" fill="#ff3b30"></rect>
+  <rect x="232.47" y="524.24" width="22.54" height="22.54" rx="11.25" fill="#ff3b30"></rect>
+  <rect x="268.15" y="586.06" width="14.48" height="14.48" rx="7.22" fill="#ff3b30"></rect>
+  <rect x="332.00" y="596.54" width="10.04" height="10.04" rx="4.98" fill="#ff3d2f"></rect>
+  <rect x="375.68" y="547.49" width="28.41" height="28.41" rx="13.50" fill="#ff412e"></rect>
+  <rect x="425.98" y="503.92" width="15.39" height="15.39" rx="6.96" fill="#ff4a2a"></rect>
+  <rect x="465.43" y="450.19" width="16.34" height="16.34" rx="6.55" fill="#ff5925"></rect>
+  <rect x="503.19" y="395.19" width="17.63" height="17.63" rx="5.77" fill="#ff6d1d"></rect>
+  <rect x="540.94" y="340.18" width="18.92" height="18.92" rx="4.72" fill="#ff8115"></rect>
+  <rect x="579.80" y="285.86" width="21.06" height="21.06" rx="3.87" fill="#ff9010"></rect>
+  <rect x="623.66" y="235.85" width="20.91" height="20.91" rx="3.19" fill="#ff990c"></rect>
+  <rect x="676.50" y="195.96" width="20.97" height="20.97" rx="2.87" fill="#ff9d0b"></rect>
+  <rect x="743.21" y="209.29" width="10.82" height="10.82" rx="2.73" fill="#ff9f0a"></rect>
+  <rect x="774.85" y="267.09" width="10.82" height="10.82" rx="2.73" fill="#ff9f0a"></rect>
+  <rect x="788.26" y="332.17" width="10.85" height="10.85" rx="2.72" fill="#ff9f0a"></rect>
+  <rect x="787.21" y="393.61" width="20.79" height="20.79" rx="2.73" fill="#ff9f0a"></rect>
+  <rect x="783.27" y="459.99" width="20.82" height="20.82" rx="2.73" fill="#ff9f0a"></rect>
+  <rect x="774.83" y="530.08" width="10.85" height="10.85" rx="2.73" fill="#ff9f0a"></rect>
+  <rect x="738.19" y="582.87" width="20.85" height="20.85" rx="2.76" fill="#ff9f0a"></rect>
+  <rect x="676.68" y="591.26" width="20.59" height="20.59" rx="2.87" fill="#ff9d0b"></rect>
+  <rect x="623.66" y="551.24" width="20.91" height="20.91" rx="3.19" fill="#ff990c"></rect>
+  <rect x="584.65" y="505.93" width="11.36" height="11.36" rx="3.16" fill="#ff9010"></rect>
+  <rect x="538.80" y="446.76" width="23.21" height="23.21" rx="5.36" fill="#ff8115"></rect>
+  <text x="512" y="806" text-anchor="middle" font-family="ui-monospace, &#34;SF Mono&#34;, SFMono-Regular, Menlo, monospace" font-size="104" letter-spacing="19" fill="#D9D9D9">KONTINUUM</text>
+</svg>

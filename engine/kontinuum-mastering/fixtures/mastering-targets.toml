@@ -1,0 +1,47 @@
+# mastering-targets.toml — the versioned mastering targets (#28).
+#
+# This file is the shipped source of the mastering targets: the code
+# (`kontinuum-mastering::targets`) loads and validates it, and a test pins
+# file ⇄ code agreement so neither side can drift silently.
+#
+# PROVENANCE — every numeric entry below is a HYPOTHESIS, not a
+# measurement. The values come from the minimal-techno brief's picture of
+# streaming-era club masters (short-term −8…−6 LUFS in peaks, integrated
+# −9…−8, −1.0 dBTP ceiling). The reference corpus (#23) will measure 20
+# commercial references per subgenre; when that lands, the measured
+# profile must bump `schema_version` and rename the profile
+# (`*-measured-*`), so a guess can never masquerade as data. The profile
+# `name` carries provenance by convention ("hypothesis" vs "measured").
+#
+# LUFS-war stance: we master to genre-competitive levels (this hypothesis
+# deliberately sits at the quieter edge of the club window); a "dynamic"
+# preference toggle is a later, separate decision (#28).
+
+schema_version = 1
+name = "minimal-techno-hypothesis"
+
+# Program loudness (LUFS, BS.1770 integrated). Hypothesis: −9…−8 window.
+integrated_lufs = -8.5
+# Short-term (3 s) loudness expected in peak sections. Hypothesis: −8…−6.
+short_term_lufs = -7.0
+# Loudness range (LU, EBU R128 10th–95th percentile). Hypothesis: club
+# masters sit tight, around 4 LU.
+lra_lu = 4.0
+# True-peak ceiling the limiter enforces (dBTP). Policy, not hypothesis:
+# −1.0 per #28.
+ceiling_dbtp = -1.0
+# Pivot frequency of the corrective tilt EQ (Hz). Hypothesis: a broadband
+# tilt around the kick-body/vocal region.
+tilt_hz = 700.0
+# Corrective tilt toward the subgenre spectral target, centi-dB (×0.01 dB).
+# 0 until #23 measures a spectral target — the chain never guesses a
+# spectral move.
+tilt_cdb = 0.0
+
+# Allowed deviation when evaluating a master against the targets.
+[tolerances]
+integrated_lufs = 0.5
+short_term_lufs = 1.0
+lra_lu = 1.5
+ceiling_dbtp = 0.2
+tilt_cdb = 30.0

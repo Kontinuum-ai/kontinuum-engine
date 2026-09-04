@@ -1,0 +1,50 @@
+{
+  "format_version": 1,
+  "id": "pre-dawn-ambient",
+  "name": "Pre-dawn ambient",
+  "description": "Slow rooms before sunrise: pads that take a minute to arrive, almost no percussion, energy that only ever falls or floats.",
+  "kind": "genre",
+  "taste_tags": ["ambient"],
+  "eras": {
+    "default": {
+      "style_card": "Almost nothing happens, slowly. Pads take a minute to arrive; percussion, when it exists at all, is a texture not a beat. Every energy change is a descent or a float — nothing ever pushes.",
+      "harmony": {
+        "progressions": [
+          [{"root": 29, "minor": true}, {"root": 37, "minor": false}],
+          [{"root": 29, "minor": true}, {"root": 34, "minor": true}, {"root": 37, "minor": false}, {"root": 32, "minor": false}]
+        ]
+      },
+      "groove": {
+        "template": "laid-back",
+        "swing": 0.08,
+        "jitter_ticks": 6.0,
+        "affinities": { "laid-back": 0.9, "drunk-shuffle": 0.5 }
+      },
+      "rack": {
+        "palette_overrides": {
+          "kick": { "voice": "kick", "tune_hz": 44.0, "decay_ms": 700.0, "click": 0.05, "drive": 0.0 },
+          "perc": { "voice": "perc", "decay_ms": 400.0, "tone": 0.3 },
+          "bass": { "voice": "bass", "cutoff_hz": 180.0, "resonance": 0.1, "glide_ms": 200.0 },
+          "pad": { "voice": "pad", "attack_ms": 6000.0, "release_ms": 12000.0, "detune_cents": 18.0, "cutoff_hz": 1400.0 }
+        }
+      },
+      "samples": {
+        "recipe_hashes": [],
+        "queries": ["pad grain long fade", "texture air hiss", "kick sub muffled distant"]
+      },
+      "mix": {
+        "profile": {
+          "kick": { "gain": 0.7, "pan": 0.0, "send_delay": 0.1, "send_reverb": 0.4 },
+          "perc": { "gain": 0.35, "pan": -0.3, "send_delay": 0.4, "send_reverb": 0.6 },
+          "bass": { "gain": 0.7, "pan": 0.0, "send_delay": 0.0, "send_reverb": 0.1 },
+          "pad": { "gain": 0.6, "pan": 0.0, "send_delay": 0.45, "send_reverb": 0.8 }
+        }
+      },
+      "arrangement": {
+        "dev_bars": 32,
+        "breakdown_bars": 16,
+        "energy_arc": [0.4, 0.36, 0.33, 0.3, 0.28, 0.26, 0.24, 0.22]
+      }
+    }
+  }
+}

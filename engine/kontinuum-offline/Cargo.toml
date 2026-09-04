@@ -1,0 +1,22 @@
+[package]
+name = "kontinuum-offline"
+version.workspace = true
+edition.workspace = true
+description = "Offline renderer: IR → WAV for tests, regression, premium render (issue #10/#11)"
+
+[dependencies]
+kontinuum-instruments-core = { path = "../../plugins/kontinuum-instruments-core" }
+kontinuum-plugin-api = { path = "../../plugins/kontinuum-plugin-api" }
+kontinuum-samples = { path = "../kontinuum-samples" }
+hound.workspace = true
+kontinuum-clock.workspace = true
+kontinuum-schedule.workspace = true
+kontinuum-core.workspace = true
+kontinuum-ir.workspace = true
+kontinuum-mastering.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+
+[dev-dependencies]
+kontinuum-compose.workspace = true
+kontinuum-analysis = { path = "../kontinuum-analysis" }

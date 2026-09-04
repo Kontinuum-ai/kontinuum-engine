@@ -1,0 +1,50 @@
+{
+  "format_version": 1,
+  "id": "classic-house-groove",
+  "name": "Classic house groove",
+  "description": "Classic four-to-the-floor house: warm swing, chords that smile, basslines that dance around the kick instead of under it.",
+  "kind": "genre",
+  "taste_tags": ["house"],
+  "eras": {
+    "default": {
+      "style_card": "Warm and human: swing everything slightly, let chords ring bright and short, and give the bass a melody of its own that dances around the kick. Joy is allowed — but keep the kick four-on-the-floor honest.",
+      "harmony": {
+        "progressions": [
+          [{"root": 29, "minor": true}, {"root": 37, "minor": false}, {"root": 39, "minor": false}, {"root": 32, "minor": false}],
+          [{"root": 34, "minor": true}, {"root": 37, "minor": false}, {"root": 29, "minor": true}, {"root": 39, "minor": false}]
+        ]
+      },
+      "groove": {
+        "template": "mpc-ish",
+        "swing": 0.12,
+        "jitter_ticks": 3.0,
+        "affinities": { "mpc-ish": 0.9, "drunk-shuffle": 0.6, "laid-back": 0.6 }
+      },
+      "rack": {
+        "palette_overrides": {
+          "kick": { "voice": "kick", "tune_hz": 50.0, "decay_ms": 350.0, "click": 0.4, "drive": 0.2 },
+          "perc": { "voice": "perc", "decay_ms": 120.0, "tone": 0.6, "open": true },
+          "bass": { "voice": "bass", "cutoff_hz": 600.0, "resonance": 0.2, "glide_ms": 60.0 },
+          "pad": { "voice": "pad", "attack_ms": 300.0, "release_ms": 2000.0, "detune_cents": 10.0, "cutoff_hz": 3500.0 }
+        }
+      },
+      "samples": {
+        "recipe_hashes": [],
+        "queries": ["kick warm round house", "clap bright tight", "hat open swung"]
+      },
+      "mix": {
+        "profile": {
+          "kick": { "gain": 1.0, "pan": 0.0, "send_delay": 0.0, "send_reverb": 0.05 },
+          "perc": { "gain": 0.65, "pan": -0.15, "send_delay": 0.12, "send_reverb": 0.18 },
+          "bass": { "gain": 0.85, "pan": 0.0, "send_delay": 0.0, "send_reverb": 0.03 },
+          "pad": { "gain": 0.55, "pan": 0.1, "send_delay": 0.2, "send_reverb": 0.35 }
+        }
+      },
+      "arrangement": {
+        "dev_bars": 16,
+        "breakdown_bars": 8,
+        "energy_arc": [0.4, 0.5, 0.58, 0.65, 0.7, 0.75, 0.8, 0.85]
+      }
+    }
+  }
+}

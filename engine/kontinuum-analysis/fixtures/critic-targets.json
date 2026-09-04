@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "name": "minimal-techno critic targets (#52 profile crest floor / #28 loudness + spectral hypotheses)",
+  "integrated_target_lufs": -10.0,
+  "loudness_tolerance_lu": 2.5,
+  "crest_floor_db": 8.0,
+  "crest_tolerance_db": 1.0,
+  "tilt_target_db_per_oct": -3.0,
+  "tilt_tolerance_db_per_oct": 2.0,
+  "sub_share_cap": 0.45,
+  "sub_share_tolerance": 0.05
+}

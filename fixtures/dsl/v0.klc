@@ -1,0 +1,18 @@
+# kontinuum livecode v0 — golden example (issue #39 step 4)
+# Everything here is an IR projection: no engine-internal knobs.
+
+// Two sections; the first is a one-liner header.
+section a { bars 4, energy 0.5 }
+
+section b {
+  bars 8,
+  energy 0.7,
+  kick.mask = 0b1000_1000_1000_1000;
+  hat.vel = [1.0, 0.0, 0.5, 0.0, 1.0, 0.0, 0.5, 0.0, 1.0, 0.0, 0.5, 0.0, 1.0, 0.0, 0.5, 0.0];
+  perc: E(5, 16, 2) @ swing 0.14;
+  bass.cutoff_hz = 120.0;
+  energy 0.85;
+}
+
+# Track-level params live outside sections too.
+kick.tune_hz = 48.0;

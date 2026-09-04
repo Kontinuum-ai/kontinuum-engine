@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "seed": 7,
+  "tempo_lane": [[0, 124.0]],
+  "key": "A minor",
+  "sections": [
+    {
+      "id": "a",
+      "bars": 8,
+      "energy_curve": [0.5, 0.55, 0.6, 0.6, 0.65, 0.65, 0.7, 0.7],
+      "transition_in": null,
+      "transition_out": null,
+      "pattern_bindings": {
+        "k": {"generator": "euclidean", "k": 4, "n": 16},
+        "p": {"generator": "euclidean", "k": 3, "n": 8, "rot": 1},
+        "b": {
+          "steps": [
+            {"position": 0, "velocity": 0.85, "probability": 1.0, "microtiming_ticks": 0, "ratchet": 1, "pitch": 33.0, "gate": 0.4, "accent": true},
+            {"position": 192, "velocity": 0.6, "probability": 1.0, "microtiming_ticks": 0, "ratchet": 1, "pitch": 33.0, "gate": 0.2, "accent": false},
+            {"position": 264, "velocity": 0.7, "probability": 1.0, "microtiming_ticks": 0, "ratchet": 1, "pitch": 36.0, "gate": 0.3, "accent": false},
+            {"position": 336, "velocity": 0.6, "probability": 1.0, "microtiming_ticks": 0, "ratchet": 1, "pitch": 40.0, "gate": 0.2, "accent": false}
+          ]
+        },
+        "w": {
+          "steps": [
+            {"position": 0, "velocity": 0.7, "probability": 1.0, "microtiming_ticks": 0, "ratchet": 1, "pitch": 45.0, "gate": 6.0, "accent": false}
+          ]
+        },
+        "t": {
+          "steps": [
+            {"position": 0, "velocity": 0.6, "probability": 1.0, "microtiming_ticks": 0, "ratchet": 1, "pitch": 60.0, "gate": 16.0, "accent": false}
+          ]
+        }
+      }
+    },
+    {
+      "id": "b",
+      "bars": 8,
+      "energy_curve": [0.7, 0.7, 0.72, 0.72, 0.74, 0.74, 0.76, 0.78],
+      "transition_in": {
+        "type": "filter_sweep",
+        "bars": 2,
+        "params": {"from_hz": 300.0, "to_hz": 16000.0}
+      },
+      "transition_out": null,
+      "pattern_bindings": {
+        "k": {"generator": "euclidean", "k": 4, "n": 16},
+        "p": {"generator": "euclidean", "k": 5, "n": 16, "rot": 3},
+        "b": {
+          "steps": [
+            {"position": 0, "velocity": 0.85, "probability": 1.0, "microtiming_ticks": 0, "ratchet": 1, "pitch": 31.0, "gate": 0.4, "accent": true},
+            {"position": 168, "velocity": 0.6, "probability": 1.0, "microtiming_ticks": 0, "ratchet": 1, "pitch": 31.0, "gate": 0.2, "accent": false},
+            {"position": 264, "velocity": 0.7, "probability": 1.0, "microtiming_ticks": 0, "ratchet": 1, "pitch": 38.0, "gate": 0.3, "accent": false},
+            {"position": 336, "velocity": 0.65, "probability": 1.0, "microtiming_ticks": 0, "ratchet": 1, "pitch": 43.0, "gate": 0.25, "accent": false}
+          ]
+        },
+        "w": {
+          "steps": [
+            {"position": 0, "velocity": 0.7, "probability": 1.0, "microtiming_ticks": 0, "ratchet": 1, "pitch": 48.0, "gate": 8.0, "accent": false}
+          ]
+        },
+        "t": {
+          "steps": [
+            {"position": 0, "velocity": 0.55, "probability": 1.0, "microtiming_ticks": 0, "ratchet": 1, "pitch": 60.0, "gate": 16.0, "accent": false}
+          ]
+        }
+      }
+    }
+  ],
+  "tracks": [
+    {"id": "k", "role": "kick", "instrument": {"kind": "kick", "tune_hz": 50.0, "decay_ms": 300.0, "click": 0.5, "drive": 0.4}, "inserts": [], "sends": {"delay": 0.0, "reverb": 0.05}, "gain": 1.0, "pan": 0.0},
+    {"id": "p", "role": "perc", "instrument": {"kind": "fmperc", "ratio": 1.0, "index": 3.2, "feedback": 0.3, "decay_ms": 240.0, "preset": "tom"}, "inserts": [{"type": "phaser", "params": {"rate_hz": 0.5, "depth": 0.6, "feedback": 0.6, "stages": 1.0}, "mix": 0.5}], "sends": {"delay": 0.25, "reverb": 0.12}, "gain": 0.8, "pan": 0.1},
+    {"id": "b", "role": "bass", "instrument": {"kind": "acid", "cutoff_hz": 700.0, "resonance": 0.5, "env_amt": 2.8, "glide_ms": 50.0}, "inserts": [{"type": "transient", "params": {"attack": 0.85, "sustain": 0.55}, "mix": 1.0}], "sends": {"delay": 0.05, "reverb": 0.05}, "gain": 0.9, "pan": 0.0},
+    {"id": "w", "role": "pad", "instrument": {"kind": "wavetable", "position": 0.42, "detune_cents": 16.0, "osc2_level": 0.8, "sub": 0.35, "cutoff_hz": 1600.0, "release_ms": 2400.0}, "inserts": [{"type": "chorus", "params": {"rate_hz": 0.4, "depth": 0.6}, "mix": 0.5}], "sends": {"delay": 0.2, "reverb": 0.45}, "gain": 0.55, "pan": -0.1},
+    {"id": "t", "role": "fx", "instrument": {"kind": "texture", "crackle": true, "density": 0.004, "grain_ms": 30.0, "tone": 0.45}, "inserts": [{"type": "freq_shifter", "params": {"shift_hz": 0.0}, "mix": 0.4}], "sends": {"delay": 0.3, "reverb": 0.3}, "gain": 0.35, "pan": 0.2}
+  ],
+  "send_fx": {"reverb": "fdn8", "delay": "tape"}
+}

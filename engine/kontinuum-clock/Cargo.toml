@@ -1,0 +1,7 @@
+[package]
+name = "kontinuum-clock"
+version.workspace = true
+edition.workspace = true
+description = "Musical transport: PPQ clock, tempo automation lanes, boundary iteration, seeded RNG streams"
+
+[dependencies]

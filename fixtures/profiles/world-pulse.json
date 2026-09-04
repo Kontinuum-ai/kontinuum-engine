@@ -1,0 +1,30 @@
+{
+  "name": "sound world `pulse` render profile (issue #30)",
+  "tolerances": {},
+  "targets": {
+    "band_sub": {
+      "min": 0.0,
+      "max": 0.9
+    },
+    "centroid_hz": {
+      "min": 1500.0,
+      "max": 9000.0
+    },
+    "crest_db": {
+      "min": 11.0,
+      "max": 26.0
+    },
+    "hit_cv": {
+      "min": 0.0,
+      "max": 0.65
+    },
+    "short_term_dyn_db": {
+      "min": 8.0,
+      "max": 36.0
+    },
+    "transients_per_sec": {
+      "min": 0.5,
+      "max": 4.5
+    }
+  }
+}

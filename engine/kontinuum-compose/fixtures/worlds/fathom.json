@@ -1,0 +1,64 @@
+{
+  "format_version": 1,
+  "id": "fathom",
+  "name": "Fathom",
+  "description": "Deep/dub: sub-first rounded kick, long open tops swimming in delay, gliding square sub, cavernous dark wavetable pads. Roster-v2 curation: wavetable pad patch, texture/crackle pack.",
+  "taste_tags": [
+    "deep",
+    "dub"
+  ],
+  "palette_overrides": {
+    "kick": {
+      "voice": "kick",
+      "tune_hz": 45.0,
+      "decay_ms": 420.0,
+      "click": 0.2,
+      "drive": 0.6
+    },
+    "perc": {
+      "voice": "perc",
+      "decay_ms": 160.0,
+      "tone": 0.45
+    },
+    "bass": {
+      "voice": "bass",
+      "cutoff_hz": 180.0,
+      "resonance": 0.4,
+      "wave": "square",
+      "glide_ms": 90.0
+    }
+  },
+  "mix_target_overrides": {
+    "perc": {
+      "gain": 0.6,
+      "pan": -0.3,
+      "send_delay": 0.45
+    },
+    "bass": {
+      "gain": 0.95
+    },
+    "pad": {
+      "gain": 0.55,
+      "send_reverb": 0.5
+    }
+  },
+  "groove_affinities": {
+    "laid-back": 0.9,
+    "mpc-ish": 0.6,
+    "drunk-shuffle": 0.3
+  },
+  "sample_packs": [
+    "texture-crackle-v1"
+  ],
+  "patch_overrides": {
+    "pad": {
+      "kind": "wavetable",
+      "position": 0.35,
+      "detune_cents": 10.0,
+      "osc2_level": 0.8,
+      "sub": 0.55,
+      "cutoff_hz": 1100.0,
+      "release_ms": 3500.0
+    }
+  }
+}

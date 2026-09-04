@@ -1,0 +1,13 @@
+[package]
+name = "kontinuum-instruments-core"
+version.workspace = true
+edition.workspace = true
+
+[dev-dependencies]
+assert_no_alloc = "1"
+
+[dependencies]
+kontinuum-schedule = { path = "../../engine/kontinuum-schedule" }
+kontinuum-clock = { path = "../../engine/kontinuum-clock" }
+kontinuum-core = { path = "../../engine/kontinuum-core" }
+kontinuum-plugin-api = { path = "../kontinuum-plugin-api" }

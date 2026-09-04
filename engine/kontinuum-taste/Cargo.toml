@@ -1,0 +1,16 @@
+[package]
+name = "kontinuum-taste"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+rusqlite = { version = "0.32", features = ["bundled"] }
+kontinuum-clock = { workspace = true }
+kontinuum-compose = { workspace = true }
+kontinuum-ir = { workspace = true }
+kontinuum-analysis = { path = "../kontinuum-analysis" }
+kontinuum-corpus = { workspace = true }
+kontinuum-preference = { workspace = true }

@@ -1,0 +1,24 @@
+{
+  "name": "deep house target profile (re-specified for corrected metrics)",
+  "note": "The warmest of the four: widest mid allowance, lowest centroid range, softest transients. Still a floor under every one of them.",
+  "targets": {
+    "short_term_dyn_db": { "min": 2.5, "max": 8.0 },
+    "crest_db": { "min": 7.0, "max": 12.0 },
+    "hit_cv": { "min": 0.15, "max": 0.5 },
+    "transients_per_sec": { "min": 3.5, "max": 11.0 },
+    "centroid_hz": { "min": 1400.0, "max": 5500.0 },
+    "band_sub": { "max": 0.28 },
+    "band_mid": { "min": 0.18, "max": 0.4 },
+    "band_himid": { "min": 0.045 }
+  },
+  "tolerances": {
+    "short_term_dyn_db": 2.0,
+    "crest_db": 1.0,
+    "hit_cv": 0.05,
+    "transients_per_sec": 1.0,
+    "centroid_hz": 400.0,
+    "band_sub": 0.02,
+    "band_mid": 0.02,
+    "band_himid": 0.02
+  }
+}

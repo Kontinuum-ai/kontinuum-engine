@@ -1,0 +1,51 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  reachability:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: ./scripts/check-reachability.sh
+
+  engine:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo test --workspace
+      - run: cargo test --workspace --release
+  golden:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      # The golden hash itself is host/toolchain/profile-specific (see the GOLDEN
+      # docs in golden.rs) — CI gates the portable guarantees: run-to-run bit
+      # determinism, finite/audible output, WAV roundtrip. Exact-pin check is
+      # opt-in via KONTINUUM_GOLDEN_PIN_CHECK=1 on the canonical host.
+      - run: cargo test --workspace --release
+      - run: cargo run --release -p kontinuum-offline -- hash fixtures/loop-4track.ir.json
+  critic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo test -p kontinuum-analysis --release
+      # Render microhouse at the pinned seed and gate it against the ratchet:
+      # fails only on quality REGRESSION (issue #52 WS4), not on absolute miss.
+      - run: |
+          cargo run --release -q -p kontinuum-compose --example gen_genre -- microhouse session-critic.json 7 128
+          cargo run --release -q -p kontinuum-offline -- render session-critic.json render-critic.wav
+          cargo run --release -q -p kontinuum-analysis --bin kontinuum-critic -- gate render-critic.wav fixtures/profiles/microhouse.json fixtures/profiles/baseline-microhouse.json
+      # The premium/export path through its own ratchet (issue #117): #111
+      # shipped 9 dB under target through this chain while the gate above
+      # only ever rendered the real-time mix. Same session, the export
+      # chain, its own profile and baseline.
+      - run: |
+          cargo run --release -q -p kontinuum-offline -- render --premium session-critic.json render-critic-premium.wav
+          cargo run --release -q -p kontinuum-analysis --bin kontinuum-critic -- gate render-critic-premium.wav fixtures/profiles/premium-microhouse.json fixtures/profiles/baseline-premium-microhouse.json

@@ -1,0 +1,67 @@
+{
+  "format_version": 1,
+  "id": "dust",
+  "name": "Dust",
+  "description": "Dusty micro: soft rounded kick, darker shuffling tops, warm filtered bass, hazy wavetable pads over a crackle bed. Roster-v2 curation: wavetable pad patch, texture + chord one-shot packs.",
+  "taste_tags": [
+    "micro",
+    "minimal"
+  ],
+  "palette_overrides": {
+    "kick": {
+      "voice": "kick",
+      "tune_hz": 52.0,
+      "decay_ms": 300.0,
+      "click": 0.35,
+      "drive": 0.45
+    },
+    "perc": {
+      "voice": "perc",
+      "decay_ms": 85.0,
+      "tone": 0.5
+    },
+    "bass": {
+      "voice": "bass",
+      "cutoff_hz": 320.0,
+      "resonance": 0.35,
+      "glide_ms": 60.0
+    }
+  },
+  "mix_target_overrides": {
+    "kick": {
+      "gain": 1.05
+    },
+    "perc": {
+      "gain": 0.65,
+      "pan": 0.35,
+      "send_delay": 0.3
+    },
+    "bass": {
+      "gain": 0.85
+    },
+    "pad": {
+      "gain": 0.5,
+      "send_reverb": 0.4
+    }
+  },
+  "groove_affinities": {
+    "drunk-shuffle": 0.9,
+    "laid-back": 0.7,
+    "mpc-ish": 0.4
+  },
+  "sample_packs": [
+    "texture-crackle-v1",
+    "chord-oneshots-v1"
+  ],
+  "patch_overrides": {
+    "pad": {
+      "kind": "wavetable",
+      "position": 0.25,
+      "detune_cents": 18.0,
+      "osc2_level": 0.7,
+      "sub": 0.3,
+      "cutoff_hz": 1500.0,
+      "release_ms": 1500.0
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "seed": 23,
+  "sample_rate": 48000,
+  "name": "starter closed hat",
+  "tail_ms": 300,
+  "voices": [
+    {
+      "id": "h",
+      "instrument": { "kind": "hat", "decay_ms": 42.0, "tone": 0.7 },
+      "chain": [{ "type": "highpass", "amount": 4000.0 }]
+    }
+  ],
+  "hits": [
+    { "voice": "h", "at_ms": 0.0, "pitch": 62, "velocity": 0.85, "choke_group": 1 }
+  ],
+  "tags": ["hat", "choke:1", "starter"]
+}

@@ -1,0 +1,23 @@
+{
+  "version": 1, "seed": 3,
+  "tempo_lane": [[0, 128.0]],
+  "sections": [{"id": "a", "bars": 2, "energy_curve": [0.7],
+      "pattern_bindings": {"acid": {"generator": "euclidean", "k": 8, "n": 16, "pitch": 36.0, "gate": 0.6}}}],
+  "tracks": [{"id": "acid", "role": "bass", "instrument": {"kind": "custom", "patch": {
+      "nodes": [
+        {"id": "o1", "type": "osc", "wave": "saw", "unison": 2, "fine_cents": 7.0, "level": 0.9},
+        {"id": "flt1", "type": "filter", "mode": "low_pass", "cutoff_hz": 420.0, "resonance": 0.85, "drive": 0.6},
+        {"id": "env1", "type": "env", "attack_ms": 1.0, "decay_ms": 220.0, "sustain": 0.0, "release_ms": 150.0},
+        {"id": "lfo1", "type": "lfo", "rate_hz": 5.5, "depth": 0.25, "wave": "tri"},
+        {"id": "g1", "type": "gain", "level": 1.2},
+        {"id": "out1", "type": "out", "level": 0.8}
+      ],
+      "edges": [
+        {"from": "o1", "to": "flt1", "type": "audio", "amount": 1.0},
+        {"from": "env1", "to": "flt1", "type": "mod", "param": "cutoff_hz", "amount": 0.9},
+        {"from": "lfo1", "to": "flt1", "type": "mod", "param": "cutoff_hz", "amount": 0.25},
+        {"from": "flt1", "to": "g1", "type": "audio", "amount": 1.0},
+        {"from": "g1", "to": "out1", "type": "audio", "amount": 1.0}
+      ]
+  }}}]
+}

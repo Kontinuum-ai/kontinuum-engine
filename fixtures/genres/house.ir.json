@@ -1,0 +1,1414 @@
+{
+  "version": 1,
+  "seed": 42,
+  "tempo_lane": [
+    [
+      0,
+      124.0
+    ]
+  ],
+  "key": "F minor",
+  "sections": [
+    {
+      "id": "intro",
+      "bars": 8,
+      "energy_curve": [
+        0.39737982,
+        0.38650632,
+        0.45144472,
+        0.45386365,
+        0.45575443,
+        0.515184,
+        0.509771,
+        0.5527038
+      ],
+      "density_curve": [
+        0.3861394,
+        0.3827522,
+        0.44611922,
+        0.44498834,
+        0.45160028,
+        0.51638,
+        0.52368206,
+        0.5610166
+      ],
+      "brightness_curve": [
+        0.43879348,
+        0.47535616,
+        0.4526672,
+        0.45109108,
+        0.47015676,
+        0.49428597,
+        0.5310422,
+        0.51393574
+      ],
+      "transition_in": null,
+      "transition_out": {
+        "type": "fill",
+        "bars": 1,
+        "params": {
+          "glitch_repeat": true,
+          "kick_drop": false,
+          "reverse_cymbal": false,
+          "rolls": true
+        }
+      },
+      "pattern_bindings": {
+        "bass": {
+          "steps": [
+            {
+              "position": 266,
+              "velocity": 0.60737014,
+              "probability": 1.0,
+              "microtiming_ticks": -2,
+              "ratchet": 1,
+              "pitch": 39.0,
+              "gate": 0.33524597,
+              "accent": true
+            },
+            {
+              "position": 743,
+              "velocity": 0.5843248,
+              "probability": 1.0,
+              "microtiming_ticks": -3,
+              "ratchet": 1,
+              "pitch": 39.0,
+              "gate": 0.25435376,
+              "accent": false
+            },
+            {
+              "position": 1229,
+              "velocity": 0.60822403,
+              "probability": 1.0,
+              "microtiming_ticks": -4,
+              "ratchet": 1,
+              "pitch": 39.0,
+              "gate": 0.27169552,
+              "accent": false
+            },
+            {
+              "position": 1709,
+              "velocity": 0.54314256,
+              "probability": 1.0,
+              "microtiming_ticks": -5,
+              "ratchet": 1,
+              "pitch": 39.0,
+              "gate": 0.31250244,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "clap": {
+          "steps": [
+            {
+              "position": 960,
+              "velocity": 0.7096783,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2879,
+              "velocity": 0.70791525,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "kick": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.63,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": true
+            },
+            {
+              "position": 960,
+              "velocity": 0.63,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2880,
+              "velocity": 0.63,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2894,
+              "velocity": 0.5355,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2908,
+              "velocity": 0.455175,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "perc": {
+          "steps": [
+            {
+              "position": 245,
+              "velocity": 0.58764076,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 0.4,
+              "accent": false
+            },
+            {
+              "position": 719,
+              "velocity": 0.53892374,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 0.4,
+              "accent": false
+            },
+            {
+              "position": 1204,
+              "velocity": 0.5779986,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 0.4,
+              "accent": false
+            },
+            {
+              "position": 1684,
+              "velocity": 0.59753466,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 0.4,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        }
+      },
+      "automation": {
+        "bass": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.63,
+              "smooth"
+            ],
+            [
+              7,
+              0.71999997,
+              "smooth"
+            ]
+          ]
+        },
+        "clap": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.504,
+              "smooth"
+            ],
+            [
+              7,
+              0.57600003,
+              "smooth"
+            ]
+          ]
+        },
+        "ep": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.36,
+              "exp"
+            ],
+            [
+              7,
+              0.3,
+              "smooth"
+            ]
+          ]
+        },
+        "kick": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.85,
+              "smooth"
+            ],
+            [
+              7,
+              0.85,
+              "smooth"
+            ]
+          ]
+        },
+        "perc": {
+          "target_param": "send_delay",
+          "points": [
+            [
+              0,
+              0.15,
+              "linear"
+            ],
+            [
+              6,
+              0.15,
+              "linear"
+            ],
+            [
+              7,
+              0.55,
+              "smooth"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "dev_0",
+      "bars": 4,
+      "energy_curve": [
+        0.4703449,
+        0.5033174,
+        0.5462219,
+        0.57858855
+      ],
+      "density_curve": [
+        0.6764671,
+        0.7508115,
+        0.7993051,
+        0.8316603
+      ],
+      "brightness_curve": [
+        0.52070117,
+        0.567984,
+        0.64370716,
+        0.69983053
+      ],
+      "transition_in": null,
+      "transition_out": {
+        "type": "fill",
+        "bars": 1,
+        "params": {
+          "glitch_repeat": false,
+          "kick_drop": true,
+          "reverse_cymbal": true,
+          "rolls": true
+        }
+      },
+      "pattern_bindings": {
+        "kick": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.65250003,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": true
+            },
+            {
+              "position": 960,
+              "velocity": 0.65250003,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2880,
+              "velocity": 0.65250003,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2894,
+              "velocity": 0.55462503,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2908,
+              "velocity": 0.4714313,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "perc": {
+          "steps": [
+            {
+              "position": 240,
+              "velocity": 0.54034,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 0.4,
+              "accent": false
+            },
+            {
+              "position": 719,
+              "velocity": 0.5869725,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 0.4,
+              "accent": false
+            },
+            {
+              "position": 1198,
+              "velocity": 0.5528472,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 0.4,
+              "accent": false
+            },
+            {
+              "position": 1675,
+              "velocity": 0.59304726,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 0.4,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        }
+      },
+      "automation": {
+        "bass": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.71999997,
+              "exp"
+            ],
+            [
+              3,
+              0.089999996,
+              "smooth"
+            ]
+          ]
+        },
+        "clap": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.57600003,
+              "exp"
+            ],
+            [
+              3,
+              0.072000004,
+              "smooth"
+            ]
+          ]
+        },
+        "ep": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.3,
+              "exp"
+            ],
+            [
+              3,
+              0.060000002,
+              "smooth"
+            ]
+          ]
+        },
+        "kick": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.85,
+              "smooth"
+            ],
+            [
+              3,
+              1.0,
+              "smooth"
+            ]
+          ]
+        },
+        "perc": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.4,
+              "exp"
+            ],
+            [
+              3,
+              0.175,
+              "smooth"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "dev_1",
+      "bars": 4,
+      "energy_curve": [
+        0.9124684,
+        0.92254883,
+        0.9595065,
+        0.9392683
+      ],
+      "density_curve": [
+        0.6566809,
+        0.7593657,
+        0.7629455,
+        0.8581603
+      ],
+      "brightness_curve": [
+        0.553178,
+        0.55620337,
+        0.62089026,
+        0.6825002
+      ],
+      "transition_in": null,
+      "transition_out": null,
+      "pattern_bindings": {
+        "bass": {
+          "steps": [
+            {
+              "position": 267,
+              "velocity": 0.86276174,
+              "probability": 1.0,
+              "microtiming_ticks": -3,
+              "ratchet": 1,
+              "pitch": 51.0,
+              "gate": 0.26829997,
+              "accent": true
+            },
+            {
+              "position": 753,
+              "velocity": 0.829574,
+              "probability": 1.0,
+              "microtiming_ticks": -3,
+              "ratchet": 1,
+              "pitch": 39.0,
+              "gate": 0.32538518,
+              "accent": false
+            },
+            {
+              "position": 1233,
+              "velocity": 0.8787967,
+              "probability": 1.0,
+              "microtiming_ticks": -2,
+              "ratchet": 1,
+              "pitch": 39.0,
+              "gate": 0.32196552,
+              "accent": false
+            },
+            {
+              "position": 1715,
+              "velocity": 0.76296043,
+              "probability": 1.0,
+              "microtiming_ticks": -2,
+              "ratchet": 1,
+              "pitch": 39.0,
+              "gate": 0.32442266,
+              "accent": false
+            },
+            {
+              "position": 2196,
+              "velocity": 0.8662973,
+              "probability": 1.0,
+              "microtiming_ticks": -4,
+              "ratchet": 1,
+              "pitch": 39.0,
+              "gate": 0.34200835,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "clap": {
+          "steps": [
+            {
+              "position": 957,
+              "velocity": 0.9348876,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2883,
+              "velocity": 0.9566057,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "ep": {
+          "steps": [
+            {
+              "position": 236,
+              "velocity": 0.5746589,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 51.0,
+              "gate": 0.9,
+              "accent": true
+            },
+            {
+              "position": 248,
+              "velocity": 0.51952606,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 55.0,
+              "gate": 0.9,
+              "accent": false
+            },
+            {
+              "position": 239,
+              "velocity": 0.57429004,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 58.0,
+              "gate": 0.9,
+              "accent": false
+            },
+            {
+              "position": 720,
+              "velocity": 0.48338398,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 62.0,
+              "gate": 0.9,
+              "accent": false
+            },
+            {
+              "position": 713,
+              "velocity": 0.49561954,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 65.0,
+              "gate": 0.9,
+              "accent": false
+            },
+            {
+              "position": 716,
+              "velocity": 0.48555258,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 51.0,
+              "gate": 0.9,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "kick": {
+          "generator": "euclidean",
+          "k": 4,
+          "n": 16,
+          "rot": 0,
+          "velocity": 0.91249996,
+          "probability": 1.0,
+          "repeats": 1,
+          "gate": null,
+          "pitch": null
+        }
+      },
+      "automation": {
+        "bass": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.089999996,
+              "smooth"
+            ],
+            [
+              3,
+              0.8702413,
+              "smooth"
+            ]
+          ]
+        },
+        "clap": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.072000004,
+              "smooth"
+            ],
+            [
+              3,
+              0.70677686,
+              "smooth"
+            ]
+          ]
+        },
+        "ep": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.060000002,
+              "smooth"
+            ],
+            [
+              3,
+              0.5654268,
+              "smooth"
+            ]
+          ]
+        },
+        "kick": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              1.0,
+              "exp"
+            ],
+            [
+              3,
+              0.95515454,
+              "smooth"
+            ]
+          ]
+        },
+        "perc": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.175,
+              "exp"
+            ],
+            [
+              3,
+              0.05,
+              "smooth"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "reintro",
+      "bars": 8,
+      "energy_curve": [
+        0.8454485,
+        0.8592276,
+        0.8842864,
+        0.8985757,
+        0.91195905,
+        0.90045285,
+        0.9230203,
+        0.93530244
+      ],
+      "density_curve": [
+        0.8647958,
+        0.9144314,
+        0.90672755,
+        0.9139446,
+        0.90890515,
+        0.9490062,
+        0.9487361,
+        0.97938097
+      ],
+      "brightness_curve": [
+        0.61415607,
+        0.63565093,
+        0.680765,
+        0.7056319,
+        0.6991936,
+        0.7279372,
+        0.697219,
+        0.7199218
+      ],
+      "transition_in": null,
+      "transition_out": {
+        "type": "fill",
+        "bars": 1,
+        "params": {
+          "glitch_repeat": false,
+          "kick_drop": true,
+          "reverse_cymbal": false,
+          "rolls": true
+        }
+      },
+      "pattern_bindings": {
+        "bass": {
+          "steps": [
+            {
+              "position": 1200,
+              "velocity": 0.8787967,
+              "probability": 1.0,
+              "microtiming_ticks": -2,
+              "ratchet": 1,
+              "pitch": 41.0,
+              "gate": 0.64393103,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "clap": {
+          "steps": [
+            {
+              "position": 957,
+              "velocity": 0.9348876,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            },
+            {
+              "position": 2883,
+              "velocity": 0.9566057,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "ep": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.5746589,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 53.0,
+              "gate": 1.8,
+              "accent": true
+            }
+          ],
+          "repeats": 1
+        },
+        "kick": {
+          "steps": [
+            {
+              "position": 0,
+              "velocity": 0.65250003,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": true
+            },
+            {
+              "position": 960,
+              "velocity": 0.65250003,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            },
+            {
+              "position": 2880,
+              "velocity": 0.65250003,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            },
+            {
+              "position": 2894,
+              "velocity": 0.55462503,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            },
+            {
+              "position": 2908,
+              "velocity": 0.4714313,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 1.0,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "perc": {
+          "steps": [
+            {
+              "position": 1440,
+              "velocity": 0.59304726,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 0.8,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        }
+      },
+      "automation": {
+        "bass": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.8702413,
+              "smooth"
+            ],
+            [
+              7,
+              0.9,
+              "smooth"
+            ]
+          ]
+        },
+        "clap": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.70677686,
+              "smooth"
+            ],
+            [
+              7,
+              0.72,
+              "smooth"
+            ]
+          ]
+        },
+        "ep": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.5654268,
+              "smooth"
+            ],
+            [
+              7,
+              0.6,
+              "smooth"
+            ]
+          ]
+        },
+        "kick": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.95515454,
+              "smooth"
+            ],
+            [
+              7,
+              1.0,
+              "smooth"
+            ]
+          ]
+        },
+        "perc": {
+          "target_param": "send_delay",
+          "points": [
+            [
+              0,
+              0.15,
+              "linear"
+            ],
+            [
+              6,
+              0.15,
+              "linear"
+            ],
+            [
+              7,
+              0.55,
+              "smooth"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "outro",
+      "bars": 12,
+      "energy_curve": [
+        0.6821593,
+        0.6761621,
+        0.62575436,
+        0.59960157,
+        0.56457263,
+        0.5374956,
+        0.4774648,
+        0.4343575,
+        0.407823,
+        0.42840242,
+        0.33736053,
+        0.32811537
+      ],
+      "density_curve": [
+        0.68071663,
+        0.6578751,
+        0.6482656,
+        0.5997073,
+        0.5395352,
+        0.5031609,
+        0.49888456,
+        0.44762313,
+        0.45302075,
+        0.38595417,
+        0.3586257,
+        0.3427953
+      ],
+      "brightness_curve": [
+        0.5745005,
+        0.5816418,
+        0.5382911,
+        0.55995923,
+        0.5130618,
+        0.5421003,
+        0.5155822,
+        0.48876798,
+        0.4489958,
+        0.46426973,
+        0.4609142,
+        0.4516493
+      ],
+      "transition_in": null,
+      "transition_out": null,
+      "pattern_bindings": {
+        "clap": {
+          "steps": [
+            {
+              "position": 962,
+              "velocity": 0.75146264,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            },
+            {
+              "position": 2878,
+              "velocity": 0.72529626,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": null,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "ep": {
+          "steps": [
+            {
+              "position": 234,
+              "velocity": 0.4737591,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 51.0,
+              "gate": 0.9,
+              "accent": true
+            },
+            {
+              "position": 232,
+              "velocity": 0.44701383,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 55.0,
+              "gate": 0.9,
+              "accent": false
+            },
+            {
+              "position": 243,
+              "velocity": 0.4750594,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 58.0,
+              "gate": 0.9,
+              "accent": false
+            },
+            {
+              "position": 1677,
+              "velocity": 0.31469643,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 62.0,
+              "gate": 0.9,
+              "accent": false
+            },
+            {
+              "position": 1684,
+              "velocity": 0.2825316,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 65.0,
+              "gate": 0.9,
+              "accent": false
+            },
+            {
+              "position": 1683,
+              "velocity": 0.32297936,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": 51.0,
+              "gate": 0.9,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        },
+        "kick": {
+          "generator": "euclidean",
+          "k": 4,
+          "n": 16,
+          "rot": 0,
+          "velocity": 0.705,
+          "probability": 1.0,
+          "repeats": 1,
+          "gate": null,
+          "pitch": null
+        },
+        "perc": {
+          "steps": [
+            {
+              "position": 244,
+              "velocity": 0.53643817,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 0.4,
+              "accent": false
+            },
+            {
+              "position": 721,
+              "velocity": 0.5400095,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 0.4,
+              "accent": false
+            },
+            {
+              "position": 1202,
+              "velocity": 0.5939699,
+              "probability": 1.0,
+              "microtiming_ticks": 0,
+              "ratchet": 1,
+              "pitch": null,
+              "gate": 0.4,
+              "accent": false
+            }
+          ],
+          "repeats": 1
+        }
+      },
+      "automation": {
+        "bass": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.9,
+              "exp"
+            ],
+            [
+              11,
+              0.5309987,
+              "smooth"
+            ]
+          ]
+        },
+        "clap": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.72,
+              "exp"
+            ],
+            [
+              11,
+              0.39930508,
+              "smooth"
+            ]
+          ]
+        },
+        "ep": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              0.6,
+              "exp"
+            ],
+            [
+              11,
+              0.3829096,
+              "smooth"
+            ]
+          ]
+        },
+        "kick": {
+          "target_param": "gain",
+          "points": [
+            [
+              0,
+              1.0,
+              "exp"
+            ],
+            [
+              11,
+              0.61469823,
+              "smooth"
+            ]
+          ]
+        },
+        "perc": {
+          "target_param": "send_delay",
+          "points": [
+            [
+              0,
+              0.15,
+              "linear"
+            ],
+            [
+              10,
+              0.15,
+              "linear"
+            ],
+            [
+              11,
+              0.55,
+              "smooth"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "tracks": [
+    {
+      "id": "kick",
+      "role": "kick",
+      "instrument": {
+        "kind": "kick",
+        "tune_hz": 52.0,
+        "decay_ms": 180.0,
+        "click": 0.4,
+        "drive": 0.3
+      },
+      "inserts": [
+        {
+          "type": "drive",
+          "params": {
+            "amount": 1.2
+          },
+          "mix": 0.4
+        }
+      ],
+      "sends": {
+        "delay": 0.0,
+        "reverb": 0.05
+      },
+      "gain": 1.0,
+      "pan": 0.0
+    },
+    {
+      "id": "perc",
+      "role": "perc",
+      "instrument": {
+        "kind": "hat",
+        "decay_ms": 90.0,
+        "tone": 0.5,
+        "open": true
+      },
+      "inserts": [],
+      "sends": {
+        "delay": 0.15,
+        "reverb": 0.18
+      },
+      "gain": 0.5,
+      "pan": 0.25,
+      "duck_depth": 1.0
+    },
+    {
+      "id": "clap",
+      "role": "perc",
+      "instrument": {
+        "kind": "clap",
+        "decay_ms": 300.0,
+        "tone": 0.62
+      },
+      "inserts": [],
+      "sends": {
+        "delay": 0.1,
+        "reverb": 0.3
+      },
+      "gain": 0.72,
+      "pan": 0.0,
+      "duck_depth": 1.0
+    },
+    {
+      "id": "bass",
+      "role": "bass",
+      "instrument": {
+        "kind": "bass",
+        "cutoff_hz": 900.0,
+        "resonance": 0.3,
+        "wave": "saw",
+        "glide_ms": 40.0
+      },
+      "inserts": [],
+      "sends": {
+        "delay": 0.0,
+        "reverb": 0.0
+      },
+      "gain": 0.9,
+      "pan": 0.0,
+      "duck_depth": 1.0
+    },
+    {
+      "id": "ep",
+      "role": "pad",
+      "instrument": {
+        "kind": "ep",
+        "decay_ms": 1400.0,
+        "depth": 2.4
+      },
+      "inserts": [],
+      "sends": {
+        "delay": 0.1,
+        "reverb": 0.35
+      },
+      "gain": 0.6,
+      "pan": -0.2,
+      "duck_depth": 1.0
+    }
+  ],
+  "palette": null,
+  "duck_release_ms": 170.0,
+  "pattern_engine": {
+    "groove": "mpc-ish",
+    "swing": 0.12050687,
+    "bias_ticks": -8,
+    "jitter_ticks": 3.0,
+    "bass_archetype": "offbeat-eighths",
+    "downbeat_collision": "duck_only"
+  }
+}

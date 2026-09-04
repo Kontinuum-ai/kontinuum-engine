@@ -1,0 +1,25 @@
+{
+  "profile": "premium-microhouse.json",
+  "seed": 7,
+  "distance": 0.0,
+  "ratchet": 1.0,
+  "note": "Measured on the post-#115 premium export of the same session the real-time gate renders (gen_genre microhouse, seed 7, 128 bars; render --premium through the export chain). The profile's bounds sit outside the healthy export on every metric, so the anchored distance is 0.0 and the ratchet is pure drift budget: cross-host libm/LLVM float-contraction decorrelates the acid resonator the same way it does the real-time render (see golden.rs provenance and the real-time baseline's re-anchor history), which is why this ratchet is 1.0 where the real-time gate runs 0.5 on a distance of 29.899 \u2014 that baseline's violations dominate its distance, this one's bounds do not. A #111-class breakage adds 7+ to the distance; the drift budget is an order of magnitude below that. Re-anchor only with intent, as with the real-time baseline.",
+  "metrics": {
+    "rms_dbfs": -9.9,
+    "peak_dbfs": -1.1,
+    "true_peak_dbfs": -1.1,
+    "crest_db": 8.84,
+    "short_term_dyn_db": 4.27,
+    "centroid_hz": 6894.0,
+    "band_shares": [
+      0.669,
+      0.124,
+      0.056,
+      0.094,
+      0.012,
+      0.027
+    ],
+    "transients_per_sec": 5.3,
+    "hit_cv": 0.29
+  }
+}
