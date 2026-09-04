@@ -17,7 +17,7 @@ use serde_json::Value;
 
 const FIXTURE: &str = concat!(env!("CARGO_MANIFEST_DIR"), "/../../fixtures/engine-presets.json");
 const CATALOG: &str =
-    concat!(env!("CARGO_MANIFEST_DIR"), "/../../ios/Kontinuum/Resources/InstrumentsCatalog.json");
+    concat!(env!("CARGO_MANIFEST_DIR"), "/../../fixtures/instruments-catalog.json");
 const FRAMES: usize = 512;
 
 fn presets() -> Value {
