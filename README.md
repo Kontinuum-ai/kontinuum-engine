@@ -1,24 +1,27 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg"/>
-    <img src="assets/logo.svg" width="420" alt="The Kontinuum mark"/>
-  </picture>
+  <img src="assets/readme-banner.png" alt="kontinuum-engine — a deterministic, real-time music engine in Rust." width="100%"/>
 </p>
 
-<h1 align="center">kontinuum-engine</h1>
-
 <p align="center">
-  <strong>A deterministic, real-time music engine in Rust.</strong><br/>
   Music is code: a validated IR describes the whole session, a compiler turns it
   into audio blocks, and a lock-free render core performs them sample-accurately
-  on the audio thread. The same seed always produces the same music.
+  on the audio thread. <strong>The same seed always produces the same music.</strong>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Kontinuum-ai/kontinuum-engine/actions/workflows/ci.yml"><img src="https://github.com/Kontinuum-ai/kontinuum-engine/actions/workflows/ci.yml/badge.svg" alt="CI"/></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"/></a>
-  <img src="https://img.shields.io/badge/rust-stable-orange.svg" alt="Rust: stable"/>
-  <img src="https://img.shields.io/badge/render-bit--identical-2ea44f" alt="Deterministic output"/>
+  <a href="https://github.com/Kontinuum-ai/kontinuum-engine/actions/workflows/ci.yml"><img src="https://github.com/Kontinuum-ai/kontinuum-engine/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI"/></a>
+  <img src="https://img.shields.io/badge/RENDER-BIT--IDENTICAL-FF3B30?style=flat-square&labelColor=0B0B0D" alt="Deterministic output"/>
+  <img src="https://img.shields.io/badge/RUST-STABLE-D9D9D9?style=flat-square&labelColor=0B0B0D" alt="Rust: stable"/>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-D9D9D9?style=flat-square&labelColor=0B0B0D" alt="License: MIT"/></a>
+  <a href="https://factory0.ventures"><img src="https://img.shields.io/badge/FZ--001-FACTORY%20ZERO-FF9F0A?style=flat-square&labelColor=0B0B0D" alt="FZ-001, a Factory Zero venture"/></a>
+</p>
+
+<p align="center">
+  <sub>
+    <a href="https://kontinuum.audio">kontinuum.audio</a> &nbsp;·&nbsp;
+    <a href="https://github.com/Kontinuum-ai">the project</a> &nbsp;·&nbsp;
+    <a href="docs/">docs</a>
+  </sub>
 </p>
 
 ---
