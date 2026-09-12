@@ -56,14 +56,14 @@ one DSP line and a golden pin tells you exactly which pin moved and why.
 
 | Layer | Crate | What it does |
 |---|---|---|
-| Musical language | `kontinuum-ir` | The session IR: schema, bounds validator, diff mutations, compiler. JSON is canonical; every editor and the composer write through validated diffs |
+| Musical language | `kontinuum-ir` | The session IR: schema, bounds validator, diff mutations, overrides, compiler. JSON is canonical; every editor and the composer write through validated diffs — and a hand edit on a parameter outranks compiled automation until you release it |
 | Time | `kontinuum-clock`, `kontinuum-schedule` | Tempo lanes, PPQ transport, compiled audio blocks, SPSC hand-off to the audio thread |
 | Sound | `kontinuum-core`, `kontinuum-mastering` | The DSP graph: voices, FX, 12-track mixer, the mastering chain. Allocation-free on the render path |
 | Instruments | `kontinuum-plugin-api`, `kontinuum-instruments-core` | The plugin seam plus 12 first-party voices (kick, acid, pads, granular sampler, …) |
 | Composition | `kontinuum-compose`, `kontinuum-composer` | Arrangement engine (sections, energy curves, transitions), seeded generators, and a backend-agnostic planning layer: on-device heuristic first, LLM optional |
 | Safety | `kontinuum-supervision` | Watchdog, fallback arrangement, kill-switch counters: the AI is contained |
 | Evidence | `kontinuum-analysis`, `kontinuum-corpus` | The self-listening critic: LUFS, crest, spectral tilt, per-band energy, groove metrics, regression ratchets |
-| Delivery | `kontinuum-offline`, `kontinuum-export`, `kontinuum-bridge` | Deterministic IR-to-WAV rendering, masters, and the live engine facade behind the C FFI |
+| Delivery | `kontinuum-offline`, `kontinuum-export`, `kontinuum-bridge` | Deterministic IR-to-WAV rendering; deliverable masters (WAV 32f/24/16, MP3 320/256/192, full mix and stems) whose report carries a fingerprint of the session it came from; and the live engine facade behind the C FFI |
 
 `docs/MUSIC-AS-CODE.md` is the architecture document: the Score → expand →
 Performance → compile → render pipeline, and why expansion is pure, seeded, and
@@ -80,6 +80,9 @@ never runs on the audio thread.
   guarantees: run-to-run identity, finite/audible output, WAV round-trip.
 - New sound is only allowed through a review that re-pins deliberately. The
   pin's changelog is the sound's audit trail.
+- Exports carry their own provenance: every report fingerprints the session
+  document it rendered, so a deliverable can be *proven* to be a given Score's
+  render rather than merely labelled with its seed.
 
 ## The critic watches the sound
 
